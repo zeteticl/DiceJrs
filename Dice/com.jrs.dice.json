@@ -1,0 +1,100 @@
+{
+	"ret": 1,
+	"apiver": 9,
+	"name": "Dice JRS",
+	"version": "2.3.5",
+	"version_id": 500,
+	"author": "旧日",
+	"description": "跑团用骰子",
+	"event": [
+		{
+			"id": 1,
+			"type": 21,
+			"name": "私聊消息处理",
+			"function": "eventPrivateMsg",
+			"priority": 30000
+		},
+		{
+			"id": 2,
+			"type": 2,
+			"name": "群消息处理",
+			"function": "eventGroupMsg",
+			"priority": 30000
+		},
+		{
+			"id": 3,
+			"type": 4,
+			"name": "多人聊天消息处理",
+			"function": "eventDiscussMsg",
+			"priority": 30000
+		},
+		{
+			"id": 4,
+			"type": 1003,
+			"name": "启用事件",
+			"function": "eventEnable",
+			"priority": 30000
+		},
+		{
+			"id": 5,
+			"type": 1002,
+			"name": "退出事件",
+			"function": "eventExit",
+			"priority": 30000
+		},
+		{
+			"id": 6,
+			"type": 1004,
+			"name": "禁用事件",
+			"function": "eventDisable",
+			"priority": 30000
+		},
+		{
+			"id":7,
+			"type":102,
+			"name":"群成员减少事件处理",
+			"function":"eventSystem_GroupMemberDecrease",
+			"priority":20000
+		},
+		{
+			"id": 8,
+			"type": 103,
+			"name": "群成员添加事件",
+			"function": "eventGroupMemberIncrease",
+			"priority": 30000
+		},
+		{
+			"id":9,
+			"type":201,
+			"name":"好友已添加事件处理",
+			"function":"eventFriend_Add",
+			"priority":20000
+		},
+		{
+			"id": 10,
+			"type": 301,
+			"name": "好友添加事件",
+			"function": "eventRequest_AddFriend",
+			"priority": 20000
+		},
+		{
+		"id": 11,
+		"type": 302,
+		"name": "群添加事件",
+		"function": "eventRequest_AddGroup",
+		"priority": 20000
+		}
+	],
+	"auth": [
+		101,
+		103,
+		106,
+		127,
+		130,
+		131,
+		140,
+		150,
+		151, 
+		161
+	]
+}
