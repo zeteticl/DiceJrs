@@ -574,8 +574,6 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				intMsgCnt++;
 			const string strClassify = strLowerMessage.substr(intMsgCnt);
 			if (strClassify == "friend" || strClassify == "f") {
-				while (isspace(strLowerMessage[intMsgCnt]))
-					intMsgCnt++;
 				string strBanFriend;
 				while (isdigit(strLowerMessage[intMsgCnt]))
 				{
@@ -606,8 +604,6 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				}
 			}
 			if (strClassify == "group" || strClassify == "g") {
-				while (isspace(strLowerMessage[intMsgCnt]))
-					intMsgCnt++;
 				string strBanGroup;
 				while (isdigit(strLowerMessage[intMsgCnt]))
 				{
@@ -668,9 +664,6 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 		const string strClassify = strLowerMessage.substr(intMsgCnt);
 		if (strClassify == "friend" || strClassify == "f")
 		{
-			while (isspace(strLowerMessage[intMsgCnt]))
-				intMsgCnt++;
-
 			string strBan;
 			while (isdigit(strLowerMessage[intMsgCnt]))
 			{
@@ -697,9 +690,6 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 		}
 		if (strClassify == "group" || strClassify == "g")
 		{
-			while (isspace(strLowerMessage[intMsgCnt]))
-				intMsgCnt++;
-
 			string strBan;
 			while (isdigit(strLowerMessage[intMsgCnt]))
 			{
