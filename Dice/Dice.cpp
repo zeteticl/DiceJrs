@@ -721,7 +721,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 		AddMsgToQueue("ÓÃ»§<" + to_string(eve.fromQQ) + ">³¢ÊÔ½â³ý·â½û", MASTER);
 	}
 	}
-	else if (strLowerMessage[intMsgCnt] == 'r' || strLowerMessage[intMsgCnt] == 'o' || strLowerMessage[intMsgCnt] == 'd')
+	else if (strLowerMessage[intMsgCnt] == 'r')
 		{
 			intMsgCnt += 1;
 			bool boolDetail = true;
@@ -2336,7 +2336,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
-	else if (strLowerMessage[intMsgCnt] == 'r' || strLowerMessage[intMsgCnt] == 'o' || strLowerMessage[intMsgCnt] == 'h' || strLowerMessage[intMsgCnt] == 'd')
+	else if (strLowerMessage[intMsgCnt] == 'r' ||strLowerMessage[intMsgCnt] == 'h')
 		{
 			bool isHidden = false;
 			if (strLowerMessage[intMsgCnt] == 'h')
@@ -3872,7 +3872,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			}
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
-	else if (strLowerMessage[intMsgCnt] == 'r' || strLowerMessage[intMsgCnt] == 'o' || strLowerMessage[intMsgCnt] == 'h' || strLowerMessage[intMsgCnt] == 'd')
+	else if (strLowerMessage[intMsgCnt] == 'r' ||strLowerMessage[intMsgCnt] == 'h')
 		{
 			bool isHidden = false;
 			if (strLowerMessage[intMsgCnt] == 'h')
