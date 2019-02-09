@@ -570,25 +570,28 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 		if (eve.fromQQ == MASTER)
 		{
 			intMsgCnt += 3;
-			while (strLowerMessage[intMsgCnt] == ' ')
+			while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
 				intMsgCnt++;
-			const string strClassify = strLowerMessage.substr(intMsgCnt);
-			if (strClassify == "friend" || strClassify == "f") {
-				string strBanFriend;
-				while (isdigit(strLowerMessage[intMsgCnt]))
-				{
-					strBanFriend += strLowerMessage[intMsgCnt];
-					intMsgCnt++;
-				}
+			string strBan;
+			while (isdigit(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+			{
+				strBan += strLowerMessage[intMsgCnt];
+				intMsgCnt++;
+			}
+			while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+				intMsgCnt++;
+			string strClassify = strip(eve.message.substr(intMsgCnt));
 
-				for (auto i : strBanFriend)
+			if (strClassify == "friend" || strClassify == "f") {
+				for (auto i : strBan)
 				{
 					if (!isdigit(i))
 					{
+						AddMsgToQueue("错误 格式为.ban [账号] [类别]", eve.fromQQ);
 						return;
 					}
 				}
-				const long long ban = stoll(strBanFriend);
+				const long long ban = stoll(strBan);
 				if (ban == MASTER)
 				{
 					AddMsgToQueue(GlobalMsg["strBanMaster"], eve.fromQQ);
@@ -604,21 +607,15 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				}
 			}
 			if (strClassify == "group" || strClassify == "g") {
-				string strBanGroup;
-				while (isdigit(strLowerMessage[intMsgCnt]))
+				for (auto i : strBan)
 				{
-					strBanGroup += strLowerMessage[intMsgCnt];
-					intMsgCnt++;
-				}
-
-				for (auto i : strBanGroup)
-				{
-					if (!isdigit(i))
+					if (!isdigit(static_cast<unsigned char>(i)))
 					{
+						AddMsgToQueue("错误 格式为.ban [账号] [类别]", eve.fromQQ);
 						return;
 					}
 				}
-				const long long ban = stoll(strBanGroup);
+				const long long ban = stoll(strBan);
 				if (BanGroupList.count(ban))
 				{
 					AddMsgToQueue(GlobalMsg["strAlreadyBanned"], eve.fromQQ);
@@ -659,21 +656,25 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 	if (eve.fromQQ == MASTER)
 	{
 		intMsgCnt += 5;
-		while (strLowerMessage[intMsgCnt] == ' ')
+		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
 			intMsgCnt++;
-		const string strClassify = strLowerMessage.substr(intMsgCnt);
+		string strBan;
+		while (isdigit(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+		{
+			strBan += strLowerMessage[intMsgCnt];
+			intMsgCnt++;
+		}
+		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+			intMsgCnt++;
+		string strClassify = strip(eve.message.substr(intMsgCnt));
+
 		if (strClassify == "friend" || strClassify == "f")
 		{
-			string strBan;
-			while (isdigit(strLowerMessage[intMsgCnt]))
-			{
-				strBan += strLowerMessage[intMsgCnt];
-				intMsgCnt++;
-			}
 			for (auto i : strBan)
 			{
-				if (!isdigit(i))
+				if (!isdigit(static_cast<unsigned char>(i)))
 				{
+					AddMsgToQueue("错误 格式为.ban [账号] [类别]", eve.fromQQ);
 					return;
 				}
 			}
@@ -690,16 +691,11 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 		}
 		if (strClassify == "group" || strClassify == "g")
 		{
-			string strBan;
-			while (isdigit(strLowerMessage[intMsgCnt]))
-			{
-				strBan += strLowerMessage[intMsgCnt];
-				intMsgCnt++;
-			}
 			for (auto i : strBan)
 			{
-				if (!isdigit(i))
+				if (!isdigit(static_cast<unsigned char>(i)))
 				{
+					AddMsgToQueue("错误 格式为.ban [账号] [类别]", eve.fromQQ);
 					return;
 				}
 			}
@@ -1727,106 +1723,106 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			LongInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromGroup, false);
 		}
-	else if (strLowerMessage.substr(intMsgCnt, 2) == "sc")
+	else if (strLowerMessage.substr(intMsgCnt, 2) == "sc" && strLowerMessage.substr(intMsgCnt, 3) != "scp")
+	{
+		intMsgCnt += 2;
+		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+			intMsgCnt++;
+		string SanCost = strLowerMessage.substr(intMsgCnt, eve.message.find(' ', intMsgCnt) - intMsgCnt);
+		intMsgCnt += SanCost.length();
+		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+			intMsgCnt++;
+		string San;
+		while (isdigit(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
 		{
-			intMsgCnt += 2;
-			while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
-				intMsgCnt++;
-			string SanCost = strLowerMessage.substr(intMsgCnt, eve.message.find(' ', intMsgCnt) - intMsgCnt);
-			intMsgCnt += SanCost.length();
-			while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
-				intMsgCnt++;
-			string San;
-			while (isdigit(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+			San += strLowerMessage[intMsgCnt];
+			intMsgCnt++;
+		}
+		if (SanCost.empty() || SanCost.find("/") == string::npos)
+		{
+			AddMsgToQueue(GlobalMsg["strSCInvalid"], eve.fromGroup, false);
+			return;
+		}
+		if (San.empty() && !(CharacterProp.count(SourceType(eve.fromQQ, GroupT, eve.fromGroup)) && CharacterProp[
+			SourceType(eve.fromQQ, GroupT, eve.fromGroup)].count("理智")))
+		{
+			AddMsgToQueue(GlobalMsg["strSanInvalid"], eve.fromGroup, false);
+			return;
+		}
+			for (const auto& character : SanCost.substr(0, SanCost.find("/")))
 			{
-				San += strLowerMessage[intMsgCnt];
-				intMsgCnt++;
+				if (!isdigit(static_cast<unsigned char>(character)) && character != 'D' && character != 'd' && character != '+' && character != '-')
+				{
+					AddMsgToQueue(GlobalMsg["strSCInvalid"], eve.fromQQ, false);
+					return;
+				}
 			}
-			if (SanCost.empty() || SanCost.find("/") == string::npos)
+			for (const auto& character : SanCost.substr(SanCost.find("/") + 1))
+			{
+				if (!isdigit(static_cast<unsigned char>(character)) && character != 'D' && character != 'd' && character != '+' && character != '-')
+				{
+					AddMsgToQueue(GlobalMsg["strSCInvalid"], eve.fromQQ, false);
+					return;
+				}
+			}
+			RD rdSuc(SanCost.substr(0, SanCost.find("/")));
+			RD rdFail(SanCost.substr(SanCost.find("/") + 1));
+			if (rdSuc.Roll() != 0 || rdFail.Roll() != 0)
 			{
 				AddMsgToQueue(GlobalMsg["strSCInvalid"], eve.fromGroup, false);
 				return;
 			}
-			if (San.empty() && !(CharacterProp.count(SourceType(eve.fromQQ, GroupT, eve.fromGroup)) && CharacterProp[
-				SourceType(eve.fromQQ, GroupT, eve.fromGroup)].count("理智")))
+			if (San.length() >= 3)
 			{
 				AddMsgToQueue(GlobalMsg["strSanInvalid"], eve.fromGroup, false);
 				return;
 			}
-				for (const auto& character : SanCost.substr(0, SanCost.find("/")))
-				{
-					if (!isdigit(static_cast<unsigned char>(character)) && character != 'D' && character != 'd' && character != '+' && character != '-')
-					{
-						AddMsgToQueue(GlobalMsg["strSCInvalid"], eve.fromQQ, false);
-						return;
-					}
-				}
-				for (const auto& character : SanCost.substr(SanCost.find("/") + 1))
-				{
-					if (!isdigit(static_cast<unsigned char>(character)) && character != 'D' && character != 'd' && character != '+' && character != '-')
-					{
-						AddMsgToQueue(GlobalMsg["strSCInvalid"], eve.fromQQ, false);
-						return;
-					}
-				}
-				RD rdSuc(SanCost.substr(0, SanCost.find("/")));
-				RD rdFail(SanCost.substr(SanCost.find("/") + 1));
-				if (rdSuc.Roll() != 0 || rdFail.Roll() != 0)
-				{
-					AddMsgToQueue(GlobalMsg["strSCInvalid"], eve.fromGroup, false);
-					return;
-				}
-				if (San.length() >= 3)
-				{
-					AddMsgToQueue(GlobalMsg["strSanInvalid"], eve.fromGroup, false);
-					return;
-				}
-				const int intSan = San.empty() ? CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["理智"] : stoi(San);
-				if (intSan == 0)
-				{
-					AddMsgToQueue(GlobalMsg["strSanInvalid"], eve.fromGroup, false);
-					return;
-				}
-				string strAns = strNickName + "的Sancheck:\n1D100=";
-				const int intTmpRollRes = RandomGenerator::Randint(1, 100);
-				strAns += to_string(intTmpRollRes);
+			const int intSan = San.empty() ? CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["理智"] : stoi(San);
+			if (intSan == 0)
+			{
+				AddMsgToQueue(GlobalMsg["strSanInvalid"], eve.fromGroup, false);
+				return;
+			}
+			string strAns = strNickName + "的Sancheck:\n1D100=";
+			const int intTmpRollRes = RandomGenerator::Randint(1, 100);
+			strAns += to_string(intTmpRollRes);
 
-				if (intTmpRollRes <= intSan)
+			if (intTmpRollRes <= intSan)
+			{
+				strAns += " 成功\n你的San值减少" + SanCost.substr(0, SanCost.find("/"));
+				if (SanCost.substr(0, SanCost.find("/")).find("d") != string::npos)
+					strAns += "=" + to_string(rdSuc.intTotal);
+				strAns += +"点,当前剩余" + to_string(max(0, intSan - rdSuc.intTotal)) + "点";
+				if (San.empty())
 				{
-					strAns += " 成功\n你的San值减少" + SanCost.substr(0, SanCost.find("/"));
-					if (SanCost.substr(0, SanCost.find("/")).find("d") != string::npos)
-						strAns += "=" + to_string(rdSuc.intTotal);
-					strAns += +"点,当前剩余" + to_string(max(0, intSan - rdSuc.intTotal)) + "点";
-					if (San.empty())
-					{
-						CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["理智"] = max(0, intSan - rdSuc.intTotal);
-					}
+					CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["理智"] = max(0, intSan - rdSuc.intTotal);
 				}
-				else if (intTmpRollRes == 100 || (intSan < 50 && intTmpRollRes > 95))
+			}
+			else if (intTmpRollRes == 100 || (intSan < 50 && intTmpRollRes > 95))
+			{
+				strAns += " 大失败\n你的San值减少" + SanCost.substr(SanCost.find("/") + 1);
+				// ReSharper disable once CppExpressionWithoutSideEffects
+				rdFail.Max();
+				if (SanCost.substr(SanCost.find("/") + 1).find("d") != string::npos)
+					strAns += "最大值=" + to_string(rdFail.intTotal);
+				strAns += +"点,当前剩余" + to_string(max(0, intSan - rdFail.intTotal)) + "点";
+				if (San.empty())
 				{
-					strAns += " 大失败\n你的San值减少" + SanCost.substr(SanCost.find("/") + 1);
-					// ReSharper disable once CppExpressionWithoutSideEffects
-					rdFail.Max();
-					if (SanCost.substr(SanCost.find("/") + 1).find("d") != string::npos)
-						strAns += "最大值=" + to_string(rdFail.intTotal);
-					strAns += +"点,当前剩余" + to_string(max(0, intSan - rdFail.intTotal)) + "点";
-					if (San.empty())
-					{
-						CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["理智"] = max(0, intSan - rdFail.intTotal);
-					}
+					CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["理智"] = max(0, intSan - rdFail.intTotal);
 				}
-				else
+			}
+			else
+			{
+				strAns += " 失败\n你的San值减少" + SanCost.substr(SanCost.find("/") + 1);
+				if (SanCost.substr(SanCost.find("/") + 1).find("d") != string::npos)
+					strAns += "=" + to_string(rdFail.intTotal);
+				strAns += +"点,当前剩余" + to_string(max(0, intSan - rdFail.intTotal)) + "点";
+				if (San.empty())
 				{
-					strAns += " 失败\n你的San值减少" + SanCost.substr(SanCost.find("/") + 1);
-					if (SanCost.substr(SanCost.find("/") + 1).find("d") != string::npos)
-						strAns += "=" + to_string(rdFail.intTotal);
-					strAns += +"点,当前剩余" + to_string(max(0, intSan - rdFail.intTotal)) + "点";
-					if (San.empty())
-					{
-						CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["理智"] = max(0, intSan - rdFail.intTotal);
-					}
+					CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["理智"] = max(0, intSan - rdFail.intTotal);
 				}
-				AddMsgToQueue(strAns, eve.fromGroup, false);
+			}
+			AddMsgToQueue(strAns, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "en")
 		{
@@ -1976,6 +1972,65 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			const string strReply(strNickName + " 切到的牌是 \n" + tarotCard[RandomGenerator::Randint(1, 44)]);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
+	else if (strLowerMessage.substr(intMsgCnt, 3) == "scp")
+	{
+		intMsgCnt += 3;
+		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+			intMsgCnt++;
+		string strSCP = eve.message.substr(intMsgCnt);
+		for (auto i : strSCP)
+		{
+			if (!isdigit(i))
+			{
+				AddMsgToQueue(GlobalMsg["strSCPErr"], eve.fromGroup, false);
+				return;
+			}
+		}
+		if (strSCP > "3999") 
+		{
+			AddMsgToQueue(GlobalMsg["strSCPErr"], eve.fromGroup, false);
+			return;
+		}
+		if (strSCP.length() == 4) 
+		{
+			if (strSCP >= "1000" && strSCP <= "1999")
+			{
+				const string scpa = GlobalMsg["strSCP"] + strSCP;
+				const string scpb = GlobalMsg["strSCPWeb"] + "-ii/scp-" + strSCP;
+				AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
+			}
+			else if (strSCP >= "2000" && strSCP <= "2999")
+			{
+				const string scpa = GlobalMsg["strSCP"] + strSCP;
+				const string scpb = GlobalMsg["strSCPWeb"] + "-iii/scp-" + strSCP;
+				AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
+			}
+			else if (strSCP >= "3000" && strSCP <= "3999")
+			{
+				const string scpa = GlobalMsg["strSCP"] + strSCP;
+				const string scpb = GlobalMsg["strSCPWeb"] + "-iv/scp-" + strSCP;
+				AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
+			}
+		}
+		else if (strSCP.length() == 3)
+		{
+			const string scpa = GlobalMsg["strSCP"] + strSCP;
+			const string scpb = GlobalMsg["strSCPWeb"] + "-" + strSCP;
+			AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
+		}
+		else if (strSCP.length() == 2)
+		{
+			const string scpa = GlobalMsg["strSCP"] + "0" + strSCP;
+			const string scpb = GlobalMsg["strSCPWeb"] + "-i/scp-0" + strSCP;
+			AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
+		}
+		else if (strSCP.length() == 1)
+		{
+			const string scpa = GlobalMsg["strSCP"] + "00" + strSCP;
+			const string scpb = GlobalMsg["strSCPWeb"] + "-i/scp-00" + strSCP;
+			AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
+		}
+	}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "nn")
 		{
 			intMsgCnt += 2;
@@ -3526,6 +3581,66 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			const string strReply(strNickName + " 切到的牌是 \n" + tarotCard[RandomGenerator::Randint(1, 44)]);
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
+	else if (strLowerMessage.substr(intMsgCnt, 3) == "scp")
+	{
+	intMsgCnt += 3;
+	while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+		intMsgCnt++;
+	string strSCP = eve.message.substr(intMsgCnt);
+	for (auto i : strSCP)
+	{
+		if (!isdigit(i))
+		{
+			AddMsgToQueue(GlobalMsg["strSCPErr"], eve.fromDiscuss, false);
+			return;
+		}
+	}
+	if (strSCP > "3999")
+	{
+		AddMsgToQueue(GlobalMsg["strSCPErr"], eve.fromDiscuss, false);
+		return;
+	}
+	if (strSCP.length() == 4)
+	{
+		if (strSCP >= "1000" && strSCP <= "1999")
+		{
+			const string scpa = GlobalMsg["strSCP"] + strSCP;
+			const string scpb = GlobalMsg["strSCPWeb"] + "-ii/scp-" + strSCP;
+			AddMsgToQueue(scpa + "\n" + scpb, eve.fromDiscuss, false);
+		}
+		else if (strSCP >= "2000" && strSCP <= "2999")
+		{
+			const string scpa = GlobalMsg["strSCP"] + strSCP;
+			const string scpb = GlobalMsg["strSCPWeb"] + "-iii/scp-" + strSCP;
+			AddMsgToQueue(scpa + "\n" + scpb, eve.fromDiscuss, false);
+		}
+		else if (strSCP >= "3000" && strSCP <= "3999")
+		{
+			const string scpa = GlobalMsg["strSCP"] + strSCP;
+			const string scpb = GlobalMsg["strSCPWeb"] + "-iv/scp-" + strSCP;
+			AddMsgToQueue(scpa + "\n" + scpb, eve.fromDiscuss, false);
+		}
+	}
+	else if (strSCP.length() == 3)
+	{
+		const string scpa = GlobalMsg["strSCP"] + strSCP;
+		const string scpb = GlobalMsg["strSCPWeb"] + "-" + strSCP;
+		AddMsgToQueue(scpa + "\n" + scpb, eve.fromDiscuss, false);
+	}
+	else if (strSCP.length() == 2)
+	{
+		const string scpa = GlobalMsg["strSCP"] + "0" + strSCP;
+		const string scpb = GlobalMsg["strSCPWeb"] + "-i/scp-0" + strSCP;
+		AddMsgToQueue(scpa + "\n" + scpb, eve.fromDiscuss, false);
+	}
+	else if (strSCP.length() == 1)
+	{
+		const string scpa = GlobalMsg["strSCP"] + "00" + strSCP;
+		const string scpb = GlobalMsg["strSCPWeb"] + "-i/scp-00" + strSCP;
+		AddMsgToQueue(scpa + "\n" + scpb, eve.fromDiscuss, false);
+	}
+	}
+
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "nn")
 		{
 			intMsgCnt += 2;

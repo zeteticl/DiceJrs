@@ -72,6 +72,11 @@ std::map<std::string, std::string> GlobalMsg
 	{"strBanEmpty","我怎么什么都没看到?"},
 	{"strBanMaster","您在尝试干掉自己么？"},
 	{"strFixTime","提醒，旧日的儿子将于五分钟内开始进行为期两分钟的维护"},
+	{"strSCP","SCP-"},
+	{"strSCPWeb",R"(链接地址https://trow.cc/wiki/scp/main/database/series)"},
+	{"strSCPErr",R"(格式错误:正确格式为.scp [SCP号码] 如.scp 173
+服务基于The Ring of Wonder SCP Wiki
+https://trow.cc/wiki/scp/start)"},
 	{"strHlpMsgList",R"(<通用命令>
 r/rs [掷骰表达式*] [原因]	普通掷骰/简化输出
 coc7/6 [个数]	COC7/6人物作成
@@ -107,7 +112,7 @@ me [群号] [动作]	以第三方视角做出动作
 r/rs|coc7/6|dnd|help|ti/li
 st|rc/ra|w/ww|set|sc|en|ri
 init|rh|botob|me|welcome
-fate|tarot
+fate|tarot|scp
 <命令详情请使用.help list查看>
 <使用问题请找旧日酱(2558272027)>)"}
 };
