@@ -1,0 +1,300 @@
+{
+  "version": "2.0.0",
+  "$schema": "http://json.schemastore.org/sarif-2.0.0",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'msg_t::msg_t' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicemsgsend.cpp"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 2,
+                  "endLine": 18,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "public: __thiscall msg_t::msg_t(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,__int64,bool)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::queue<msg_t,std::deque<msg_t,std::allocator<msg_t> > >::queue<msg_t,std::deque<msg_t,std::allocator<msg_t> > >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicemsgsend.cpp"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 27,
+                  "endLine": 25,
+                  "endColumn": 27
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'msgQueue''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::mutex::mutex' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicemsgsend.cpp"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 20,
+                  "endLine": 28,
+                  "endColumn": 20
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'msgQueueMutex''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26486",
+          "message": {
+            "text": "Don't pass a pointer that may be invalid to a function. Parameter 0 '@msgQueue' in call to 'msg_t::operator=' may be invalid (lifetime.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicemsgsend.cpp"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 4,
+                  "endLine": 47,
+                  "endColumn": 24
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl SendMsg(void)"
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "step": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicemsgsend.cpp"
+                          },
+                          "region": {
+                            "startLine": 47,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "name": "PREfast",
+        "fullName": "PREfast Code Analysis",
+        "version": "14.20.27305.0",
+        "fileVersion": "14.00.27305.00"
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00392090 -il C:\\Users\\sb6ku\\AppData\\Local\\Temp\\_CL_155421daast -typedil -f DiceMsgSend.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1920 -D_MSC_FULL_VER=192027305 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\CQSDK -nologo -W 3 -diagnostics:column- -diagnostics:caret- -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -GF -Og -Oi -Ot -Oy -ltcg -DCODE_ANALYSIS -DWIN32 -DNDEBUG -DDICE_EXPORTS -D_WINDOWS -D_USRDLL -D_WINDLL -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -clrNoPureCRT -D_MT -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++latest -FoRelease\\DiceMsgSend.obj -FdRelease\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\Rule Sets\\AllRules.ruleset -analyze:projectdirectory C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\DiceJrs -analyze:rulesetdirectory ;C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\um -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\shared -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\winrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\cppwinrt -I C:\\Program Files\\Windows Kits\\NETFXSDK\\4.7.2\\Include\\um -MPdiagMutex 0000000000000164"
+        }
+      ],
+      "files": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_all.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqapi.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqapi.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqdefine.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqconstant.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqevebasic.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqevemsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/bufstream.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeverequest.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqapi_ex.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_status.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_groupmsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_privatemsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqmsgsend.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_discussmsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/unpack.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddfriend.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddgroup.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_friendadd.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/globalvar.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqtools.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqtools.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/custommsg.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/json.hpp": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqlogger.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicemsgsend.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicemsgsend.h": {
+          "roles": [
+            "resultFile"
+          ]
+        }
+      },
+      "logicalLocations": {},
+      "resources": {
+        "rules": {}
+      }
+    }
+  ]
+}

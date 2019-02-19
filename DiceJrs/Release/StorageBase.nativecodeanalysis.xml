@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>storagebase.cpp</FILENAME>
+      <LINE>4</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'StorageBase::StorageBase' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>StorageBase::{ctor}</FUNCTION>
+    <DECORATED>??0StorageBase@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>4</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>storagebase.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class StorageBase', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>StorageBase::{dtor}</FUNCTION>
+    <DECORATED>??1StorageBase@@UAE@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

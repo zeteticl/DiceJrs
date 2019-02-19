@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>namestorage.cpp</FILENAME>
+      <LINE>48</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'NameStorage::clear' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>NameStorage::clear</FUNCTION>
+    <DECORATED>?clear@NameStorage@@QAEXXZ</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>storagebase.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class StorageBase', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>StorageBase::{dtor}</FUNCTION>
+    <DECORATED>??1StorageBase@@UAE@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>namestorage.cpp</FILENAME>
+      <LINE>72</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class NameStorage', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>NameStorage::{dtor}</FUNCTION>
+    <DECORATED>??1NameStorage@@UAE@XZ</DECORATED>
+    <FUNCLINE>72</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>namestorage.cpp</FILENAME>
+      <LINE>74</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'save()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>NameStorage::{dtor}</FUNCTION>
+    <DECORATED>??1NameStorage@@UAE@XZ</DECORATED>
+    <FUNCLINE>72</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

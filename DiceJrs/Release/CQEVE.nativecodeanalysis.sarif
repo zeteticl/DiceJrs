@@ -1,0 +1,727 @@
+{
+  "version": "2.0.0",
+  "$schema": "http://json.schemastore.org/sarif-2.0.0",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'struct CQ::EVE', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqevebasic.h"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 12,
+                  "endLine": 18,
+                  "endColumn": 12
+                }
+              },
+              "fullyQualifiedLogicalName": "public: virtual __thiscall CQ::EVE::~EVE(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVE::message_ignore' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 11,
+                  "endLine": 15,
+                  "endColumn": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "public: void __thiscall CQ::EVE::message_ignore(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVE::message_block' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 11,
+                  "endLine": 16,
+                  "endColumn": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "public: void __thiscall CQ::EVE::message_block(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEMsg::isSystem' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 14,
+                  "endLine": 18,
+                  "endColumn": 14
+                }
+              },
+              "fullyQualifiedLogicalName": "public: bool __thiscall CQ::EVEMsg::isSystem(void)const "
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::Font::Font' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 7,
+                  "endLine": 20,
+                  "endColumn": 7
+                }
+              },
+              "fullyQualifiedLogicalName": "public: __thiscall CQ::Font::Font(int)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEMsg::isUser' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 14,
+                  "endLine": 31,
+                  "endColumn": 14
+                }
+              },
+              "fullyQualifiedLogicalName": "public: bool __thiscall CQ::EVEMsg::isUser(void)const "
+            }
+          ]
+        },
+        {
+          "ruleId": "26443",
+          "message": {
+            "text": "Overriding destructor should not use explicit 'override' or 'virtual' specifiers (c.128)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 15,
+                  "endLine": 50,
+                  "endColumn": 15
+                }
+              },
+              "fullyQualifiedLogicalName": "public: virtual __thiscall CQ::EVEGroupMsg::~EVEGroupMsg(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'struct CQ::EVEGroupMsg', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 15,
+                  "endLine": 50,
+                  "endColumn": 15
+                }
+              },
+              "fullyQualifiedLogicalName": "public: virtual __thiscall CQ::EVEGroupMsg::~EVEGroupMsg(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEGroupMsg::isAnonymous' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 19,
+                  "endLine": 53,
+                  "endColumn": 19
+                }
+              },
+              "fullyQualifiedLogicalName": "public: bool __thiscall CQ::EVEGroupMsg::isAnonymous(void)const "
+            }
+          ]
+        },
+        {
+          "ruleId": "26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 46
+                }
+              },
+              "fullyQualifiedLogicalName": "public: struct CQ::AnonymousInfo & __thiscall CQ::EVEGroupMsg::getFromAnonymousInfo(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEPrivateMsg::fromPrivate' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 21,
+                  "endLine": 126,
+                  "endColumn": 21
+                }
+              },
+              "fullyQualifiedLogicalName": "public: bool __thiscall CQ::EVEPrivateMsg::fromPrivate(void)const "
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEPrivateMsg::fromOnlineStatus' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 21,
+                  "endLine": 129,
+                  "endColumn": 21
+                }
+              },
+              "fullyQualifiedLogicalName": "public: bool __thiscall CQ::EVEPrivateMsg::fromOnlineStatus(void)const "
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEPrivateMsg::fromGroup' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 21,
+                  "endLine": 132,
+                  "endColumn": 21
+                }
+              },
+              "fullyQualifiedLogicalName": "public: bool __thiscall CQ::EVEPrivateMsg::fromGroup(void)const "
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEPrivateMsg::fromDiscuss' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 21,
+                  "endLine": 135,
+                  "endColumn": 21
+                }
+              },
+              "fullyQualifiedLogicalName": "public: bool __thiscall CQ::EVEPrivateMsg::fromDiscuss(void)const "
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEStatus::color_green' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 17,
+                  "endLine": 155,
+                  "endColumn": 17
+                }
+              },
+              "fullyQualifiedLogicalName": "public: void __thiscall CQ::EVEStatus::color_green(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEStatus::color_orange' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 17,
+                  "endLine": 156,
+                  "endColumn": 17
+                }
+              },
+              "fullyQualifiedLogicalName": "public: void __thiscall CQ::EVEStatus::color_orange(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEStatus::color_red' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 157,
+                  "startColumn": 17,
+                  "endLine": 157,
+                  "endColumn": 17
+                }
+              },
+              "fullyQualifiedLogicalName": "public: void __thiscall CQ::EVEStatus::color_red(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEStatus::color_crimson' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 158,
+                  "startColumn": 17,
+                  "endLine": 158,
+                  "endColumn": 17
+                }
+              },
+              "fullyQualifiedLogicalName": "public: void __thiscall CQ::EVEStatus::color_crimson(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEStatus::color_black' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 17,
+                  "endLine": 159,
+                  "endColumn": 17
+                }
+              },
+              "fullyQualifiedLogicalName": "public: void __thiscall CQ::EVEStatus::color_black(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVEStatus::color_gray' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 160,
+                  "startColumn": 17,
+                  "endLine": 160,
+                  "endColumn": 17
+                }
+              },
+              "fullyQualifiedLogicalName": "public: void __thiscall CQ::EVEStatus::color_gray(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26460",
+          "message": {
+            "text": "The reference argument 'eve' for function 'CQ::statusEVEreturn' can be marked as const (con.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 162,
+                  "startColumn": 17,
+                  "endLine": 162,
+                  "endColumn": 17
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl CQ::statusEVEreturn(struct CQ::EVEStatus &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'CQ::EVERequest::EVERequest' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 13,
+                  "endLine": 170,
+                  "endColumn": 13
+                }
+              },
+              "fullyQualifiedLogicalName": "public: __thiscall CQ::EVERequest::EVERequest(int,__int64,char const *,char const *)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26444",
+          "message": {
+            "text": "Avoid unnamed objects with custom construction and destruction (es.84)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddfriend.h"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 40,
+                  "endLine": 39,
+                  "endColumn": 40
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "26444",
+          "message": {
+            "text": "Avoid unnamed objects with custom construction and destruction (es.84)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddfriend.h"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 80,
+                  "endLine": 40,
+                  "endColumn": 80
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "26444",
+          "message": {
+            "text": "Avoid unnamed objects with custom construction and destruction (es.84)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddgroup.h"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 40,
+                  "endLine": 45,
+                  "endColumn": 40
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "26444",
+          "message": {
+            "text": "Avoid unnamed objects with custom construction and destruction (es.84)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddgroup.h"
+                },
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 80,
+                  "endLine": 46,
+                  "endColumn": 80
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp"
+                },
+                "region": {
+                  "startLine": 209,
+                  "startColumn": 24,
+                  "endLine": 209,
+                  "endColumn": 29
+                }
+              },
+              "fullyQualifiedLogicalName": "public: __thiscall CQ::AnonymousInfo::AnonymousInfo(char const *)"
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "name": "PREfast",
+        "fullName": "PREfast Code Analysis",
+        "version": "14.20.27305.0",
+        "fileVersion": "14.00.27305.00"
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00392090 -il C:\\Users\\sb6ku\\AppData\\Local\\Temp\\_CL_0f3421d8ast -typedil -f ..\\CQSDKCPP\\CQEVE.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1920 -D_MSC_FULL_VER=192027305 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\CQSDK -nologo -W 3 -diagnostics:column- -diagnostics:caret- -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -GF -Og -Oi -Ot -Oy -ltcg -DCODE_ANALYSIS -DWIN32 -DNDEBUG -DDICE_EXPORTS -D_WINDOWS -D_USRDLL -D_WINDLL -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -clrNoPureCRT -D_MT -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++latest -FoRelease\\CQEVE.obj -FdRelease\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\Rule Sets\\AllRules.ruleset -analyze:projectdirectory C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\DiceJrs -analyze:rulesetdirectory ;C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\um -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\shared -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\winrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\cppwinrt -I C:\\Program Files\\Windows Kits\\NETFXSDK\\4.7.2\\Include\\um -MPdiagMutex 0000000000000164"
+        }
+      ],
+      "files": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_all.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqapi.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqapi.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqdefine.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqconstant.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqevebasic.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqevemsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/bufstream.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeverequest.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqapi_ex.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_status.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_groupmsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_privatemsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqmsgsend.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_discussmsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/unpack.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddfriend.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddgroup.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_friendadd.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqtools.h": {
+          "roles": [
+            "resultFile"
+          ]
+        }
+      },
+      "logicalLocations": {},
+      "resources": {
+        "rules": {}
+      }
+    }
+  ]
+}

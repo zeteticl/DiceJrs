@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>initlist.h</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'INIT::INIT' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>INIT::{ctor}</FUNCTION>
+    <DECORATED>??0INIT@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>initlist.h</FILENAME>
+      <LINE>20</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'INIT::operator&gt;' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>INIT::&gt;</FUNCTION>
+    <DECORATED>??OINIT@@QBE_NU0@@Z</DECORATED>
+    <FUNCLINE>20</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>initlist.cpp</FILENAME>
+      <LINE>40</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26486</DEFECTCODE>
+    <DESCRIPTION>Don't pass a pointer that may be invalid to a function. Parameter 1 '(temporary 2)' in call to 'std::sort&lt;std::_Vector_iterator&lt;std::_Vector_val&lt;std::_Simple_types&lt;INIT&gt; &gt; &gt;,std::greater&lt;void&gt; &gt;' may be invalid (lifetime.3).</DESCRIPTION>
+    <FUNCTION>Initlist::show</FUNCTION>
+    <DECORATED>?show@Initlist@@QAEX_JAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>32</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+        <FILENAME>initlist.cpp</FILENAME>
+        <LINE>40</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>storagebase.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class StorageBase', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>StorageBase::{dtor}</FUNCTION>
+    <DECORATED>??1StorageBase@@UAE@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>initlist.cpp</FILENAME>
+      <LINE>93</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class Initlist', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>Initlist::{dtor}</FUNCTION>
+    <DECORATED>??1Initlist@@UAE@XZ</DECORATED>
+    <FUNCLINE>93</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>initlist.cpp</FILENAME>
+      <LINE>95</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'save()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>Initlist::{dtor}</FUNCTION>
+    <DECORATED>??1Initlist@@UAE@XZ</DECORATED>
+    <FUNCLINE>93</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

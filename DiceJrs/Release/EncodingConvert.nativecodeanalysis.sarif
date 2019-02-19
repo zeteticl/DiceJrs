@@ -1,0 +1,1047 @@
+{
+  "version": "2.0.0",
+  "$schema": "http://json.schemastore.org/sarif-2.0.0",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 21
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl GBKtoUTF8(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 21
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl GBKtoUTF8(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26403",
+          "message": {
+            "text": "Reset or explicitly delete an owner<T> pointer 'str1' (r.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 6,
+                  "endLine": 9,
+                  "endColumn": 21
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl GBKtoUTF8(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "step": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 12,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 6,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "26403",
+          "message": {
+            "text": "Reset or explicitly delete an owner<T> pointer 'str2' (r.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 6,
+                  "endLine": 12,
+                  "endColumn": 21
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl GBKtoUTF8(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "step": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 14,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 13,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 12,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 6,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "26407",
+          "message": {
+            "text": "Prefer scoped objects, don't heap-allocate unnecessarily (r.5)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 2,
+                  "endLine": 15,
+                  "endColumn": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl GBKtoUTF8(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 2,
+                  "endLine": 15,
+                  "endColumn": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl GBKtoUTF8(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26407",
+          "message": {
+            "text": "Prefer scoped objects, don't heap-allocate unnecessarily (r.5)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endLine": 16,
+                  "endColumn": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl GBKtoUTF8(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endLine": 16,
+                  "endColumn": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl GBKtoUTF8(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 23
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl UTF8toGBK(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 22
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl UTF8toGBK(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26403",
+          "message": {
+            "text": "Reset or explicitly delete an owner<T> pointer 'wszGBK' (r.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 6,
+                  "endLine": 23,
+                  "endColumn": 23
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl UTF8toGBK(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "step": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 25,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 23,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 20,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "26403",
+          "message": {
+            "text": "Reset or explicitly delete an owner<T> pointer 'szGBK' (r.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 6,
+                  "endLine": 26,
+                  "endColumn": 22
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl UTF8toGBK(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "step": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 27,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 25,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 23,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "step": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "fileLocation": {
+                            "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                          },
+                          "region": {
+                            "startLine": 20,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "26407",
+          "message": {
+            "text": "Prefer scoped objects, don't heap-allocate unnecessarily (r.5)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 2,
+                  "endLine": 29,
+                  "endColumn": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl UTF8toGBK(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 2,
+                  "endLine": 29,
+                  "endColumn": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl UTF8toGBK(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26407",
+          "message": {
+            "text": "Prefer scoped objects, don't heap-allocate unnecessarily (r.5)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 2,
+                  "endLine": 30,
+                  "endColumn": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl UTF8toGBK(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 2,
+                  "endLine": 30,
+                  "endColumn": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl UTF8toGBK(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26497",
+          "message": {
+            "text": "The function 'ToHex' could be marked constexpr if compile-time evaluation is desired (f.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 15,
+                  "endLine": 34,
+                  "endColumn": 15
+                }
+              },
+              "fullyQualifiedLogicalName": "unsigned char __cdecl ToHex(unsigned char)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26440",
+          "message": {
+            "text": "Function 'ToHex' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 15,
+                  "endLine": 34,
+                  "endColumn": 15
+                }
+              },
+              "fullyQualifiedLogicalName": "unsigned char __cdecl ToHex(unsigned char)"
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "name": "PREfast",
+        "fullName": "PREfast Code Analysis",
+        "version": "14.20.27305.0",
+        "fileVersion": "14.00.27305.00"
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00392090 -il C:\\Users\\sb6ku\\AppData\\Local\\Temp\\_CL_0d4d2d21ast -typedil -f EncodingConvert.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1920 -D_MSC_FULL_VER=192027305 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\CQSDK -nologo -W 3 -diagnostics:column- -diagnostics:caret- -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -GF -Og -Oi -Ot -Oy -ltcg -DCODE_ANALYSIS -DWIN32 -DNDEBUG -DDICE_EXPORTS -D_WINDOWS -D_USRDLL -D_WINDLL -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -clrNoPureCRT -D_MT -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++latest -FoRelease\\EncodingConvert.obj -FdRelease\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\Rule Sets\\AllRules.ruleset -analyze:projectdirectory C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\DiceJrs -analyze:rulesetdirectory ;C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\um -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\shared -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\winrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\cppwinrt -I C:\\Program Files\\Windows Kits\\NETFXSDK\\4.7.2\\Include\\um -MPdiagMutex 0000000000000164"
+        }
+      ],
+      "files": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_all.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqapi.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqapi.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqdefine.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqconstant.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqevebasic.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqevemsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/bufstream.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeverequest.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqapi_ex.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_status.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_groupmsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_privatemsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqmsgsend.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_discussmsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/unpack.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddfriend.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddgroup.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_friendadd.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/globalvar.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqtools.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqtools.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/custommsg.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/json.hpp": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqlogger.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicemsgsend.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicemsgsend.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dllmain.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        }
+      },
+      "logicalLocations": {},
+      "resources": {
+        "rules": {}
+      }
+    }
+  ]
+}

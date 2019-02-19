@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdk</FILEPATH>
+      <FILENAME>cqevebasic.h</FILENAME>
+      <LINE>18</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'struct CQ::EVE', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>CQ::EVE::{dtor}</FUNCTION>
+    <DECORATED>??1EVE@CQ@@UAE@XZ</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqapi_ex.cpp</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>CQ::StrangerInfo::{ctor}</FUNCTION>
+    <DECORATED>??0StrangerInfo@CQ@@QAE@PBD@Z</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqapi_ex.cpp</FILENAME>
+      <LINE>57</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>CQ::GroupMemberInfo::{ctor}</FUNCTION>
+    <DECORATED>??0GroupMemberInfo@CQ@@QAE@PBD@Z</DECORATED>
+    <FUNCLINE>55</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqapi_ex.cpp</FILENAME>
+      <LINE>268</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26429</DEFECTCODE>
+    <DESCRIPTION>Symbol 'data' is never tested for nullness, it can be marked as not_null (f.23).</DESCRIPTION>
+    <FUNCTION>CQ::getGroupMemberList</FUNCTION>
+    <DECORATED>?getGroupMemberList@CQ@@YA?AV?$vector@VGroupMemberInfo@CQ@@V?$allocator@VGroupMemberInfo@CQ@@@std@@@std@@_J@Z</DECORATED>
+    <FUNCLINE>266</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqapi_ex.cpp</FILENAME>
+      <LINE>270</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>CQ::getGroupMemberList</FUNCTION>
+    <DECORATED>?getGroupMemberList@CQ@@YA?AV?$vector@VGroupMemberInfo@CQ@@V?$allocator@VGroupMemberInfo@CQ@@@std@@@std@@_J@Z</DECORATED>
+    <FUNCLINE>266</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqapi_ex.cpp</FILENAME>
+      <LINE>296</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'ID' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>CQ::getGroupList</FUNCTION>
+    <DECORATED>?getGroupList@CQ@@YA?AV?$map@_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$less@_J@2@V?$allocator@U?$pair@$$CB_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@@std@@XZ</DECORATED>
+    <FUNCLINE>284</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqapi_ex.cpp</FILENAME>
+      <LINE>308</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'CQ::getlasterrmsg' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>CQ::getlasterrmsg</FUNCTION>
+    <DECORATED>?getlasterrmsg@CQ@@YAPBDXZ</DECORATED>
+    <FUNCLINE>308</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
