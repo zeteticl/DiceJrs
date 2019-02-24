@@ -78,7 +78,7 @@
     <ClCompile Include="RandomGenerator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="nameGetter.cpp">
+    <ClCompile Include="DiceNetwork.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -173,9 +173,6 @@
     <ClInclude Include="CustomMsg.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="EncodingConvert.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="RandomGenerator.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -188,10 +185,13 @@
     <ClInclude Include="Jrs.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="sqlite3.h">
+    <ClInclude Include="DiceNetwork.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="nameGetter.h">
+    <ClInclude Include="GetRule.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EncodingConvert.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

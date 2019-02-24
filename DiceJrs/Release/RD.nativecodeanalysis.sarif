@@ -29,138 +29,6 @@
         {
           "ruleId": "26426",
           "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 37,
-                  "endLine": 7,
-                  "endColumn": 37
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'Dice_Ver''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::operator+<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 43,
-                  "endLine": 8,
-                  "endColumn": 61
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'Dice_Short_Ver''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::operator+<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 42,
-                  "endLine": 9,
-                  "endColumn": 48
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'Dice_Head_Ver''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::operator+<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 42,
-                  "endLine": 9,
-                  "endColumn": 65
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'Dice_Head_Ver''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::operator+<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 42,
-                  "endLine": 10,
-                  "endColumn": 72
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'Dice_Full_Ver''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 41,
-                  "endLine": 11,
-                  "endColumn": 41
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'Dice_Bot_Ver''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
             "text": "Global initializer calls a non-constexpr function 'std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > >::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > >' (i.22)."
           },
           "locations": [
@@ -170,7 +38,7 @@
                   "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
                 },
                 "region": {
-                  "startLine": 46,
+                  "startLine": 32,
                   "startColumn": 62
                 }
               },
@@ -190,7 +58,7 @@
                   "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
                 },
                 "region": {
-                  "startLine": 105,
+                  "startLine": 91,
                   "startColumn": 53
                 }
               },
@@ -210,9 +78,229 @@
                   "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
                 },
                 "region": {
-                  "startLine": 206,
+                  "startLine": 192,
                   "startColumn": 2,
-                  "endLine": 206,
+                  "endLine": 192,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 193,
+                  "startColumn": 2,
+                  "endLine": 193,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 194,
+                  "startColumn": 2,
+                  "endLine": 194,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 195,
+                  "startColumn": 2,
+                  "endLine": 195,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 196,
+                  "startColumn": 2,
+                  "endLine": 196,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 197,
+                  "startColumn": 2,
+                  "endLine": 197,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 198,
+                  "startColumn": 2,
+                  "endLine": 198,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 2,
+                  "endLine": 199,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 200,
+                  "startColumn": 2,
+                  "endLine": 200,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 201,
+                  "startColumn": 2,
+                  "endLine": 201,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 202,
+                  "startColumn": 2,
+                  "endLine": 202,
                   "endColumn": 2
                 }
               },
@@ -238,7 +326,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
             }
           ]
         },
@@ -260,7 +348,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
             }
           ]
         },
@@ -282,7 +370,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
             }
           ]
         },
@@ -304,7 +392,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
             }
           ]
         },
@@ -326,7 +414,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
             }
           ]
         },
@@ -348,7 +436,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
             }
           ]
         },
@@ -370,7 +458,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
             }
           ]
         },
@@ -392,7 +480,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
             }
           ]
         },
@@ -414,7 +502,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
             }
           ]
         },
@@ -436,7 +524,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'TempInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
             }
           ]
         },
@@ -452,9 +540,9 @@
                   "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
                 },
                 "region": {
-                  "startLine": 221,
+                  "startLine": 217,
                   "startColumn": 2,
-                  "endLine": 221,
+                  "endLine": 217,
                   "endColumn": 2
                 }
               },
@@ -480,7 +568,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
             }
           ]
         },
@@ -502,7 +590,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
             }
           ]
         },
@@ -524,7 +612,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
             }
           ]
         },
@@ -546,7 +634,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
             }
           ]
         },
@@ -568,7 +656,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
             }
           ]
         },
@@ -590,7 +678,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
             }
           ]
         },
@@ -612,7 +700,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
             }
           ]
         },
@@ -634,7 +722,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
             }
           ]
         },
@@ -656,7 +744,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
             }
           ]
         },
@@ -678,7 +766,95 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'LongInsanity''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 232,
+                  "startColumn": 2,
+                  "endLine": 232,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 233,
+                  "startColumn": 2,
+                  "endLine": 233,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 234,
+                  "startColumn": 2,
+                  "endLine": 234,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 235,
+                  "startColumn": 2,
+                  "endLine": 235,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
             }
           ]
         },
@@ -2608,57 +2784,13 @@
                   "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
                 },
                 "region": {
-                  "startLine": 323,
-                  "startColumn": 2,
-                  "endLine": 323,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 324,
-                  "startColumn": 2,
-                  "endLine": 324,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
                   "startLine": 325,
                   "startColumn": 2,
                   "endLine": 325,
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
             }
           ]
         },
@@ -2680,7 +2812,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
             }
           ]
         },
@@ -2702,7 +2834,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
             }
           ]
         },
@@ -2724,7 +2856,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
             }
           ]
         },
@@ -2746,7 +2878,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
             }
           ]
         },
@@ -2768,7 +2900,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
             }
           ]
         },
@@ -2790,7 +2922,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
             }
           ]
         },
@@ -2812,7 +2944,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
             }
           ]
         },
@@ -2834,7 +2966,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
             }
           ]
         },
@@ -2856,7 +2988,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
             }
           ]
         },
@@ -2878,7 +3010,7 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
             }
           ]
         },
@@ -2900,7 +3032,51 @@
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strFear''(void)"
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 337,
+                  "startColumn": 2,
+                  "endLine": 337,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26426",
+          "message": {
+            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
+                },
+                "region": {
+                  "startLine": 338,
+                  "startColumn": 2,
+                  "endLine": 338,
+                  "endColumn": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
             }
           ]
         },
@@ -4815,1304 +4991,6 @@
                 }
               },
               "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 426,
-                  "startColumn": 2,
-                  "endLine": 426,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 427,
-                  "startColumn": 2,
-                  "endLine": 427,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 428,
-                  "startColumn": 2,
-                  "endLine": 428,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 429,
-                  "startColumn": 2,
-                  "endLine": 429,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 430,
-                  "startColumn": 2,
-                  "endLine": 430,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 431,
-                  "startColumn": 2,
-                  "endLine": 431,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 432,
-                  "startColumn": 2,
-                  "endLine": 432,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 433,
-                  "startColumn": 2,
-                  "endLine": 433,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 434,
-                  "startColumn": 2,
-                  "endLine": 434,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 435,
-                  "startColumn": 2,
-                  "endLine": 435,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 436,
-                  "startColumn": 2,
-                  "endLine": 436,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 437,
-                  "startColumn": 2,
-                  "endLine": 437,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 438,
-                  "startColumn": 2,
-                  "endLine": 438,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 439,
-                  "startColumn": 2,
-                  "endLine": 439,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'strPanic''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 445,
-                  "startColumn": 2,
-                  "endLine": 445,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 446,
-                  "startColumn": 2,
-                  "endLine": 446,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 447,
-                  "startColumn": 2,
-                  "endLine": 447,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 448,
-                  "startColumn": 2,
-                  "endLine": 448,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 449,
-                  "startColumn": 2,
-                  "endLine": 449,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 450,
-                  "startColumn": 2,
-                  "endLine": 450,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 451,
-                  "startColumn": 2,
-                  "endLine": 451,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 452,
-                  "startColumn": 2,
-                  "endLine": 452,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 453,
-                  "startColumn": 2,
-                  "endLine": 453,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 454,
-                  "startColumn": 2,
-                  "endLine": 454,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 455,
-                  "startColumn": 2,
-                  "endLine": 455,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 456,
-                  "startColumn": 2,
-                  "endLine": 456,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 457,
-                  "startColumn": 2,
-                  "endLine": 457,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 458,
-                  "startColumn": 2,
-                  "endLine": 458,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 459,
-                  "startColumn": 2,
-                  "endLine": 459,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 460,
-                  "startColumn": 2,
-                  "endLine": 460,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 461,
-                  "startColumn": 2,
-                  "endLine": 461,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 462,
-                  "startColumn": 2,
-                  "endLine": 462,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 463,
-                  "startColumn": 2,
-                  "endLine": 463,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 464,
-                  "startColumn": 2,
-                  "endLine": 464,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 465,
-                  "startColumn": 2,
-                  "endLine": 465,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 466,
-                  "startColumn": 2,
-                  "endLine": 466,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 467,
-                  "startColumn": 2,
-                  "endLine": 467,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 468,
-                  "startColumn": 2,
-                  "endLine": 468,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 469,
-                  "startColumn": 2,
-                  "endLine": 469,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 470,
-                  "startColumn": 2,
-                  "endLine": 470,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 471,
-                  "startColumn": 2,
-                  "endLine": 471,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 472,
-                  "startColumn": 2,
-                  "endLine": 472,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 473,
-                  "startColumn": 2,
-                  "endLine": 473,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 474,
-                  "startColumn": 2,
-                  "endLine": 474,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 475,
-                  "startColumn": 2,
-                  "endLine": 475,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 476,
-                  "startColumn": 2,
-                  "endLine": 476,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 477,
-                  "startColumn": 2,
-                  "endLine": 477,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 478,
-                  "startColumn": 2,
-                  "endLine": 478,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 479,
-                  "startColumn": 2,
-                  "endLine": 479,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 480,
-                  "startColumn": 2,
-                  "endLine": 480,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 481,
-                  "startColumn": 2,
-                  "endLine": 481,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 482,
-                  "startColumn": 2,
-                  "endLine": 482,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 483,
-                  "startColumn": 2,
-                  "endLine": 483,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 484,
-                  "startColumn": 2,
-                  "endLine": 484,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 485,
-                  "startColumn": 2,
-                  "endLine": 485,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 486,
-                  "startColumn": 2,
-                  "endLine": 486,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 487,
-                  "startColumn": 2,
-                  "endLine": 487,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 488,
-                  "startColumn": 2,
-                  "endLine": 488,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26426",
-          "message": {
-            "text": "Global initializer calls a non-constexpr function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >' (i.22)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rdconstant.h"
-                },
-                "region": {
-                  "startLine": 489,
-                  "startColumn": 2,
-                  "endLine": 489,
-                  "endColumn": 2
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl `dynamic initializer for 'tarotCard''(void)"
             }
           ]
         },
@@ -8566,28 +7444,6 @@
           ]
         },
         {
-          "ruleId": "26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
-                },
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 15,
-                  "endLine": 64,
-                  "endColumn": 28
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl COC7(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &,int)"
-            }
-          ]
-        },
-        {
           "ruleId": "26482",
           "message": {
             "text": "Only index into arrays using constant expressions (bounds.2)."
@@ -8641,13 +7497,13 @@
                   "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
                 },
                 "region": {
-                  "startLine": 86,
+                  "startLine": 64,
                   "startColumn": 15,
-                  "endLine": 86,
+                  "endLine": 64,
                   "endColumn": 28
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl COC6(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &,int)"
+              "fullyQualifiedLogicalName": "void __cdecl COC7(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &,int)"
             }
           ]
         },
@@ -8705,13 +7561,13 @@
                   "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
                 },
                 "region": {
-                  "startLine": 109,
-                  "startColumn": 17,
-                  "endLine": 109,
-                  "endColumn": 29
+                  "startLine": 86,
+                  "startColumn": 15,
+                  "endLine": 86,
+                  "endColumn": 28
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl DND(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &,int)"
+              "fullyQualifiedLogicalName": "void __cdecl COC6(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &,int)"
             }
           ]
         },
@@ -8734,6 +7590,90 @@
                 }
               },
               "fullyQualifiedLogicalName": "void __cdecl DND(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &,int)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
+                },
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 17,
+                  "endLine": 109,
+                  "endColumn": 29
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl DND(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &,int)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
+                },
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 22,
+                  "endLine": 122,
+                  "endColumn": 92
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl TempInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
+                },
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 120
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl TempInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
+                },
+                "region": {
+                  "startLine": 134,
+                  "startColumn": 121
+                }
+              },
+              "fullyQualifiedLogicalName": "void __cdecl TempInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
             }
           ]
         },
@@ -8815,13 +7755,13 @@
                   "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
                 },
                 "region": {
-                  "startLine": 122,
+                  "startLine": 147,
                   "startColumn": 22,
-                  "endLine": 122,
+                  "endLine": 147,
                   "endColumn": 92
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl TempInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
+              "fullyQualifiedLogicalName": "void __cdecl LongInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
             }
           ]
         },
@@ -8837,11 +7777,11 @@
                   "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
                 },
                 "region": {
-                  "startLine": 127,
+                  "startLine": 152,
                   "startColumn": 120
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl TempInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
+              "fullyQualifiedLogicalName": "void __cdecl LongInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
             }
           ]
         },
@@ -8857,11 +7797,11 @@
                   "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
                 },
                 "region": {
-                  "startLine": 134,
+                  "startLine": 159,
                   "startColumn": 121
                 }
               },
-              "fullyQualifiedLogicalName": "void __cdecl TempInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
+              "fullyQualifiedLogicalName": "void __cdecl LongInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
             }
           ]
         },
@@ -8930,68 +7870,6 @@
               "fullyQualifiedLogicalName": "void __cdecl LongInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
             }
           ]
-        },
-        {
-          "ruleId": "26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
-                },
-                "region": {
-                  "startLine": 147,
-                  "startColumn": 22,
-                  "endLine": 147,
-                  "endColumn": 92
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl LongInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
-                },
-                "region": {
-                  "startLine": 152,
-                  "startColumn": 120
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl LongInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp"
-                },
-                "region": {
-                  "startLine": 159,
-                  "startColumn": 121
-                }
-              },
-              "fullyQualifiedLogicalName": "void __cdecl LongInsane(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)"
-            }
-          ]
         }
       ],
       "tool": {
@@ -9002,39 +7880,18 @@
       },
       "invocations": [
         {
-          "commandLine": "\"C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00392090 -il C:\\Users\\sb6ku\\AppData\\Local\\Temp\\_CL_28299877ast -typedil -f RD.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1920 -D_MSC_FULL_VER=192027305 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\CQSDK -nologo -W 3 -diagnostics:column- -diagnostics:caret- -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -GF -Og -Oi -Ot -Oy -ltcg -DCODE_ANALYSIS -DWIN32 -DNDEBUG -DDICE_EXPORTS -D_WINDOWS -D_USRDLL -D_WINDLL -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -clrNoPureCRT -D_MT -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++latest -FoRelease\\RD.obj -FdRelease\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\Rule Sets\\AllRules.ruleset -analyze:projectdirectory C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\DiceJrs -analyze:rulesetdirectory ;C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\um -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\shared -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\winrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\cppwinrt -I C:\\Program Files\\Windows Kits\\NETFXSDK\\4.7.2\\Include\\um -MPdiagMutex 0000000000000164"
+          "commandLine": "\"C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00162090 -il C:\\Users\\sb6ku\\AppData\\Local\\Temp\\_CL_5b736519ast -typedil -f RD.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1920 -D_MSC_FULL_VER=192027305 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\CQSDK -nologo -W 0 -diagnostics:column- -diagnostics:caret- -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -GF -Og -Oi -Ot -Oy -ltcg -DCODE_ANALYSIS -DWIN32 -DNDEBUG -DDICE_EXPORTS -D_WINDOWS -D_USRDLL -D_WINDLL -D_MBCS -EHs -D_CPPUNWIND -EHc -clrNoPureCRT -D_MT -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -FoRelease\\RD.obj -FdRelease\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\Rule Sets\\AllRules.ruleset -analyze:projectdirectory C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\DiceJrs -analyze:rulesetdirectory ;C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\um -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\shared -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\winrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\cppwinrt -I C:\\Program Files\\Windows Kits\\NETFXSDK\\4.7.2\\Include\\um -MPdiagMutex 0000000000000158"
         }
       ],
       "files": {
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqapi_ex.h": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_all.h": {
           "roles": [
             "resultFile"
           ]
         },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqapi_ex.cpp": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqapi.cpp": {
           "roles": [
             "analysisTarget",
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqdefine.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/unpack.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/unpack.cpp": {
-          "roles": [
-            "analysisTarget",
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_discussmsg.h": {
-          "roles": [
             "resultFile"
           ]
         },
@@ -9043,17 +7900,23 @@
             "resultFile"
           ]
         },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqevemsg.h": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqdefine.h": {
           "roles": [
             "resultFile"
           ]
         },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/bufstream.h": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqconstant.h": {
           "roles": [
             "resultFile"
           ]
         },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_groupmsg.h": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqeve.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve.h": {
           "roles": [
             "resultFile"
           ]
@@ -9068,110 +7931,28 @@
             "resultFile"
           ]
         },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqconstant.h": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqevemsg.h": {
           "roles": [
             "resultFile"
           ]
         },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqtools.h": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/bufstream.h": {
           "roles": [
             "resultFile"
           ]
         },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqstream.cpp": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/randomgenerator.cpp": {
           "roles": [
             "analysisTarget",
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/randomgenerator.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqlogger.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqmsgsend.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_privatemsg.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dbmanager.cpp": {
-          "roles": [
-            "analysisTarget",
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dbmanager.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/sqlite3.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/globalvar.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_friendadd.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicejrs.cpp": {
-          "roles": [
-            "analysisTarget",
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/appinfo.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddfriend.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicemsgsend.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_all.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/storagebase.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve.h": {
-          "roles": [
             "resultFile"
           ]
         },
         "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeverequest.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqapi_ex.h": {
           "roles": [
             "resultFile"
           ]
@@ -9187,22 +7968,79 @@
             "resultFile"
           ]
         },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_groupmsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_privatemsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqmsgsend.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_discussmsg.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/unpack.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddfriend.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
         "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_requestaddgroup.h": {
           "roles": [
             "resultFile"
           ]
         },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/initlist.h": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqeve_friendadd.h": {
           "roles": [
             "resultFile"
           ]
         },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/custommsg.h": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/globalvar.h": {
           "roles": [
             "resultFile"
           ]
         },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/msgformat.h": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqtools.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqtools.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/custommsg.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/json.hpp": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdk/cqlogger.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.h": {
           "roles": [
             "resultFile"
           ]
@@ -9212,25 +8050,69 @@
             "resultFile"
           ]
         },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/namegetter.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/namestorage.cpp": {
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicemsgsend.cpp": {
           "roles": [
             "analysisTarget",
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/namestorage.h": {
-          "roles": [
             "resultFile"
           ]
         },
         "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.cpp": {
           "roles": [
             "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicemsgsend.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicenetwork.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/rd.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/msgformat.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dicenetwork.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/getrule.h": {
+          "roles": [
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/dllmain.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/encodingconvert.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/globalvar.cpp": {
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        "file:///c:/users/sb6ku/desktop/jrs_dev/dicejrs/randomgenerator.h": {
+          "roles": [
             "resultFile"
           ]
         }

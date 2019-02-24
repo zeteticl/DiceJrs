@@ -2,6 +2,7 @@
 #include "GlobalVar.h"
 #include <map>
 #include "RDConstant.h"
+#include "Jrs.h"
 
 bool Enabled = false;
 
@@ -61,6 +62,8 @@ std::map<std::string, std::string> GlobalMsg
 	{"strAlreadyBanned","已封禁！" },
 	{"strNotBanned","未封禁" },
 	{"strUnBan","已解除封禁" },
+	{"strJrrp", "{0}今天的人品值是: {1}"},
+	{"strJrrpErr", "JRRP获取失败! 错误信息: \n{0}"},
 	{"strSuccessfullyBanned","已加入封禁名单！" },
 	{"strBanAdmin","请不要封禁骰子管理员" },
 	{"strBanEmpty","我怎么什么都没看到?"},
@@ -71,43 +74,4 @@ std::map<std::string, std::string> GlobalMsg
 	{"strSCPErr",R"(格式错误:正确格式为.scp [SCP号码] 如.scp 173
 服务基于The Ring of Wonder SCP Wiki
 https://trow.cc/wiki/scp/start)"},
-	{"strHlpMsgList",R"(<通用命令>
-r/rs [掷骰表达式*] [原因]	普通掷骰/简化输出
-coc7/6 [个数]	COC7/6人物作成
-dnd [个数]	DND人物作成
-help	显示帮助
-<仅限群/讨论组>
-ti/li	疯狂发作-临时/总结症状
-st [del/clr/show] [属性名] [属性值]	人物卡导入
-rc/ra [技能名] [技能值]	技能检定(规则书/房规)
-w/ww XaY	骰池
-set [1-99999之间的整数]	设置默认骰
-sc SC表达式** [San值]	自动Sancheck
-en [技能名] [技能值]	增强检定/幕间成长
-ri [加值] [昵称]	DnD先攻掷骰
-init [clr]	DnD先攻查看/清空
-nn [名称]	设置/删除昵称
-rh [掷骰表达式*] [原因]	暗骰,结果私聊发送
-bot [on/off] [机器人QQ号]	机器人开启或关闭
-ob [exit/list/clr/on/off]	旁观模式
-me [on/off/动作]	以第三方视角做出动作
-welcome [欢迎消息]	群欢迎提示
-fate [on/off]	今日命运
-tarot	塔罗牌抽卡
-scp [编号]	SCPWiki链接速查
-<仅限私聊>
-me [群号] [动作]	以第三方视角做出动作
-*COC7惩罚骰为P+个数,奖励骰为B+个数
- 支持使用K来取较大的几个骰子
- 支持使用 个数#表达式 进行多轮掷骰
-**SC表达式为 成功扣San/失败扣San,如:1/1d6)"},
-	{"strHlpMsg" , Dice_Full_Ver + "\n" +
-	R"(<请使用 .quit 命令让旧日的儿子脱离!>
-目前可使用命令(前加"."已示命令):
-r/rs|coc7/6|dnd|help|ti/li
-st|rc/ra|w/ww|set|sc|en|ri
-init|rh|botob|me|welcome
-fate|tarot|scp
-<命令详情请使用.help list查看>
-<使用问题请找旧日酱(2558272027)>)"}
 };

@@ -32,6 +32,76 @@
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
       <FILENAME>cqtools.cpp</FILENAME>
+      <LINE>31</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>base64_encode</FUNCTION>
+    <DECORATED>?base64_encode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqtools.cpp</FILENAME>
+      <LINE>31</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>base64_encode</FUNCTION>
+    <DECORATED>?base64_encode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqtools.cpp</FILENAME>
+      <LINE>40</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>base64_encode</FUNCTION>
+    <DECORATED>?base64_encode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqtools.cpp</FILENAME>
+      <LINE>48</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>base64_encode</FUNCTION>
+    <DECORATED>?base64_encode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqtools.cpp</FILENAME>
+      <LINE>56</LINE>
+      <COLUMN>38</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>base64_encode</FUNCTION>
+    <DECORATED>?base64_encode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqtools.cpp</FILENAME>
       <LINE>22</LINE>
       <COLUMN>6</COLUMN>
     </SFA>
@@ -46,11 +116,11 @@
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
       <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>25</LINE>
-      <COLUMN>5</COLUMN>
+      <LINE>27</LINE>
+      <COLUMN>15</COLUMN>
     </SFA>
     <DEFECTCODE>26494</DEFECTCODE>
-    <DESCRIPTION>Variable 'j' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
+    <DESCRIPTION>Variable 'char_array_4' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
     <FUNCTION>base64_encode</FUNCTION>
     <DECORATED>?base64_encode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
     <FUNCLINE>19</FUNCLINE>
@@ -74,11 +144,11 @@
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
       <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>27</LINE>
-      <COLUMN>15</COLUMN>
+      <LINE>25</LINE>
+      <COLUMN>5</COLUMN>
     </SFA>
     <DEFECTCODE>26494</DEFECTCODE>
-    <DESCRIPTION>Variable 'char_array_4' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
+    <DESCRIPTION>Variable 'j' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
     <FUNCTION>base64_encode</FUNCTION>
     <DECORATED>?base64_encode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
     <FUNCLINE>19</FUNCLINE>
@@ -193,70 +263,112 @@
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
       <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>31</LINE>
+      <LINE>76</LINE>
       <COLUMN>20</COLUMN>
     </SFA>
     <DEFECTCODE>26482</DEFECTCODE>
     <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>base64_encode</FUNCTION>
-    <DECORATED>?base64_encode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>19</FUNCLINE>
+    <FUNCTION>base64_decode</FUNCTION>
+    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
       <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>31</LINE>
-      <COLUMN>20</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>base64_encode</FUNCTION>
-    <DECORATED>?base64_encode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>19</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
-      <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>40</LINE>
-      <COLUMN>39</COLUMN>
+      <LINE>81</LINE>
+      <COLUMN>66</COLUMN>
     </SFA>
     <DEFECTCODE>26482</DEFECTCODE>
     <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>base64_encode</FUNCTION>
-    <DECORATED>?base64_encode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>19</FUNCLINE>
+    <FUNCTION>base64_decode</FUNCTION>
+    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
       <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>48</LINE>
+      <LINE>81</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>base64_decode</FUNCTION>
+    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqtools.cpp</FILENAME>
+      <LINE>88</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>base64_decode</FUNCTION>
+    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqtools.cpp</FILENAME>
+      <LINE>96</LINE>
       <COLUMN>19</COLUMN>
     </SFA>
     <DEFECTCODE>26482</DEFECTCODE>
     <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>base64_encode</FUNCTION>
-    <DECORATED>?base64_encode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>19</FUNCLINE>
+    <FUNCTION>base64_decode</FUNCTION>
+    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
       <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>56</LINE>
-      <COLUMN>38</COLUMN>
+      <LINE>99</LINE>
+      <COLUMN>65</COLUMN>
     </SFA>
     <DEFECTCODE>26482</DEFECTCODE>
     <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>base64_encode</FUNCTION>
-    <DECORATED>?base64_encode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>19</FUNCLINE>
+    <FUNCTION>base64_decode</FUNCTION>
+    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqtools.cpp</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>base64_decode</FUNCTION>
+    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
+      <FILENAME>cqtools.cpp</FILENAME>
+      <LINE>105</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>base64_decode</FUNCTION>
+    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -278,10 +390,10 @@
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
       <FILENAME>cqtools.cpp</FILENAME>
       <LINE>71</LINE>
-      <COLUMN>15</COLUMN>
+      <COLUMN>32</COLUMN>
     </SFA>
     <DEFECTCODE>26494</DEFECTCODE>
-    <DESCRIPTION>Variable 'char_array_4' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
+    <DESCRIPTION>Variable 'char_array_3' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
     <FUNCTION>base64_decode</FUNCTION>
     <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
     <FUNCLINE>65</FUNCLINE>
@@ -292,10 +404,10 @@
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
       <FILENAME>cqtools.cpp</FILENAME>
       <LINE>71</LINE>
-      <COLUMN>32</COLUMN>
+      <COLUMN>15</COLUMN>
     </SFA>
     <DEFECTCODE>26494</DEFECTCODE>
-    <DESCRIPTION>Variable 'char_array_3' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
+    <DESCRIPTION>Variable 'char_array_4' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
     <FUNCTION>base64_decode</FUNCTION>
     <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
     <FUNCLINE>65</FUNCLINE>
@@ -478,118 +590,6 @@
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>base64_decode</FUNCTION>
-    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>65</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
-      <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>76</LINE>
-      <COLUMN>20</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>base64_decode</FUNCTION>
-    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>65</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
-      <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>81</LINE>
-      <COLUMN>66</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>base64_decode</FUNCTION>
-    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>65</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
-      <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>81</LINE>
-      <COLUMN>20</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>base64_decode</FUNCTION>
-    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>65</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
-      <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>88</LINE>
-      <COLUMN>8</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>base64_decode</FUNCTION>
-    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>65</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
-      <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>96</LINE>
-      <COLUMN>19</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>base64_decode</FUNCTION>
-    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>65</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
-      <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>99</LINE>
-      <COLUMN>65</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>base64_decode</FUNCTION>
-    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>65</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
-      <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>99</LINE>
-      <COLUMN>19</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>base64_decode</FUNCTION>
-    <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
-    <FUNCLINE>65</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
-      <FILENAME>cqtools.cpp</FILENAME>
-      <LINE>105</LINE>
-      <COLUMN>36</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
     <FUNCTION>base64_decode</FUNCTION>
     <DECORATED>?base64_decode@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV12@@Z</DECORATED>
     <FUNCLINE>65</FUNCLINE>

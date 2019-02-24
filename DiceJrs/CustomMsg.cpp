@@ -1,9 +1,10 @@
 #include "json.hpp"
 #include "GlobalVar.h"
-#include "EncodingConvert.h"
 #include <fstream>
 #include <sstream>
 #include "RDConstant.h"
+#include "EncodingConvert.h"
+#include "Jrs.h"
 
 void ReadCustomMsg(std::ifstream& in)
 {

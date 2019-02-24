@@ -18,126 +18,182 @@
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
       <FILENAME>rdconstant.h</FILENAME>
-      <LINE>7</LINE>
-      <COLUMN>36</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'Dice_Ver''</FUNCTION>
-    <DECORATED>??__EDice_Ver@@YAXXZ</DECORATED>
-    <FUNCLINE>7</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>8</LINE>
-      <COLUMN>58</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::operator+&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'Dice_Short_Ver''</FUNCTION>
-    <DECORATED>??__EDice_Short_Ver@@YAXXZ</DECORATED>
-    <FUNCLINE>8</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>9</LINE>
-      <COLUMN>45</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::operator+&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'Dice_Head_Ver''</FUNCTION>
-    <DECORATED>??__EDice_Head_Ver@@YAXXZ</DECORATED>
-    <FUNCLINE>9</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>9</LINE>
-      <COLUMN>62</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::operator+&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'Dice_Head_Ver''</FUNCTION>
-    <DECORATED>??__EDice_Head_Ver@@YAXXZ</DECORATED>
-    <FUNCLINE>9</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>10</LINE>
-      <COLUMN>69</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::operator+&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'Dice_Full_Ver''</FUNCTION>
-    <DECORATED>??__EDice_Full_Ver@@YAXXZ</DECORATED>
-    <FUNCLINE>10</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>11</LINE>
-      <COLUMN>40</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'Dice_Bot_Ver''</FUNCTION>
-    <DECORATED>??__EDice_Bot_Ver@@YAXXZ</DECORATED>
-    <FUNCLINE>11</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>46</LINE>
+      <LINE>32</LINE>
       <COLUMN>61</COLUMN>
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,std::less&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;,std::allocator&lt;std::pair&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; const ,std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,std::less&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;,std::allocator&lt;std::pair&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; const ,std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'SkillNameReplace''</FUNCTION>
     <DECORATED>??__ESkillNameReplace@@YAXXZ</DECORATED>
-    <FUNCLINE>102</FUNCLINE>
+    <FUNCLINE>88</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
       <FILENAME>rdconstant.h</FILENAME>
-      <LINE>105</LINE>
+      <LINE>91</LINE>
       <COLUMN>52</COLUMN>
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,int,std::less&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;,std::allocator&lt;std::pair&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; const ,int&gt; &gt; &gt;::map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,int,std::less&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;,std::allocator&lt;std::pair&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; const ,int&gt; &gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'SkillDefaultVal''</FUNCTION>
     <DECORATED>??__ESkillDefaultVal@@YAXXZ</DECORATED>
-    <FUNCLINE>202</FUNCLINE>
+    <FUNCLINE>188</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
       <FILENAME>rdconstant.h</FILENAME>
-      <LINE>206</LINE>
+      <LINE>192</LINE>
       <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
     <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>217</FUNCLINE>
+    <FUNCLINE>203</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>193</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
+    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>203</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>194</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
+    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>203</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>195</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
+    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>203</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>196</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
+    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>203</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>197</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
+    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>203</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>198</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
+    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>203</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>199</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
+    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>203</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>200</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
+    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>203</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>201</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
+    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>203</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>202</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
+    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>203</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -149,9 +205,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
-    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>217</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
+    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>218</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -163,9 +219,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
-    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>217</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
+    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>218</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -177,9 +233,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
-    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>217</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
+    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>218</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -191,9 +247,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
-    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>217</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
+    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>218</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -205,9 +261,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
-    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>217</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
+    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>218</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -219,9 +275,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
-    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>217</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
+    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>218</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -233,9 +289,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
-    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>217</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
+    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>218</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -247,9 +303,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
-    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>217</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
+    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>218</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -261,9 +317,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
-    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>217</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
+    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>218</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -275,23 +331,23 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'TempInsanity''</FUNCTION>
-    <DECORATED>??__ETempInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>217</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
+    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
+    <FUNCLINE>218</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
       <FILENAME>rdconstant.h</FILENAME>
-      <LINE>221</LINE>
+      <LINE>217</LINE>
       <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
     <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>232</FUNCLINE>
+    <FUNCLINE>218</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -303,9 +359,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
-    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>232</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -317,9 +373,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
-    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>232</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -331,9 +387,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
-    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>232</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -345,9 +401,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
-    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>232</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -359,9 +415,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
-    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>232</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -373,9 +429,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
-    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>232</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -387,9 +443,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
-    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>232</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -401,9 +457,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
-    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>232</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -415,9 +471,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
-    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>232</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -429,9 +485,65 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'LongInsanity''</FUNCTION>
-    <DECORATED>??__ELongInsanity@@YAXXZ</DECORATED>
-    <FUNCLINE>232</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>232</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>233</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>234</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>235</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
+    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -445,7 +557,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -459,7 +571,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -473,7 +585,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -487,7 +599,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -501,7 +613,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -515,7 +627,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -529,7 +641,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -543,7 +655,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -557,7 +669,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -571,7 +683,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -585,7 +697,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -599,7 +711,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -613,7 +725,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -627,7 +739,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -641,7 +753,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -655,7 +767,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -669,7 +781,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -683,7 +795,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -697,7 +809,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -711,7 +823,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -725,7 +837,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -739,7 +851,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -753,7 +865,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -767,7 +879,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -781,7 +893,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -795,7 +907,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -809,7 +921,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -823,7 +935,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -837,7 +949,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -851,7 +963,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -865,7 +977,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -879,7 +991,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -893,7 +1005,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -907,7 +1019,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -921,7 +1033,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -935,7 +1047,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -949,7 +1061,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -963,7 +1075,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -977,7 +1089,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -991,7 +1103,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1005,7 +1117,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1019,7 +1131,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1033,7 +1145,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1047,7 +1159,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1061,7 +1173,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1075,7 +1187,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1089,7 +1201,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1103,7 +1215,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1117,7 +1229,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1131,7 +1243,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1145,7 +1257,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1159,7 +1271,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1173,7 +1285,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1187,7 +1299,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1201,7 +1313,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1215,7 +1327,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1229,7 +1341,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1243,7 +1355,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1257,7 +1369,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1271,7 +1383,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1285,7 +1397,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1299,7 +1411,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1313,7 +1425,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1327,7 +1439,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1341,7 +1453,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1355,7 +1467,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1369,7 +1481,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1383,7 +1495,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1397,7 +1509,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1411,7 +1523,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1425,7 +1537,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1439,7 +1551,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1453,7 +1565,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1467,7 +1579,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1481,7 +1593,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1495,7 +1607,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1509,7 +1621,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1523,7 +1635,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1537,7 +1649,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1551,7 +1663,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1565,7 +1677,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1579,7 +1691,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1593,7 +1705,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1607,7 +1719,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1621,7 +1733,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1635,7 +1747,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1649,35 +1761,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
     <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>323</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>324</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCLINE>323</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1689,9 +1773,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1703,9 +1787,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1717,9 +1801,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1731,9 +1815,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1745,9 +1829,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1759,9 +1843,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1773,9 +1857,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1787,9 +1871,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1801,9 +1885,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1815,9 +1899,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1829,9 +1913,9 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1843,9 +1927,37 @@
     </SFA>
     <DEFECTCODE>26426</DEFECTCODE>
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strFear''</FUNCTION>
-    <DECORATED>??__EstrFear@@YAXXZ</DECORATED>
-    <FUNCLINE>337</FUNCLINE>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>337</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rdconstant.h</FILENAME>
+      <LINE>338</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
+    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1859,7 +1971,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1873,7 +1985,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1887,7 +1999,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1901,7 +2013,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1915,7 +2027,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1929,7 +2041,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1943,7 +2055,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1957,7 +2069,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1971,7 +2083,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1985,7 +2097,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1999,7 +2111,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2013,7 +2125,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2027,7 +2139,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2041,7 +2153,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2055,7 +2167,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2069,7 +2181,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2083,7 +2195,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2097,7 +2209,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2111,7 +2223,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2125,7 +2237,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2139,7 +2251,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2153,7 +2265,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2167,7 +2279,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2181,7 +2293,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2195,7 +2307,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2209,7 +2321,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2223,7 +2335,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2237,7 +2349,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2251,7 +2363,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2265,7 +2377,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2279,7 +2391,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2293,7 +2405,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2307,7 +2419,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2321,7 +2433,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2335,7 +2447,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2349,7 +2461,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2363,7 +2475,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2377,7 +2489,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2391,7 +2503,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2405,7 +2517,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2419,7 +2531,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2433,7 +2545,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2447,7 +2559,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2461,7 +2573,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2475,7 +2587,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2489,7 +2601,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2503,7 +2615,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2517,7 +2629,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2531,7 +2643,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2545,7 +2657,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2559,7 +2671,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2573,7 +2685,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2587,7 +2699,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2601,7 +2713,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2615,7 +2727,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2629,7 +2741,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2643,7 +2755,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2657,7 +2769,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2671,7 +2783,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2685,7 +2797,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2699,7 +2811,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2713,7 +2825,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2727,7 +2839,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2741,7 +2853,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2755,7 +2867,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2769,7 +2881,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2783,7 +2895,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2797,7 +2909,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2811,7 +2923,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2825,7 +2937,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2839,7 +2951,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2853,7 +2965,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2867,7 +2979,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2881,7 +2993,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2895,7 +3007,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2909,7 +3021,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2923,7 +3035,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2937,7 +3049,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2951,7 +3063,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2965,7 +3077,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2979,7 +3091,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -2993,7 +3105,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -3007,7 +3119,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -3021,7 +3133,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -3035,7 +3147,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -3049,7 +3161,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -3063,833 +3175,7 @@
     <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
     <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
     <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>426</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>427</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>428</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>429</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>430</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>431</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>432</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>433</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>434</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>435</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>436</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>437</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>438</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>439</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'strPanic''</FUNCTION>
-    <DECORATED>??__EstrPanic@@YAXXZ</DECORATED>
-    <FUNCLINE>440</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>445</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>446</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>447</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>448</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>449</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>450</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>451</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>452</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>453</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>454</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>455</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>456</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>457</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>458</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>459</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>460</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>461</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>462</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>463</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>464</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>465</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>466</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>467</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>468</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>469</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>470</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>471</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>472</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>473</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>474</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>475</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>476</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>477</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>478</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>479</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>480</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>481</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>482</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>483</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>484</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>485</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>486</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>487</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>488</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rdconstant.h</FILENAME>
-      <LINE>489</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26426</DEFECTCODE>
-    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
-    <FUNCTION>`dynamic initializer for 'tarotCard''</FUNCTION>
-    <DECORATED>??__EtarotCard@@YAXXZ</DECORATED>
-    <FUNCLINE>490</FUNCLINE>
+    <FUNCLINE>426</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -5359,20 +4645,6 @@
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
       <FILENAME>rd.cpp</FILENAME>
-      <LINE>64</LINE>
-      <COLUMN>27</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>COC7</FUNCTION>
-    <DECORATED>?COC7@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z</DECORATED>
-    <FUNCLINE>51</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rd.cpp</FILENAME>
       <LINE>62</LINE>
       <COLUMN>21</COLUMN>
     </SFA>
@@ -5401,14 +4673,14 @@
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
       <FILENAME>rd.cpp</FILENAME>
-      <LINE>86</LINE>
+      <LINE>64</LINE>
       <COLUMN>27</COLUMN>
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>COC6</FUNCTION>
-    <DECORATED>?COC6@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z</DECORATED>
-    <FUNCLINE>72</FUNCLINE>
+    <FUNCTION>COC7</FUNCTION>
+    <DECORATED>?COC7@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z</DECORATED>
+    <FUNCLINE>51</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -5443,14 +4715,14 @@
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
       <FILENAME>rd.cpp</FILENAME>
-      <LINE>109</LINE>
-      <COLUMN>28</COLUMN>
+      <LINE>86</LINE>
+      <COLUMN>27</COLUMN>
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>DND</FUNCTION>
-    <DECORATED>?DND@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z</DECORATED>
-    <FUNCLINE>96</FUNCLINE>
+    <FUNCTION>COC6</FUNCTION>
+    <DECORATED>?COC6@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z</DECORATED>
+    <FUNCLINE>72</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -5471,42 +4743,14 @@
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
       <FILENAME>rd.cpp</FILENAME>
-      <LINE>122</LINE>
-      <COLUMN>91</COLUMN>
+      <LINE>109</LINE>
+      <COLUMN>28</COLUMN>
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>TempInsane</FUNCTION>
-    <DECORATED>?TempInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
-    <FUNCLINE>119</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rd.cpp</FILENAME>
-      <LINE>127</LINE>
-      <COLUMN>119</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>TempInsane</FUNCTION>
-    <DECORATED>?TempInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
-    <FUNCLINE>119</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
-      <FILENAME>rd.cpp</FILENAME>
-      <LINE>134</LINE>
-      <COLUMN>120</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>TempInsane</FUNCTION>
-    <DECORATED>?TempInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
-    <FUNCLINE>119</FUNCLINE>
+    <FUNCTION>DND</FUNCTION>
+    <DECORATED>?DND@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z</DECORATED>
+    <FUNCLINE>96</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -5555,42 +4799,42 @@
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
       <FILENAME>rd.cpp</FILENAME>
-      <LINE>147</LINE>
+      <LINE>122</LINE>
       <COLUMN>91</COLUMN>
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>LongInsane</FUNCTION>
-    <DECORATED>?LongInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
-    <FUNCLINE>144</FUNCLINE>
+    <FUNCTION>TempInsane</FUNCTION>
+    <DECORATED>?TempInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>119</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
       <FILENAME>rd.cpp</FILENAME>
-      <LINE>152</LINE>
+      <LINE>127</LINE>
       <COLUMN>119</COLUMN>
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>LongInsane</FUNCTION>
-    <DECORATED>?LongInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
-    <FUNCLINE>144</FUNCLINE>
+    <FUNCTION>TempInsane</FUNCTION>
+    <DECORATED>?TempInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>119</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
       <FILENAME>rd.cpp</FILENAME>
-      <LINE>159</LINE>
+      <LINE>134</LINE>
       <COLUMN>120</COLUMN>
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>LongInsane</FUNCTION>
-    <DECORATED>?LongInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
-    <FUNCLINE>144</FUNCLINE>
+    <FUNCTION>TempInsane</FUNCTION>
+    <DECORATED>?TempInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>119</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -5630,6 +4874,48 @@
     </SFA>
     <DEFECTCODE>26482</DEFECTCODE>
     <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>LongInsane</FUNCTION>
+    <DECORATED>?LongInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>144</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rd.cpp</FILENAME>
+      <LINE>147</LINE>
+      <COLUMN>91</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>LongInsane</FUNCTION>
+    <DECORATED>?LongInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>144</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rd.cpp</FILENAME>
+      <LINE>152</LINE>
+      <COLUMN>119</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>LongInsane</FUNCTION>
+    <DECORATED>?LongInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>144</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\dicejrs</FILEPATH>
+      <FILENAME>rd.cpp</FILENAME>
+      <LINE>159</LINE>
+      <COLUMN>120</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>LongInsane</FUNCTION>
     <DECORATED>?LongInsane@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
     <FUNCLINE>144</FUNCLINE>

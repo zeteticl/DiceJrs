@@ -46,11 +46,11 @@
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
       <FILENAME>cqapi_ex.cpp</FILENAME>
-      <LINE>268</LINE>
+      <LINE>270</LINE>
       <COLUMN>11</COLUMN>
     </SFA>
-    <DEFECTCODE>26429</DEFECTCODE>
-    <DESCRIPTION>Symbol 'data' is never tested for nullness, it can be marked as not_null (f.23).</DESCRIPTION>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
     <FUNCTION>CQ::getGroupMemberList</FUNCTION>
     <DECORATED>?getGroupMemberList@CQ@@YA?AV?$vector@VGroupMemberInfo@CQ@@V?$allocator@VGroupMemberInfo@CQ@@@std@@@std@@_J@Z</DECORATED>
     <FUNCLINE>266</FUNCLINE>
@@ -60,11 +60,11 @@
     <SFA>
       <FILEPATH>c:\users\sb6ku\desktop\jrs_dev\cqsdkcpp</FILEPATH>
       <FILENAME>cqapi_ex.cpp</FILENAME>
-      <LINE>270</LINE>
+      <LINE>268</LINE>
       <COLUMN>11</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26429</DEFECTCODE>
+    <DESCRIPTION>Symbol 'data' is never tested for nullness, it can be marked as not_null (f.23).</DESCRIPTION>
     <FUNCTION>CQ::getGroupMemberList</FUNCTION>
     <DECORATED>?getGroupMemberList@CQ@@YA?AV?$vector@VGroupMemberInfo@CQ@@V?$allocator@VGroupMemberInfo@CQ@@@std@@@std@@_J@Z</DECORATED>
     <FUNCLINE>266</FUNCLINE>

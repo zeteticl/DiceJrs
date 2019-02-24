@@ -21,6 +21,9 @@
 #include "CustomMsg.h"
 #include "MsgFormat.h"
 #include "Jrs.h"
+#include "DiceNetwork.h"
+//#include "GetRule.h"
+
 
 using namespace std;
 using namespace CQ;
@@ -72,6 +75,8 @@ map<long long, string> LogMsg;
 set<long long> EnableLogGroup;
 set<long long> DisabledGroup;
 set<long long> DisabledDiscuss;
+set<long long> DisabledJRRPGroup;
+set<long long> DisabledJRRPDiscuss;
 set<long long> DisabledJRFATEGroup;
 set<long long> DisabledJRFATEDiscuss;
 set<long long> DisabledMEGroup;
@@ -150,6 +155,26 @@ EVE_Enable(eventEnable)
 		}
 	}
 	ifstreamDisabledDiscuss.close();
+	ifstream ifstreamDisabledJRRPGroup(strFileLoc + "DisabledJRRPGroup.RDconf");
+	if (ifstreamDisabledJRRPGroup)
+	{
+		long long Group;
+		while (ifstreamDisabledJRRPGroup >> Group)
+		{
+			DisabledJRRPGroup.insert(Group);
+		}
+	}
+	ifstreamDisabledJRRPGroup.close();
+	ifstream ifstreamDisabledJRRPDiscuss(strFileLoc + "DisabledJRRPDiscuss.RDconf");
+	if (ifstreamDisabledJRRPDiscuss)
+	{
+		long long Discuss;
+		while (ifstreamDisabledJRRPDiscuss >> Discuss)
+		{
+			DisabledJRRPDiscuss.insert(Discuss);
+		}
+	}
+	ifstreamDisabledJRRPDiscuss.close();
 
 	//Fate
 	ifstream ifstreamDisabledFATEG(strFileLoc + "DisabledJRFATEGroup.RDconf");
@@ -376,10 +401,10 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 			const string strAction = strLowerMessage.substr(intMsgCnt);
 			if (strAction == "list")
 			{
-				AddMsgToQueue(GlobalMsg["strHlpMsgList"], eve.fromQQ);
+				AddMsgToQueue(strHlpMsgList, eve.fromQQ);
 				return;
 			}
-			AddMsgToQueue(GlobalMsg["strHlpMsg"] + "\n此版本更新时间："+ __DATE__ + " " + __TIME__, eve.fromQQ);
+			AddMsgToQueue(strHlpMsg + "\n此版本更新时间："+ __DATE__ + " " + __TIME__, eve.fromQQ);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "bot")
 		{
@@ -945,7 +970,6 @@ EVE_GroupMsg_EX(eventGroupMsg)
 		AddMsgToQueue(strReply, eve.fromGroup, false);
 		return;
 	}
-
 	if (strLowerMessage.substr(intMsgCnt, 3) == "bot")
 		{
 			intMsgCnt += 3;
@@ -1092,10 +1116,10 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 			if (strAction == "list" && !DisabledHELPGroup.count(eve.fromGroup))
 			{
-				AddMsgToQueue(GlobalMsg["strHlpMsgList"], eve.fromGroup, false);
+				AddMsgToQueue(strHlpMsgList, eve.fromGroup, false);
 				return;
 			}
-			AddMsgToQueue(GlobalMsg["strHlpMsg"] + "\n此版本更新时间：" + __DATE__ + " " + __TIME__, eve.fromGroup, false);
+			AddMsgToQueue(strHlpMsg + "\n此版本更新时间：" + __DATE__ + " " + __TIME__, eve.fromGroup, false);
 		}
 	if (DisabledGroup.count(eve.fromGroup))return;
 	else if (strLowerMessage.substr(intMsgCnt, 7) == "welcome")
@@ -2031,6 +2055,72 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
 		}
 	}
+	else if (strLowerMessage.substr(intMsgCnt, 4) == "jrrp")
+	{
+	intMsgCnt += 4;
+	while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+		intMsgCnt++;
+	const string Command = strLowerMessage.substr(intMsgCnt, eve.message.find(' ', intMsgCnt) - intMsgCnt);
+	if (Command == "on")
+	{
+		if (getGroupMemberInfo(eve.fromGroup, eve.fromQQ).permissions >= 2)
+		{
+			if (DisabledJRRPGroup.count(eve.fromGroup))
+			{
+				DisabledJRRPGroup.erase(eve.fromGroup);
+				AddMsgToQueue("成功在本群中启用JRRP!", eve.fromGroup, false);
+			}
+			else
+			{
+				AddMsgToQueue("在本群中JRRP没有被禁用!", eve.fromGroup, false);
+			}
+		}
+		else
+		{
+			AddMsgToQueue(GlobalMsg["strPermissionDeniedErr"], eve.fromGroup, false);
+		}
+		return;
+	}
+	if (Command == "off")
+	{
+		if (getGroupMemberInfo(eve.fromGroup, eve.fromQQ).permissions >= 2)
+		{
+			if (!DisabledJRRPGroup.count(eve.fromGroup))
+			{
+				DisabledJRRPGroup.insert(eve.fromGroup);
+				AddMsgToQueue("成功在本群中禁用JRRP!", eve.fromGroup, false);
+			}
+			else
+			{
+				AddMsgToQueue("在本群中JRRP没有被启用!", eve.fromGroup, false);
+			}
+		}
+		else
+		{
+			AddMsgToQueue(GlobalMsg["strPermissionDeniedErr"], eve.fromGroup, false);
+		}
+		return;
+	}
+	if (DisabledJRRPGroup.count(eve.fromGroup))
+	{
+		AddMsgToQueue("在本群中JRRP功能已被禁用", eve.fromGroup, false);
+		return;
+	}
+	string des;
+	string data = "QQ=" + to_string(CQ::getLoginQQ()) + "&v=20190114" + "&QueryQQ=" + to_string(eve.fromQQ);
+	char* frmdata = new char[data.length() + 1];
+	strcpy_s(frmdata, data.length() + 1, data.c_str());
+	bool res = Network::POST("dice.xn--8c2a.top", "/jrrp", 80, frmdata, des);
+	delete[] frmdata;
+	if (res)
+	{
+		AddMsgToQueue(format(GlobalMsg["strJrrp"], { strNickName, des }), eve.fromGroup, false);
+	}
+	else
+	{
+		AddMsgToQueue(format(GlobalMsg["strJrrpErr"], { des }), eve.fromGroup, false);
+	}
+	}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "nn")
 		{
 			intMsgCnt += 2;
@@ -2764,10 +2854,10 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 		const string strAction = strLowerMessage.substr(intMsgCnt);
 		if (strAction == "list")
 		{
-			AddMsgToQueue(GlobalMsg["strHlpMsgList"], eve.fromDiscuss, false);
+			AddMsgToQueue(strHlpMsgList, eve.fromDiscuss, false);
 			return;
 		}
-			AddMsgToQueue(GlobalMsg["strHlpMsg"] + "\n此版本更新时间：" + __DATE__ + " " + __TIME__, eve.fromDiscuss, false);
+			AddMsgToQueue(strHlpMsg + "\n此版本更新时间：" + __DATE__ + " " + __TIME__, eve.fromDiscuss, false);
 		}
 	if (DisabledDiscuss.count(eve.fromDiscuss))return;
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "st")
@@ -3640,7 +3730,58 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 		AddMsgToQueue(scpa + "\n" + scpb, eve.fromDiscuss, false);
 	}
 	}
-
+	else if (strLowerMessage.substr(intMsgCnt, 4) == "jrrp")
+	{
+	intMsgCnt += 4;
+	while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+		intMsgCnt++;
+	const string Command = strLowerMessage.substr(intMsgCnt, eve.message.find(' ', intMsgCnt) - intMsgCnt);
+	if (Command == "on")
+	{
+		if (DisabledJRRPDiscuss.count(eve.fromDiscuss))
+		{
+			DisabledJRRPDiscuss.erase(eve.fromDiscuss);
+			AddMsgToQueue("成功在此多人聊天中启用JRRP!", eve.fromDiscuss, false);
+		}
+		else
+		{
+			AddMsgToQueue("在此多人聊天中JRRP没有被禁用!", eve.fromDiscuss, false);
+		}
+		return;
+	}
+	if (Command == "off")
+	{
+		if (!DisabledJRRPDiscuss.count(eve.fromDiscuss))
+		{
+			DisabledJRRPDiscuss.insert(eve.fromDiscuss);
+			AddMsgToQueue("成功在此多人聊天中禁用JRRP!", eve.fromDiscuss, false);
+		}
+		else
+		{
+			AddMsgToQueue("在此多人聊天中JRRP没有被启用!", eve.fromDiscuss, false);
+		}
+		return;
+	}
+	if (DisabledJRRPDiscuss.count(eve.fromDiscuss))
+	{
+		AddMsgToQueue("在此多人聊天中JRRP已被禁用!", eve.fromDiscuss, false);
+		return;
+	}
+	string des;
+	string data = "QQ=" + to_string(CQ::getLoginQQ()) + "&v=20190114" + "&QueryQQ=" + to_string(eve.fromQQ);
+	char* frmdata = new char[data.length() + 1];
+	strcpy_s(frmdata, data.length() + 1, data.c_str());
+	bool res = Network::POST("dice.xn--8c2a.top", "/jrrp", 80, frmdata, des);
+	delete[] frmdata;
+	if (res)
+	{
+		AddMsgToQueue(format(GlobalMsg["strJrrp"], { strNickName, des }), eve.fromDiscuss, false);
+	}
+	else
+	{
+		AddMsgToQueue(format(GlobalMsg["strJrrpErr"], { des }), eve.fromDiscuss, false);
+	}
+	}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "nn")
 		{
 			intMsgCnt += 2;
@@ -4429,6 +4570,22 @@ EVE_Disable(eventDisable)
 		ofstreamObserveDiscuss << it->first << " " << it->second << std::endl;
 	}
 	ofstreamObserveDiscuss.close();
+
+	ofstream ofstreamDisabledJRRPGroup(strFileLoc + "DisabledJRRPGroup.RDconf", ios::out | ios::trunc);
+	for (auto it = DisabledJRRPGroup.begin(); it != DisabledJRRPGroup.end(); ++it)
+	{
+		ofstreamDisabledJRRPGroup << *it << std::endl;
+	}
+	ofstreamDisabledJRRPGroup.close();
+
+	ofstream ofstreamDisabledJRRPDiscuss(strFileLoc + "DisabledJRRPDiscuss.RDconf", ios::out | ios::trunc);
+	for (auto it = DisabledJRRPDiscuss.begin(); it != DisabledJRRPDiscuss.end(); ++it)
+	{
+		ofstreamDisabledJRRPDiscuss << *it << std::endl;
+	}
+	ofstreamDisabledJRRPDiscuss.close();
+
+
 	//Fate
 	ofstream ofstreamJRFATE(strFileLoc + "JRFATE.RDconf", ios::out | ios::trunc);
 	for (auto it = JRFATE.begin(); it != JRFATE.end(); ++it)
@@ -4464,6 +4621,8 @@ EVE_Disable(eventDisable)
 		ofstreamWelcomeMsg << it->first << " " << it->second << std::endl;
 	}
 	ofstreamWelcomeMsg.close();
+	DisabledJRRPGroup.clear();
+	DisabledJRRPDiscuss.clear();
 	JRFATE.clear();
 	DefaultDice.clear();
 	DisabledGroup.clear();
@@ -4588,6 +4747,20 @@ EVE_Exit(eventExit)
 		ofstreamObserveDiscuss << it->first << " " << it->second << std::endl;
 	}
 	ofstreamObserveDiscuss.close();
+	ofstream ofstreamDisabledJRRPGroup(strFileLoc + "DisabledJRRPGroup.RDconf", ios::out | ios::trunc);
+	for (auto it = DisabledJRRPGroup.begin(); it != DisabledJRRPGroup.end(); ++it)
+	{
+		ofstreamDisabledJRRPGroup << *it << std::endl;
+	}
+	ofstreamDisabledJRRPGroup.close();
+
+	ofstream ofstreamDisabledJRRPDiscuss(strFileLoc + "DisabledJRRPDiscuss.RDconf", ios::out | ios::trunc);
+	for (auto it = DisabledJRRPDiscuss.begin(); it != DisabledJRRPDiscuss.end(); ++it)
+	{
+		ofstreamDisabledJRRPDiscuss << *it << std::endl;
+	}
+	ofstreamDisabledJRRPDiscuss.close();
+
 	//Fate
 	ofstream ofstreamJRFATE(strFileLoc + "JRFATE.RDconf", ios::out | ios::trunc);
 	for (auto it = JRFATE.begin(); it != JRFATE.end(); ++it)

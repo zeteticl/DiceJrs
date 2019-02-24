@@ -71,28 +71,6 @@
           ]
         },
         {
-          "ruleId": "26429",
-          "message": {
-            "text": "Symbol 'data' is never tested for nullness, it can be marked as not_null (f.23)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqapi_ex.cpp"
-                },
-                "region": {
-                  "startLine": 268,
-                  "startColumn": 12,
-                  "endLine": 268,
-                  "endColumn": 58
-                }
-              },
-              "fullyQualifiedLogicalName": "class std::vector<class CQ::GroupMemberInfo,class std::allocator<class CQ::GroupMemberInfo> > __cdecl CQ::getGroupMemberList(__int64)"
-            }
-          ]
-        },
-        {
           "ruleId": "26481",
           "message": {
             "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
@@ -108,6 +86,28 @@
                   "startColumn": 6,
                   "endLine": 270,
                   "endColumn": 12
+                }
+              },
+              "fullyQualifiedLogicalName": "class std::vector<class CQ::GroupMemberInfo,class std::allocator<class CQ::GroupMemberInfo> > __cdecl CQ::getGroupMemberList(__int64)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26429",
+          "message": {
+            "text": "Symbol 'data' is never tested for nullness, it can be marked as not_null (f.23)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///c:/users/sb6ku/desktop/jrs_dev/cqsdkcpp/cqapi_ex.cpp"
+                },
+                "region": {
+                  "startLine": 268,
+                  "startColumn": 12,
+                  "endLine": 268,
+                  "endColumn": 58
                 }
               },
               "fullyQualifiedLogicalName": "class std::vector<class CQ::GroupMemberInfo,class std::allocator<class CQ::GroupMemberInfo> > __cdecl CQ::getGroupMemberList(__int64)"
@@ -167,7 +167,7 @@
       },
       "invocations": [
         {
-          "commandLine": "\"C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00392090 -il C:\\Users\\sb6ku\\AppData\\Local\\Temp\\_CL_429d7f4dast -typedil -f ..\\CQSDKCPP\\CQAPI_EX.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1920 -D_MSC_FULL_VER=192027305 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\CQSDK -nologo -W 3 -diagnostics:column- -diagnostics:caret- -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -GF -Og -Oi -Ot -Oy -ltcg -DCODE_ANALYSIS -DWIN32 -DNDEBUG -DDICE_EXPORTS -D_WINDOWS -D_USRDLL -D_WINDLL -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -clrNoPureCRT -D_MT -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++latest -FoRelease\\CQAPI_EX.obj -FdRelease\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\Rule Sets\\AllRules.ruleset -analyze:projectdirectory C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\DiceJrs -analyze:rulesetdirectory ;C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\um -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\shared -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\winrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\cppwinrt -I C:\\Program Files\\Windows Kits\\NETFXSDK\\4.7.2\\Include\\um -MPdiagMutex 0000000000000164"
+          "commandLine": "\"C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00162090 -il C:\\Users\\sb6ku\\AppData\\Local\\Temp\\_CL_76748f24ast -typedil -f ..\\CQSDKCPP\\CQAPI_EX.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1920 -D_MSC_FULL_VER=192027305 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\CQSDK -nologo -W 0 -diagnostics:column- -diagnostics:caret- -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -GF -Og -Oi -Ot -Oy -ltcg -DCODE_ANALYSIS -DWIN32 -DNDEBUG -DDICE_EXPORTS -D_WINDOWS -D_USRDLL -D_WINDLL -D_MBCS -EHs -D_CPPUNWIND -EHc -clrNoPureCRT -D_MT -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -FoRelease\\CQAPI_EX.obj -FdRelease\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\Rule Sets\\AllRules.ruleset -analyze:projectdirectory C:\\Users\\sb6ku\\Desktop\\Jrs_Dev\\DiceJrs -analyze:rulesetdirectory ;C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\um -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\shared -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\winrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\cppwinrt -I C:\\Program Files\\Windows Kits\\NETFXSDK\\4.7.2\\Include\\um -MPdiagMutex 0000000000000158"
         }
       ],
       "files": {
