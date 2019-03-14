@@ -1,5 +1,8 @@
-﻿  DiceNetwork.cpp
-    正在创建库 C:\Users\sb6ku\Desktop\Jrs_Dev\Release\com.jrs.dice.lib 和对象 C:\Users\sb6ku\Desktop\Jrs_Dev\Release\com.jrs.dice.exp
+﻿  CustomMsg.cpp
+  DiceJrs.cpp
+  GlobalVar.cpp
+  RD.cpp
+    正在创建库 C:\Users\SEEWO\source\repos\DiceJrs\Release\com.jrs.dice.lib 和对象 C:\Users\SEEWO\source\repos\DiceJrs\Release\com.jrs.dice.exp
   正在生成代码
   已完成代码的生成
-  DiceJrs.vcxproj -> C:\Users\sb6ku\Desktop\Jrs_Dev\Release\com.jrs.dice.dll
+  DiceJrs.vcxproj -> C:\Users\SEEWO\source\repos\DiceJrs\Release\com.jrs.dice.dll

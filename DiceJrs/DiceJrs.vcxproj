@@ -118,6 +118,8 @@
       <EnablePREfast>false</EnablePREfast>
       <LanguageStandard>
       </LanguageStandard>
+      <AdditionalOptions>
+      </AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
