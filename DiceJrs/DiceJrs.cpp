@@ -1993,61 +1993,74 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			AddMsgToQueue(GlobalMsg["strSCPErr"], eve.fromGroup, false);
 			return;
 		}
+    ostringstream scpb;
 		if (strSCP.length() == 4) 
 		{
 			if (strSCP >= "1000" && strSCP <= "1999")
 			{
 				const string scpa = GlobalMsg["strSCP"] + strSCP;
-				const string scpb = GlobalMsg["strSCPWeb"] + "-ii/scp-" + strSCP;
+        scpb.clear();
+        scpb.str("");
+        scpb << strSCPWeb << "-ii/scp-" << strSCP << endl;
 				AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
 			}
 			else if (strSCP >= "2000" && strSCP <= "2999")
 			{
 				const string scpa = GlobalMsg["strSCP"] + strSCP;
-				const string scpb = GlobalMsg["strSCPWeb"] + "-iii/scp-" + strSCP;
+        scpb.clear();
+        scpb.str("");
+        scpb << strSCPWeb << "-iii/scp-" << strSCP << endl;
 				AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
 			}
 			else if (strSCP >= "3000" && strSCP <= "3999")
 			{
 				const string scpa = GlobalMsg["strSCP"] + strSCP;
-				const string scpb = GlobalMsg["strSCPWeb"] + "-iv/scp-" + strSCP;
+        scpb.clear();
+        scpb.str("");
+        scpb << strSCPWeb << "-iv/scp-" << strSCP << endl;
 				AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
 			}
 		}
 		else if (strSCP.length() == 3)
 		{
 			const string scpa = GlobalMsg["strSCP"] + strSCP;
-			const string scpb = GlobalMsg["strSCPWeb"] + "-" + strSCP;
+      scpb.clear();
+      scpb.str("");
+      scpb << strSCPWeb << "-i/scp-" << strSCP << endl;
 			AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
 		}
 		else if (strSCP.length() == 2)
 		{
 			const string scpa = GlobalMsg["strSCP"] + "0" + strSCP;
-			const string scpb = GlobalMsg["strSCPWeb"] + "-i/scp-0" + strSCP;
+      scpb.clear();
+      scpb.str("");
+      scpb << strSCPWeb << "-i/scp-0" << strSCP << endl;
 			AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
 		}
 		else if (strSCP.length() == 1)
 		{
 			const string scpa = GlobalMsg["strSCP"] + "00" + strSCP;
-			const string scpb = GlobalMsg["strSCPWeb"] + "-i/scp-00" + strSCP;
+      scpb.clear();
+      scpb.str("");
+      scpb << strSCPWeb << "-i/scp-00" << strSCP << endl;
 			AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
 		}
 	}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "jrrp")
 	{
-	intMsgCnt += 4;
-	while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
-		intMsgCnt++;
-	const string Command = strLowerMessage.substr(intMsgCnt, eve.message.find(' ', intMsgCnt) - intMsgCnt);
-	if (Command == "on")
-	{
-		if (getGroupMemberInfo(eve.fromGroup, eve.fromQQ).permissions >= 2)
-		{
-			if (DisabledJRRPGroup.count(eve.fromGroup))
-			{
-				DisabledJRRPGroup.erase(eve.fromGroup);
-				AddMsgToQueue("成功在本群中启用JRRP!", eve.fromGroup, false);
-			}
+  	intMsgCnt += 4;
+  	while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+	  	intMsgCnt++;
+  	const string Command = strLowerMessage.substr(intMsgCnt, eve.message.find(' ', intMsgCnt) - intMsgCnt);
+  	if (Command == "on")
+  	{
+	  	if (getGroupMemberInfo(eve.fromGroup, eve.fromQQ).permissions >= 2)
+	  	{
+		  	if (DisabledJRRPGroup.count(eve.fromGroup))
+		  	{
+			  	DisabledJRRPGroup.erase(eve.fromGroup);
+			  	AddMsgToQueue("成功在本群中启用JRRP!", eve.fromGroup, false);
+		  	}
 			else
 			{
 				AddMsgToQueue("在本群中JRRP没有被禁用!", eve.fromGroup, false);
