@@ -5,6 +5,8 @@ QQ Dice Robot For TRPG Based on CoolQ
 
 旧日的儿子是一款基于酷Q的QQ跑团掷骰机器人 主人是旧日酱（2558272027）
 
+基于溯洄的Dice项目(https://github.com/w4123/Dice)进行更改
+
 ## 开发者
 
 贡献者:w4123溯洄 jh123111 緋色月下、スイカを食う
@@ -20,7 +22,7 @@ QQ Dice Robot For TRPG Based on CoolQ
 
 Dice! QQ Dice Robot for TRPG
 
-Copyright (C) 2018-2019 旧日酱（Buffoonss）
+Copyright (C) 2018-2019 w4123溯洄
 
 This program is free software: you can redistribute it and/or modify it under the terms
 of the GNU Affero General Public License as published by the Free Software Foundation,
