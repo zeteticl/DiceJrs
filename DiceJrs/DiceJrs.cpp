@@ -22,8 +22,6 @@
 #include "MsgFormat.h"
 #include "Jrs.h"
 #include "DiceNetwork.h"
-//#include "GetRule.h"
-
 
 using namespace std;
 using namespace CQ;
@@ -41,7 +39,7 @@ std::string strip(std::string origin)
 			origin.erase(origin.begin());
 			flag = true;
 		}
-		else if (origin.substr(0, 2) == "£¡" || origin.substr(0, 2) == "¡£")
+		else if (origin.substr(0, 2) == "ï¼" || origin.substr(0, 2) == "ã€‚")
 		{
 			origin.erase(origin.begin());
 			origin.erase(origin.begin());
@@ -119,7 +117,7 @@ EVE_Enable(eventEnable)
 	msgSendThread.detach();
 	strFileLoc = getAppDirectory();
 	/*
-	* Ãû³Æ´æ´¢-´´½¨Óë¶ÁÈ¡
+	* åç§°å­˜å‚¨-åˆ›å»ºä¸è¯»å–
 	*/
 	Name = make_unique<NameStorage>(strFileLoc + "Name.dicedb");
 	ifstream ifstreamCharacterProp(strFileLoc + "CharacterProp.RDconf");
@@ -344,26 +342,6 @@ EVE_Enable(eventEnable)
 	}
 	ifstreamWelcomeMsg.close();
 
-
-
-
-	/*Log
-	ifstream ifstreamLogMsg(strFileLoc + "LogMsg.RDconf");
-	{
-		long long GroupID;
-		string LogMsgs;
-		while (ifstreamLogMsg >> GroupID >> LogMsgs)
-		{
-			while (Msg.find("{space}") != string::npos)Msg.replace(Msg.find("{space}"), 7, " ");
-			while (Msg.find("{enter}") != string::npos)Msg.replace(Msg.find("{enter}"), 7, "\r");
-			LogMsg = LogMsgs;
-		}
-	}
-	*/
-
-
-
-
 	ilInitList = make_unique<Initlist>(strFileLoc + "INIT.DiceDB");
 	ifstream ifstreamCustomMsg(strFileLoc + "CustomMsg.json");
 	if (ifstreamCustomMsg)
@@ -404,7 +382,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				AddMsgToQueue(strHlpMsgList, eve.fromQQ);
 				return;
 			}
-			AddMsgToQueue(strHlpMsg + "\n´Ë°æ±¾¸üĞÂÊ±¼ä£º"+ __DATE__ + " " + __TIME__, eve.fromQQ);
+			AddMsgToQueue(strHlpMsg + "\næ­¤ç‰ˆæœ¬æ›´æ–°æ—¶é—´ï¼š"+ __DATE__ + " " + __TIME__, eve.fromQQ);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "bot")
 		{
@@ -435,12 +413,12 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 			}
 			if (strGroupID.empty())
 			{
-				AddMsgToQueue("ÈººÅ²»ÄÜÎª¿Õ!", eve.fromQQ);
+				AddMsgToQueue("ç¾¤å·ä¸èƒ½ä¸ºç©º!", eve.fromQQ);
 				return;
 			}
 			if (strAction.empty())
 			{
-				AddMsgToQueue("¶¯×÷²»ÄÜÎª¿Õ!", eve.fromQQ);
+				AddMsgToQueue("åŠ¨ä½œä¸èƒ½ä¸ºç©º!", eve.fromQQ);
 				return;
 			}
 			const long long llGroupID = stoll(strGroupID);
@@ -462,7 +440,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 			}
 			else
 			{
-				AddMsgToQueue("ÃüÁîÖ´ĞĞ³É¹¦!", eve.fromQQ);
+				AddMsgToQueue("å‘½ä»¤æ‰§è¡ŒæˆåŠŸ!", eve.fromQQ);
 			}
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "coc6")
@@ -584,9 +562,9 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 		}
 	}
 	const long long llgroup = stoll(strgroup);
-	AddMsgToQueue("ßí£¬¼ì²âµ½·ÇºÏÀíÓÃÌØ£¬ÇëÎğ½«¾ÉÈÕµÄ¶ù×ÓÀ­Èë·ÇÅÜÍÅÓÃÍ¾µÄÈºÖĞ£¬ÈçĞèÉê±çÇëÁªÏµ¾ÉÈÕ½´£¨2558272027£©", llgroup, false);
+	AddMsgToQueue("å””ï¼Œæ£€æµ‹åˆ°éåˆç†ç”¨ç‰¹ï¼Œè¯·å‹¿å°†æ—§æ—¥çš„å„¿å­æ‹‰å…¥éè·‘å›¢ç”¨é€”çš„ç¾¤ä¸­ï¼Œå¦‚éœ€ç”³è¾©è¯·è”ç³»æ—§æ—¥é…±ï¼ˆ2558272027ï¼‰", llgroup, false);
 	if (setGroupLeave(llgroup) == 0)
-		AddMsgToQueue("ÒÑ´Ó" + strgroup + "ÖĞÍË³ö", eve.fromQQ);
+		AddMsgToQueue("å·²ä»" + strgroup + "ä¸­é€€å‡º", eve.fromQQ);
 	eve.message_block();
 	return;
 	}
@@ -612,7 +590,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				{
 					if (!isdigit(i))
 					{
-						AddMsgToQueue("´íÎó ¸ñÊ½Îª.ban [ÕËºÅ] [Àà±ğ]", eve.fromQQ);
+						AddMsgToQueue("é”™è¯¯ æ ¼å¼ä¸º.ban [è´¦å·] [ç±»åˆ«]", eve.fromQQ);
 						return;
 					}
 				}
@@ -636,7 +614,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				{
 					if (!isdigit(static_cast<unsigned char>(i)))
 					{
-						AddMsgToQueue("´íÎó ¸ñÊ½Îª.ban [ÕËºÅ] [Àà±ğ]", eve.fromQQ);
+						AddMsgToQueue("é”™è¯¯ æ ¼å¼ä¸º.ban [è´¦å·] [ç±»åˆ«]", eve.fromQQ);
 						return;
 					}
 				}
@@ -653,14 +631,14 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 			}
 			if (strClassify == "list" || strClassify == "l")
 			{
-				string ReplyF = "<ÓÃ»§·â½ûÁĞ±í>\n";
+				string ReplyF = "<ç”¨æˆ·å°ç¦åˆ—è¡¨>\n";
 				auto itera = BanFriendList.begin();
 				while (itera != BanFriendList.end())
 				{
 					ReplyF += to_string(*itera) + '\n';
 					itera++;
 				}
-				string ReplyG = "<Èº·â½ûÁĞ±í>\n";
+				string ReplyG = "<ç¾¤å°ç¦åˆ—è¡¨>\n";
 				auto iterb = BanGroupList.begin();
 				while (iterb != BanGroupList.end())
 				{
@@ -673,7 +651,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 		else
 		{
 			AddMsgToQueue(GlobalMsg["strNoAuth"], eve.fromQQ);
-			AddMsgToQueue("ÓÃ»§<" + to_string(eve.fromQQ) + ">³¢ÊÔ²»ºÏ·¨¹¦ÄÜ", MASTER);
+			AddMsgToQueue("ç”¨æˆ·<" + to_string(eve.fromQQ) + ">å°è¯•ä¸åˆæ³•åŠŸèƒ½", MASTER);
 		}
 	}
 	else if (strLowerMessage.substr(intMsgCnt, 5) == "unban")
@@ -699,7 +677,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 			{
 				if (!isdigit(static_cast<unsigned char>(i)))
 				{
-					AddMsgToQueue("´íÎó ¸ñÊ½Îª.ban [ÕËºÅ] [Àà±ğ]", eve.fromQQ);
+					AddMsgToQueue("é”™è¯¯ æ ¼å¼ä¸º.ban [è´¦å·] [ç±»åˆ«]", eve.fromQQ);
 					return;
 				}
 			}
@@ -720,7 +698,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 			{
 				if (!isdigit(static_cast<unsigned char>(i)))
 				{
-					AddMsgToQueue("´íÎó ¸ñÊ½Îª.ban [ÕËºÅ] [Àà±ğ]", eve.fromQQ);
+					AddMsgToQueue("é”™è¯¯ æ ¼å¼ä¸º.ban [è´¦å·] [ç±»åˆ«]", eve.fromQQ);
 					return;
 				}
 			}
@@ -739,7 +717,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 	else
 	{
 		AddMsgToQueue(GlobalMsg["strNoAuth"], eve.fromQQ);
-		AddMsgToQueue("ÓÃ»§<" + to_string(eve.fromQQ) + ">³¢ÊÔ½â³ı·â½û", MASTER);
+		AddMsgToQueue("ç”¨æˆ·<" + to_string(eve.fromQQ) + ">å°è¯•è§£é™¤å°ç¦", MASTER);
 	}
 	}
 	else if (strLowerMessage[intMsgCnt] == 'r')
@@ -837,7 +815,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				intTurnCnt = rdTurnCnt.intTotal;
 				if (strTurnCnt.find("d") != string::npos)
 				{
-					const string strTurnNotice = strNickName + "µÄÖÀ÷»ÂÖÊı: " + rdTurnCnt.FormShortString() + "ÂÖ";
+					const string strTurnNotice = strNickName + "çš„æ·éª°è½®æ•°: " + rdTurnCnt.FormShortString() + "è½®";
 
 					AddMsgToQueue(strTurnNotice, eve.fromQQ);
 				}
@@ -887,13 +865,13 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 			}
 			if (!boolDetail && intTurnCnt != 1)
 			{
-				string strAns = strNickName + "÷»³öÁË: " + to_string(intTurnCnt) + "´Î" + rdMainDice.strDice + ": { ";
+				string strAns = strNickName + "éª°å‡ºäº†: " + to_string(intTurnCnt) + "æ¬¡" + rdMainDice.strDice + ": { ";
 				if (!strReason.empty())
-					strAns.insert(0, "ÓÉÓÚ" + strReason + " ");
+					strAns.insert(0, "ç”±äº" + strReason + " ");
 				vector<int> vintExVal;
 				while (intTurnCnt--)
 				{
-					// ´Ë´¦·µ»ØÖµÎŞÓÃ
+					// æ­¤å¤„è¿”å›å€¼æ— ç”¨
 					// ReSharper disable once CppExpressionWithoutSideEffects
 					rdMainDice.Roll();
 					strAns += to_string(rdMainDice.intTotal);
@@ -906,7 +884,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				strAns += " }";
 				if (!vintExVal.empty())
 				{
-					strAns += ",¼«Öµ: ";
+					strAns += ",æå€¼: ";
 					for (auto it = vintExVal.cbegin(); it != vintExVal.cend(); ++it)
 					{
 						strAns += to_string(*it);
@@ -920,14 +898,14 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 			{
 				while (intTurnCnt--)
 				{
-					// ´Ë´¦·µ»ØÖµÎŞÓÃ
+					// æ­¤å¤„è¿”å›å€¼æ— ç”¨
 					// ReSharper disable once CppExpressionWithoutSideEffects
 					rdMainDice.Roll();
-					string strAns = strNickName + "÷»³öÁË: " + (boolDetail
+					string strAns = strNickName + "éª°å‡ºäº†: " + (boolDetail
 						? rdMainDice.FormCompleteString()
 						: rdMainDice.FormShortString());
 					if (!strReason.empty())
-						strAns.insert(0, "ÓÉÓÚ" + strReason + " ");
+						strAns.insert(0, "ç”±äº" + strReason + " ");
 					AddMsgToQueue(strAns, eve.fromQQ);
 				}
 			}
@@ -994,11 +972,11 @@ EVE_GroupMsg_EX(eventGroupMsg)
 						if (DisabledGroup.count(eve.fromGroup))
 						{
 							DisabledGroup.erase(eve.fromGroup);
-							AddMsgToQueue("³É¹¦¿ªÆô±¾»úÆ÷ÈË!", eve.fromGroup, false);
+							AddMsgToQueue("æˆåŠŸå¼€å¯æœ¬æœºå™¨äºº!", eve.fromGroup, false);
 						}
 						else
 						{
-							AddMsgToQueue("±¾»úÆ÷ÈËÒÑ¾­´¦ÓÚ¿ªÆô×´Ì¬!", eve.fromGroup, false);
+							AddMsgToQueue("æœ¬æœºå™¨äººå·²ç»å¤„äºå¼€å¯çŠ¶æ€!", eve.fromGroup, false);
 						}
 					}
 					else
@@ -1016,11 +994,11 @@ EVE_GroupMsg_EX(eventGroupMsg)
 						if (!DisabledGroup.count(eve.fromGroup))
 						{
 							DisabledGroup.insert(eve.fromGroup);
-							AddMsgToQueue("³É¹¦¹Ø±Õ±¾»úÆ÷ÈË!", eve.fromGroup, false);
+							AddMsgToQueue("æˆåŠŸå…³é—­æœ¬æœºå™¨äºº!", eve.fromGroup, false);
 						}
 						else
 						{
-							AddMsgToQueue("±¾»úÆ÷ÈËÒÑ¾­´¦ÓÚ¹Ø±Õ×´Ì¬!", eve.fromGroup, false);
+							AddMsgToQueue("æœ¬æœºå™¨äººå·²ç»å¤„äºå…³é—­çŠ¶æ€!", eve.fromGroup, false);
 						}
 					}
 					else
@@ -1075,11 +1053,11 @@ EVE_GroupMsg_EX(eventGroupMsg)
 					if (DisabledHELPGroup.count(eve.fromGroup))
 					{
 						DisabledHELPGroup.erase(eve.fromGroup);
-						AddMsgToQueue("³É¹¦ÔÚ±¾ÈºÖĞÆôÓÃ.helpÃüÁî!", eve.fromGroup, false);
+						AddMsgToQueue("æˆåŠŸåœ¨æœ¬ç¾¤ä¸­å¯ç”¨.helpå‘½ä»¤!", eve.fromGroup, false);
 					}
 					else
 					{
-						AddMsgToQueue("ÔÚ±¾ÈºÖĞ.helpÃüÁîÃ»ÓĞ±»½ûÓÃ!", eve.fromGroup, false);
+						AddMsgToQueue("åœ¨æœ¬ç¾¤ä¸­.helpå‘½ä»¤æ²¡æœ‰è¢«ç¦ç”¨!", eve.fromGroup, false);
 					}
 				}
 				else
@@ -1095,11 +1073,11 @@ EVE_GroupMsg_EX(eventGroupMsg)
 					if (!DisabledHELPGroup.count(eve.fromGroup))
 					{
 						DisabledHELPGroup.insert(eve.fromGroup);
-						AddMsgToQueue("³É¹¦ÔÚ±¾ÈºÖĞ½ûÓÃ.helpÃüÁî!", eve.fromGroup, false);
+						AddMsgToQueue("æˆåŠŸåœ¨æœ¬ç¾¤ä¸­ç¦ç”¨.helpå‘½ä»¤!", eve.fromGroup, false);
 					}
 					else
 					{
-						AddMsgToQueue("ÔÚ±¾ÈºÖĞ.helpÃüÁîÃ»ÓĞ±»ÆôÓÃ!", eve.fromGroup, false);
+						AddMsgToQueue("åœ¨æœ¬ç¾¤ä¸­.helpå‘½ä»¤æ²¡æœ‰è¢«å¯ç”¨!", eve.fromGroup, false);
 					}
 				}
 				else
@@ -1110,7 +1088,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 			if (DisabledHELPGroup.count(eve.fromGroup))
 			{
-				const string strMag = "¾ÉÈÕµÄ¶ù×ÓĞİÏ¢À²£¡";
+				const string strMag = "æ—§æ—¥çš„å„¿å­ä¼‘æ¯å•¦ï¼";
 				AddMsgToQueue(strMag, eve.fromGroup, false);
 				return;
 			}
@@ -1119,7 +1097,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				AddMsgToQueue(strHlpMsgList, eve.fromGroup, false);
 				return;
 			}
-			AddMsgToQueue(strHlpMsg + "\n´Ë°æ±¾¸üĞÂÊ±¼ä£º" + __DATE__ + " " + __TIME__, eve.fromGroup, false);
+			AddMsgToQueue(strHlpMsg + "\næ­¤ç‰ˆæœ¬æ›´æ–°æ—¶é—´ï¼š" + __DATE__ + " " + __TIME__, eve.fromGroup, false);
 		}
 	if (DisabledGroup.count(eve.fromGroup))return;
 	else if (strLowerMessage.substr(intMsgCnt, 7) == "welcome")
@@ -1336,7 +1314,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				return;
 			}
 			ilInitList->insert(eve.fromGroup, initdice.intTotal, strname);
-			const string strReply = strname + "µÄÏÈ¹¥÷»µã£º" + strinit + '=' + to_string(initdice.intTotal);
+			const string strReply = strname + "çš„å…ˆæ”»éª°ç‚¹ï¼š" + strinit + '=' + to_string(initdice.intTotal);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "init")
@@ -1347,9 +1325,9 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			if (strLowerMessage.substr(intMsgCnt, 3) == "clr")
 			{
 				if (ilInitList->clear(eve.fromGroup))
-					strReply = "³É¹¦Çå³ıÏÈ¹¥¼ÇÂ¼£¡";
+					strReply = "æˆåŠŸæ¸…é™¤å…ˆæ”»è®°å½•ï¼";
 				else
-					strReply = "ÁĞ±íÎª¿Õ£¡";
+					strReply = "åˆ—è¡¨ä¸ºç©ºï¼";
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 				return;
 			}
@@ -1456,14 +1434,14 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				intTurnCnt = rdTurnCnt.intTotal;
 				if (strTurnCnt.find("d") != string::npos)
 				{
-					string strTurnNotice = strNickName + "µÄÖÀ÷»ÂÖÊı: " + rdTurnCnt.FormShortString() + "ÂÖ";
+					string strTurnNotice = strNickName + "çš„æ·éª°è½®æ•°: " + rdTurnCnt.FormShortString() + "è½®";
 					if (!isHidden)
 					{
 						AddMsgToQueue(strTurnNotice, eve.fromGroup, false);
 					}
 					else
 					{
-						strTurnNotice = "ÔÚÈº\"" + getGroupList()[eve.fromGroup] + "\"ÖĞ " + strTurnNotice;
+						strTurnNotice = "åœ¨ç¾¤\"" + getGroupList()[eve.fromGroup] + "\"ä¸­ " + strTurnNotice;
 						AddMsgToQueue(strTurnNotice, eve.fromQQ);
 						const auto range = ObserveGroup.equal_range(eve.fromGroup);
 						for (auto it = range.first; it != range.second; ++it)
@@ -1543,13 +1521,13 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 			if (!boolDetail && intTurnCnt != 1)
 			{
-				string strAns = strNickName + "÷»³öÁË: " + to_string(intTurnCnt) + "´Î" + rdMainDice.strDice + ": { ";
+				string strAns = strNickName + "éª°å‡ºäº†: " + to_string(intTurnCnt) + "æ¬¡" + rdMainDice.strDice + ": { ";
 				if (!strReason.empty())
-					strAns.insert(0, "ÓÉÓÚ" + strReason + " ");
+					strAns.insert(0, "ç”±äº" + strReason + " ");
 				vector<int> vintExVal;
 				while (intTurnCnt--)
 				{
-					// ´Ë´¦·µ»ØÖµÎŞÓÃ
+					// æ­¤å¤„è¿”å›å€¼æ— ç”¨
 					// ReSharper disable once CppExpressionWithoutSideEffects
 					rdMainDice.Roll();
 					strAns += to_string(rdMainDice.intTotal);
@@ -1562,7 +1540,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				strAns += " }";
 				if (!vintExVal.empty())
 				{
-					strAns += ",¼«Öµ: ";
+					strAns += ",æå€¼: ";
 					for (auto it = vintExVal.cbegin(); it != vintExVal.cend(); ++it)
 					{
 						strAns += to_string(*it);
@@ -1576,7 +1554,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				}
 				else
 				{
-					strAns = "ÔÚÈº\"" + getGroupList()[eve.fromGroup] + "\"ÖĞ " + strAns;
+					strAns = "åœ¨ç¾¤\"" + getGroupList()[eve.fromGroup] + "\"ä¸­ " + strAns;
 					AddMsgToQueue(strAns, eve.fromQQ);
 					const auto range = ObserveGroup.equal_range(eve.fromGroup);
 					for (auto it = range.first; it != range.second; ++it)
@@ -1592,21 +1570,21 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			{
 				while (intTurnCnt--)
 				{
-					// ´Ë´¦·µ»ØÖµÎŞÓÃ
+					// æ­¤å¤„è¿”å›å€¼æ— ç”¨
 					// ReSharper disable once CppExpressionWithoutSideEffects
 					rdMainDice.Roll();
-					string strAns = strNickName + "÷»³öÁË: " + (boolDetail
+					string strAns = strNickName + "éª°å‡ºäº†: " + (boolDetail
 						? rdMainDice.FormCompleteString()
 						: rdMainDice.FormShortString());
 					if (!strReason.empty())
-						strAns.insert(0, "ÓÉÓÚ" + strReason + " ");
+						strAns.insert(0, "ç”±äº" + strReason + " ");
 					if (!isHidden)
 					{
 						AddMsgToQueue(strAns, eve.fromGroup, false);
 					}
 					else
 					{
-						strAns = "ÔÚÈº\"" + getGroupList()[eve.fromGroup] + "\"ÖĞ " + strAns;
+						strAns = "åœ¨ç¾¤\"" + getGroupList()[eve.fromGroup] + "\"ä¸­ " + strAns;
 						AddMsgToQueue(strAns, eve.fromQQ);
 						const auto range = ObserveGroup.equal_range(eve.fromGroup);
 						for (auto it = range.first; it != range.second; ++it)
@@ -1621,7 +1599,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 			if (isHidden)
 			{
-				const string strReply = strNickName + "½øĞĞÁËÒ»´Î°µ÷»";
+				const string strReply = strNickName + "è¿›è¡Œäº†ä¸€æ¬¡æš—éª°";
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 			}
 		}
@@ -1638,16 +1616,16 @@ EVE_GroupMsg_EX(eventGroupMsg)
 					if (DisabledOBGroup.count(eve.fromGroup))
 					{
 						DisabledOBGroup.erase(eve.fromGroup);
-						AddMsgToQueue("³É¹¦ÔÚ±¾ÈºÖĞÆôÓÃÅÔ¹ÛÄ£Ê½!", eve.fromGroup, false);
+						AddMsgToQueue("æˆåŠŸåœ¨æœ¬ç¾¤ä¸­å¯ç”¨æ—è§‚æ¨¡å¼!", eve.fromGroup, false);
 					}
 					else
 					{
-						AddMsgToQueue("±¾ÈºÖĞÅÔ¹ÛÄ£Ê½Ã»ÓĞ±»½ûÓÃ!", eve.fromGroup, false);
+						AddMsgToQueue("æœ¬ç¾¤ä¸­æ—è§‚æ¨¡å¼æ²¡æœ‰è¢«ç¦ç”¨!", eve.fromGroup, false);
 					}
 				}
 				else
 				{
-					AddMsgToQueue("ÄãÃ»ÓĞÈ¨ÏŞÖ´ĞĞ´ËÃüÁî!", eve.fromGroup, false);
+					AddMsgToQueue("ä½ æ²¡æœ‰æƒé™æ‰§è¡Œæ­¤å‘½ä»¤!", eve.fromGroup, false);
 				}
 				return;
 			}
@@ -1659,33 +1637,33 @@ EVE_GroupMsg_EX(eventGroupMsg)
 					{
 						DisabledOBGroup.insert(eve.fromGroup);
 						ObserveGroup.clear();
-						AddMsgToQueue("³É¹¦ÔÚ±¾ÈºÖĞ½ûÓÃÅÔ¹ÛÄ£Ê½!", eve.fromGroup, false);
+						AddMsgToQueue("æˆåŠŸåœ¨æœ¬ç¾¤ä¸­ç¦ç”¨æ—è§‚æ¨¡å¼!", eve.fromGroup, false);
 					}
 					else
 					{
-						AddMsgToQueue("±¾ÈºÖĞÅÔ¹ÛÄ£Ê½Ã»ÓĞ±»ÆôÓÃ!", eve.fromGroup, false);
+						AddMsgToQueue("æœ¬ç¾¤ä¸­æ—è§‚æ¨¡å¼æ²¡æœ‰è¢«å¯ç”¨!", eve.fromGroup, false);
 					}
 				}
 				else
 				{
-					AddMsgToQueue("ÄãÃ»ÓĞÈ¨ÏŞÖ´ĞĞ´ËÃüÁî!", eve.fromGroup, false);
+					AddMsgToQueue("ä½ æ²¡æœ‰æƒé™æ‰§è¡Œæ­¤å‘½ä»¤!", eve.fromGroup, false);
 				}
 				return;
 			}
 			if (DisabledOBGroup.count(eve.fromGroup))
 			{
-				AddMsgToQueue("ÔÚ±¾ÈºÖĞÅÔ¹ÛÄ£Ê½ÒÑ±»½ûÓÃ!", eve.fromGroup, false);
+				AddMsgToQueue("åœ¨æœ¬ç¾¤ä¸­æ—è§‚æ¨¡å¼å·²è¢«ç¦ç”¨!", eve.fromGroup, false);
 				return;
 			}
 			if (Command == "list")
 			{
-				string Msg = "µ±Ç°µÄÅÔ¹ÛÕßÓĞ:";
+				string Msg = "å½“å‰çš„æ—è§‚è€…æœ‰:";
 				const auto Range = ObserveGroup.equal_range(eve.fromGroup);
 				for (auto it = Range.first; it != Range.second; ++it)
 				{
 					Msg += "\n" + getName(it->second, eve.fromGroup) + "(" + to_string(it->second) + ")";
 				}
-				const string strReply = Msg == "µ±Ç°µÄÅÔ¹ÛÕßÓĞ:" ? "µ±Ç°ÔİÎŞÅÔ¹ÛÕß" : Msg;
+				const string strReply = Msg == "å½“å‰çš„æ—è§‚è€…æœ‰:" ? "å½“å‰æš‚æ— æ—è§‚è€…" : Msg;
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 			}
 			else if (Command == "clr")
@@ -1693,11 +1671,11 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				if (eve.fromQQ == MASTER || getGroupMemberInfo(eve.fromGroup, eve.fromQQ).permissions >= 2)
 				{
 					ObserveGroup.erase(eve.fromGroup);
-					AddMsgToQueue("³É¹¦É¾³ıËùÓĞÅÔ¹ÛÕß!", eve.fromGroup, false);
+					AddMsgToQueue("æˆåŠŸåˆ é™¤æ‰€æœ‰æ—è§‚è€…!", eve.fromGroup, false);
 				}
 				else
 				{
-					AddMsgToQueue("ÄãÃ»ÓĞÈ¨ÏŞÖ´ĞĞ´ËÃüÁî!", eve.fromGroup, false);
+					AddMsgToQueue("ä½ æ²¡æœ‰æƒé™æ‰§è¡Œæ­¤å‘½ä»¤!", eve.fromGroup, false);
 				}
 			}
 			else if (Command == "exit")
@@ -1708,13 +1686,13 @@ EVE_GroupMsg_EX(eventGroupMsg)
 					if (it->second == eve.fromQQ)
 					{
 						ObserveGroup.erase(it);
-						const string strReply = strNickName + "³É¹¦ÍË³öÅÔ¹ÛÄ£Ê½!";
+						const string strReply = strNickName + "æˆåŠŸé€€å‡ºæ—è§‚æ¨¡å¼!";
 						AddMsgToQueue(strReply, eve.fromGroup, false);
 						eve.message_block();
 						return;
 					}
 				}
-				const string strReply = strNickName + "Ã»ÓĞ¼ÓÈëÅÔ¹ÛÄ£Ê½!";
+				const string strReply = strNickName + "æ²¡æœ‰åŠ å…¥æ—è§‚æ¨¡å¼!";
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 			}
 			else
@@ -1724,26 +1702,26 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				{
 					if (it->second == eve.fromQQ)
 					{
-						const string strReply = strNickName + "ÒÑ¾­´¦ÓÚÅÔ¹ÛÄ£Ê½!";
+						const string strReply = strNickName + "å·²ç»å¤„äºæ—è§‚æ¨¡å¼!";
 						AddMsgToQueue(strReply, eve.fromGroup, false);
 						eve.message_block();
 						return;
 					}
 				}
 				ObserveGroup.insert(make_pair(eve.fromGroup, eve.fromQQ));
-				const string strReply = strNickName + "³É¹¦¼ÓÈëÅÔ¹ÛÄ£Ê½!";
+				const string strReply = strNickName + "æˆåŠŸåŠ å…¥æ—è§‚æ¨¡å¼!";
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 			}
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "ti")
 		{
-			string strAns = strNickName + "µÄ·è¿ñ·¢×÷-ÁÙÊ±Ö¢×´:\n";
+			string strAns = strNickName + "çš„ç–¯ç‹‚å‘ä½œ-ä¸´æ—¶ç—‡çŠ¶:\n";
 			TempInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "li")
 		{
-			string strAns = strNickName + "µÄ·è¿ñ·¢×÷-×Ü½áÖ¢×´:\n";
+			string strAns = strNickName + "çš„ç–¯ç‹‚å‘ä½œ-æ€»ç»“ç—‡çŠ¶:\n";
 			LongInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromGroup, false);
 		}
@@ -1768,7 +1746,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			return;
 		}
 		if (San.empty() && !(CharacterProp.count(SourceType(eve.fromQQ, GroupT, eve.fromGroup)) && CharacterProp[
-			SourceType(eve.fromQQ, GroupT, eve.fromGroup)].count("ÀíÖÇ")))
+			SourceType(eve.fromQQ, GroupT, eve.fromGroup)].count("ç†æ™º")))
 		{
 			AddMsgToQueue(GlobalMsg["strSanInvalid"], eve.fromGroup, false);
 			return;
@@ -1801,49 +1779,49 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				AddMsgToQueue(GlobalMsg["strSanInvalid"], eve.fromGroup, false);
 				return;
 			}
-			const int intSan = San.empty() ? CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["ÀíÖÇ"] : stoi(San);
+			const int intSan = San.empty() ? CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["ç†æ™º"] : stoi(San);
 			if (intSan == 0)
 			{
 				AddMsgToQueue(GlobalMsg["strSanInvalid"], eve.fromGroup, false);
 				return;
 			}
-			string strAns = strNickName + "µÄSancheck:\n1D100=";
+			string strAns = strNickName + "çš„Sancheck:\n1D100=";
 			const int intTmpRollRes = RandomGenerator::Randint(1, 100);
 			strAns += to_string(intTmpRollRes);
 
 			if (intTmpRollRes <= intSan)
 			{
-				strAns += " ³É¹¦\nÄãµÄSanÖµ¼õÉÙ" + SanCost.substr(0, SanCost.find("/"));
+				strAns += " æˆåŠŸ\nä½ çš„Sanå€¼å‡å°‘" + SanCost.substr(0, SanCost.find("/"));
 				if (SanCost.substr(0, SanCost.find("/")).find("d") != string::npos)
 					strAns += "=" + to_string(rdSuc.intTotal);
-				strAns += +"µã,µ±Ç°Ê£Óà" + to_string(max(0, intSan - rdSuc.intTotal)) + "µã";
+				strAns += +"ç‚¹,å½“å‰å‰©ä½™" + to_string(max(0, intSan - rdSuc.intTotal)) + "ç‚¹";
 				if (San.empty())
 				{
-					CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["ÀíÖÇ"] = max(0, intSan - rdSuc.intTotal);
+					CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["ç†æ™º"] = max(0, intSan - rdSuc.intTotal);
 				}
 			}
 			else if (intTmpRollRes == 100 || (intSan < 50 && intTmpRollRes > 95))
 			{
-				strAns += " ´óÊ§°Ü\nÄãµÄSanÖµ¼õÉÙ" + SanCost.substr(SanCost.find("/") + 1);
+				strAns += " å¤§å¤±è´¥\nä½ çš„Sanå€¼å‡å°‘" + SanCost.substr(SanCost.find("/") + 1);
 				// ReSharper disable once CppExpressionWithoutSideEffects
 				rdFail.Max();
 				if (SanCost.substr(SanCost.find("/") + 1).find("d") != string::npos)
-					strAns += "×î´óÖµ=" + to_string(rdFail.intTotal);
-				strAns += +"µã,µ±Ç°Ê£Óà" + to_string(max(0, intSan - rdFail.intTotal)) + "µã";
+					strAns += "æœ€å¤§å€¼=" + to_string(rdFail.intTotal);
+				strAns += +"ç‚¹,å½“å‰å‰©ä½™" + to_string(max(0, intSan - rdFail.intTotal)) + "ç‚¹";
 				if (San.empty())
 				{
-					CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["ÀíÖÇ"] = max(0, intSan - rdFail.intTotal);
+					CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["ç†æ™º"] = max(0, intSan - rdFail.intTotal);
 				}
 			}
 			else
 			{
-				strAns += " Ê§°Ü\nÄãµÄSanÖµ¼õÉÙ" + SanCost.substr(SanCost.find("/") + 1);
+				strAns += " å¤±è´¥\nä½ çš„Sanå€¼å‡å°‘" + SanCost.substr(SanCost.find("/") + 1);
 				if (SanCost.substr(SanCost.find("/") + 1).find("d") != string::npos)
 					strAns += "=" + to_string(rdFail.intTotal);
-				strAns += +"µã,µ±Ç°Ê£Óà" + to_string(max(0, intSan - rdFail.intTotal)) + "µã";
+				strAns += +"ç‚¹,å½“å‰å‰©ä½™" + to_string(max(0, intSan - rdFail.intTotal)) + "ç‚¹";
 				if (San.empty())
 				{
-					CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["ÀíÖÇ"] = max(0, intSan - rdFail.intTotal);
+					CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)]["ç†æ™º"] = max(0, intSan - rdFail.intTotal);
 				}
 			}
 			AddMsgToQueue(strAns, eve.fromGroup, false);
@@ -1898,19 +1876,19 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				intCurrentVal = stoi(strCurrentValue);
 			}
 
-			string strAns = strNickName + "µÄ" + strSkillName + "ÔöÇ¿»ò³É³¤¼ì¶¨:\n1D100=";
+			string strAns = strNickName + "çš„" + strSkillName + "å¢å¼ºæˆ–æˆé•¿æ£€å®š:\n1D100=";
 			const int intTmpRollRes = RandomGenerator::Randint(1, 100);
 			strAns += to_string(intTmpRollRes) + "/" + to_string(intCurrentVal);
 
 			if (intTmpRollRes <= intCurrentVal && intTmpRollRes <= 95)
 			{
-				strAns += " Ê§°Ü!\nÄãµÄ" + (strSkillName.empty() ? "ÊôĞÔ»ò¼¼ÄÜÖµ" : strSkillName) + "Ã»ÓĞ±ä»¯!";
+				strAns += " å¤±è´¥!\nä½ çš„" + (strSkillName.empty() ? "å±æ€§æˆ–æŠ€èƒ½å€¼" : strSkillName) + "æ²¡æœ‰å˜åŒ–!";
 			}
 			else
 			{
-				strAns += " ³É¹¦!\nÄãµÄ" + (strSkillName.empty() ? "ÊôĞÔ»ò¼¼ÄÜÖµ" : strSkillName) + "Ôö¼Ó1D10=";
+				strAns += " æˆåŠŸ!\nä½ çš„" + (strSkillName.empty() ? "å±æ€§æˆ–æŠ€èƒ½å€¼" : strSkillName) + "å¢åŠ 1D10=";
 				const int intTmpRollD10 = RandomGenerator::Randint(1, 10);
-				strAns += to_string(intTmpRollD10) + "µã,µ±Ç°Îª" + to_string(intCurrentVal + intTmpRollD10) + "µã";
+				strAns += to_string(intTmpRollD10) + "ç‚¹,å½“å‰ä¸º" + to_string(intCurrentVal + intTmpRollD10) + "ç‚¹";
 				if (strCurrentValue.empty())
 				{
 					CharacterProp[SourceType(eve.fromQQ, GroupT, eve.fromGroup)][strSkillName] = intCurrentVal +
@@ -1933,11 +1911,11 @@ EVE_GroupMsg_EX(eventGroupMsg)
 					if (DisabledJRFATEGroup.count(eve.fromGroup))
 					{
 						DisabledJRFATEGroup.erase(eve.fromGroup);
-						AddMsgToQueue("³É¹¦ÔÚ±¾ÈºÖĞÆôÓÃFATE!", eve.fromGroup, false);
+						AddMsgToQueue("æˆåŠŸåœ¨æœ¬ç¾¤ä¸­å¯ç”¨FATE!", eve.fromGroup, false);
 					}
 					else
 					{
-						AddMsgToQueue("ÔÚ±¾ÈºÖĞFATEÃ»ÓĞ±»½ûÓÃ!", eve.fromGroup, false);
+						AddMsgToQueue("åœ¨æœ¬ç¾¤ä¸­FATEæ²¡æœ‰è¢«ç¦ç”¨!", eve.fromGroup, false);
 					}
 				}
 				else
@@ -1953,11 +1931,11 @@ EVE_GroupMsg_EX(eventGroupMsg)
 					if (!DisabledJRFATEGroup.count(eve.fromGroup))
 					{
 						DisabledJRFATEGroup.insert(eve.fromGroup);
-						AddMsgToQueue("³É¹¦ÔÚ±¾ÈºÖĞ½ûÓÃFATE!", eve.fromGroup, false);
+						AddMsgToQueue("æˆåŠŸåœ¨æœ¬ç¾¤ä¸­ç¦ç”¨FATE!", eve.fromGroup, false);
 					}
 					else
 					{
-						AddMsgToQueue("ÔÚ±¾ÈºÖĞFATEÃ»ÓĞ±»ÆôÓÃ!", eve.fromGroup, false);
+						AddMsgToQueue("åœ¨æœ¬ç¾¤ä¸­FATEæ²¡æœ‰è¢«å¯ç”¨!", eve.fromGroup, false);
 					}
 				}
 				else
@@ -1968,7 +1946,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 			if (DisabledJRFATEGroup.count(eve.fromGroup))
 			{
-				AddMsgToQueue("ÔÚ±¾ÈºÖĞFATE¹¦ÄÜÒÑ±»½ûÓÃ", eve.fromGroup, false);
+				AddMsgToQueue("åœ¨æœ¬ç¾¤ä¸­FATEåŠŸèƒ½å·²è¢«ç¦ç”¨", eve.fromGroup, false);
 				return;
 			}
 			char cstrDate[100] = {};
@@ -1979,7 +1957,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			strftime(cstrDate, 100, "%F", &tmTime);
 			if (JRFATE.count(eve.fromQQ) && JRFATE[eve.fromQQ].Date == cstrDate)
 			{
-				const string strReply = strNickName + " ½ñÈÕ·İÃüÔËÊÇ \n" + tarotCard[JRFATE[eve.fromQQ].FATEVal];
+				const string strReply = strNickName + " ä»Šæ—¥ä»½å‘½è¿æ˜¯ \n" + tarotCard[JRFATE[eve.fromQQ].FATEVal];
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 			}
 			else
@@ -1987,13 +1965,13 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				int iFATE = RandomGenerator::Randint(1, 44);
 				JRFATE[eve.fromQQ].Date = cstrDate;
 				JRFATE[eve.fromQQ].FATEVal = iFATE;
-				const string strReply(strNickName + " ½ñÈÕ·İÃüÔËÊÇ \n" + tarotCard[JRFATE[eve.fromQQ].FATEVal]);
+				const string strReply(strNickName + " ä»Šæ—¥ä»½å‘½è¿æ˜¯ \n" + tarotCard[JRFATE[eve.fromQQ].FATEVal]);
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 			}
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 5) == "tarot")
 		{
-			const string strReply(strNickName + " ÇĞµ½µÄÅÆÊÇ \n" + tarotCard[RandomGenerator::Randint(1, 44)]);
+			const string strReply(strNickName + " åˆ‡åˆ°çš„ç‰Œæ˜¯ \n" + tarotCard[RandomGenerator::Randint(1, 44)]);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "scp")
@@ -2068,11 +2046,11 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			if (DisabledJRRPGroup.count(eve.fromGroup))
 			{
 				DisabledJRRPGroup.erase(eve.fromGroup);
-				AddMsgToQueue("³É¹¦ÔÚ±¾ÈºÖĞÆôÓÃJRRP!", eve.fromGroup, false);
+				AddMsgToQueue("æˆåŠŸåœ¨æœ¬ç¾¤ä¸­å¯ç”¨JRRP!", eve.fromGroup, false);
 			}
 			else
 			{
-				AddMsgToQueue("ÔÚ±¾ÈºÖĞJRRPÃ»ÓĞ±»½ûÓÃ!", eve.fromGroup, false);
+				AddMsgToQueue("åœ¨æœ¬ç¾¤ä¸­JRRPæ²¡æœ‰è¢«ç¦ç”¨!", eve.fromGroup, false);
 			}
 		}
 		else
@@ -2088,11 +2066,11 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			if (!DisabledJRRPGroup.count(eve.fromGroup))
 			{
 				DisabledJRRPGroup.insert(eve.fromGroup);
-				AddMsgToQueue("³É¹¦ÔÚ±¾ÈºÖĞ½ûÓÃJRRP!", eve.fromGroup, false);
+				AddMsgToQueue("æˆåŠŸåœ¨æœ¬ç¾¤ä¸­ç¦ç”¨JRRP!", eve.fromGroup, false);
 			}
 			else
 			{
-				AddMsgToQueue("ÔÚ±¾ÈºÖĞJRRPÃ»ÓĞ±»ÆôÓÃ!", eve.fromGroup, false);
+				AddMsgToQueue("åœ¨æœ¬ç¾¤ä¸­JRRPæ²¡æœ‰è¢«å¯ç”¨!", eve.fromGroup, false);
 			}
 		}
 		else
@@ -2103,7 +2081,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 	}
 	if (DisabledJRRPGroup.count(eve.fromGroup))
 	{
-		AddMsgToQueue("ÔÚ±¾ÈºÖĞJRRP¹¦ÄÜÒÑ±»½ûÓÃ", eve.fromGroup, false);
+		AddMsgToQueue("åœ¨æœ¬ç¾¤ä¸­JRRPåŠŸèƒ½å·²è¢«ç¦ç”¨", eve.fromGroup, false);
 		return;
 	}
 	string des;
@@ -2135,14 +2113,14 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			if (!name.empty())
 			{
 				Name->set(eve.fromGroup, eve.fromQQ, name);
-				const string strReply = "ÒÑ½«" + strNickName + "µÄÃû³Æ¸ü¸ÄÎª" + strip(name);
+				const string strReply = "å·²å°†" + strNickName + "çš„åç§°æ›´æ”¹ä¸º" + strip(name);
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 			}
 			else
 			{
 				if (Name->del(eve.fromGroup, eve.fromQQ))
 				{
-					const string strReply = "ÒÑ½«" + strNickName + "µÄÃû³ÆÉ¾³ı";
+					const string strReply = "å·²å°†" + strNickName + "çš„åç§°åˆ é™¤";
 					AddMsgToQueue(strReply, eve.fromGroup, false);
 				}
 				else
@@ -2165,11 +2143,11 @@ EVE_GroupMsg_EX(eventGroupMsg)
 					if (DisabledMEGroup.count(eve.fromGroup))
 					{
 						DisabledMEGroup.erase(eve.fromGroup);
-						AddMsgToQueue("³É¹¦ÔÚ±¾ÈºÖĞÆôÓÃ.meÃüÁî!", eve.fromGroup, false);
+						AddMsgToQueue("æˆåŠŸåœ¨æœ¬ç¾¤ä¸­å¯ç”¨.meå‘½ä»¤!", eve.fromGroup, false);
 					}
 					else
 					{
-						AddMsgToQueue("ÔÚ±¾ÈºÖĞ.meÃüÁîÃ»ÓĞ±»½ûÓÃ!", eve.fromGroup, false);
+						AddMsgToQueue("åœ¨æœ¬ç¾¤ä¸­.meå‘½ä»¤æ²¡æœ‰è¢«ç¦ç”¨!", eve.fromGroup, false);
 					}
 				}
 				else
@@ -2185,11 +2163,11 @@ EVE_GroupMsg_EX(eventGroupMsg)
 					if (!DisabledMEGroup.count(eve.fromGroup))
 					{
 						DisabledMEGroup.insert(eve.fromGroup);
-						AddMsgToQueue("³É¹¦ÔÚ±¾ÈºÖĞ½ûÓÃ.meÃüÁî!", eve.fromGroup, false);
+						AddMsgToQueue("æˆåŠŸåœ¨æœ¬ç¾¤ä¸­ç¦ç”¨.meå‘½ä»¤!", eve.fromGroup, false);
 					}
 					else
 					{
-						AddMsgToQueue("ÔÚ±¾ÈºÖĞ.meÃüÁîÃ»ÓĞ±»ÆôÓÃ!", eve.fromGroup, false);
+						AddMsgToQueue("åœ¨æœ¬ç¾¤ä¸­.meå‘½ä»¤æ²¡æœ‰è¢«å¯ç”¨!", eve.fromGroup, false);
 					}
 				}
 				else
@@ -2200,7 +2178,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 			if (DisabledMEGroup.count(eve.fromGroup))
 			{
-				AddMsgToQueue("ÔÚ±¾ÈºÖĞ.meÃüÁîÒÑ±»½ûÓÃ!", eve.fromGroup, false);
+				AddMsgToQueue("åœ¨æœ¬ç¾¤ä¸­.meå‘½ä»¤å·²è¢«ç¦ç”¨!", eve.fromGroup, false);
 				return;
 			}
 			if (DisabledMEGroup.count(eve.fromGroup))
@@ -2211,7 +2189,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			strAction = strip(eve.message.substr(intMsgCnt));
 			if (strAction.empty())
 			{
-				AddMsgToQueue("¶¯×÷²»ÄÜÎª¿Õ!", eve.fromGroup, false);
+				AddMsgToQueue("åŠ¨ä½œä¸èƒ½ä¸ºç©º!", eve.fromGroup, false);
 				return;
 			}
 			const string strReply = strNickName + strAction;
@@ -2243,7 +2221,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				DefaultDice.erase(eve.fromQQ);
 			else
 				DefaultDice[eve.fromQQ] = intDefaultDice;
-			const string strSetSuccessReply = "ÒÑ½«" + strNickName + "µÄÄ¬ÈÏ÷»ÀàĞÍ¸ü¸ÄÎªD" + strDefaultDice;
+			const string strSetSuccessReply = "å·²å°†" + strNickName + "çš„é»˜è®¤éª°ç±»å‹æ›´æ”¹ä¸ºD" + strDefaultDice;
 			AddMsgToQueue(strSetSuccessReply, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "coc6")
@@ -2399,17 +2377,17 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				intSkillVal = stoi(strSkillVal);
 			}
 			const int intD100Res = RandomGenerator::Randint(1, 100);
-			string strReply = strNickName + "½øĞĞ" + strSkillName + "¼ì¶¨: D100=" + to_string(intD100Res) + "/" +
+			string strReply = strNickName + "è¿›è¡Œ" + strSkillName + "æ£€å®š: D100=" + to_string(intD100Res) + "/" +
 				to_string(intSkillVal) + " ";
-			if (intD100Res <= 5)strReply += "´ó³É¹¦";
-			else if (intD100Res <= intSkillVal / 5)strReply += "¼«ÄÑ³É¹¦";
-			else if (intD100Res <= intSkillVal / 2)strReply += "À§ÄÑ³É¹¦";
-			else if (intD100Res <= intSkillVal)strReply += "³É¹¦";
-			else if (intD100Res <= 95)strReply += "Ê§°Ü";
-			else strReply += "´óÊ§°Ü";
+			if (intD100Res <= 5)strReply += "å¤§æˆåŠŸ";
+			else if (intD100Res <= intSkillVal / 5)strReply += "æéš¾æˆåŠŸ";
+			else if (intD100Res <= intSkillVal / 2)strReply += "å›°éš¾æˆåŠŸ";
+			else if (intD100Res <= intSkillVal)strReply += "æˆåŠŸ";
+			else if (intD100Res <= 95)strReply += "å¤±è´¥";
+			else strReply += "å¤§å¤±è´¥";
 			if (!strReason.empty())
 			{
-				strReply = "ÓÉÓÚ" + strReason + " " + strReply;
+				strReply = "ç”±äº" + strReason + " " + strReply;
 			}
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
@@ -2467,17 +2445,17 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				intSkillVal = stoi(strSkillVal);
 			}
 			const int intD100Res = RandomGenerator::Randint(1, 100);
-			string strReply = strNickName + "½øĞĞ" + strSkillName + "¼ì¶¨: D100=" + to_string(intD100Res) + "/" +
+			string strReply = strNickName + "è¿›è¡Œ" + strSkillName + "æ£€å®š: D100=" + to_string(intD100Res) + "/" +
 				to_string(intSkillVal) + " ";
-			if (intD100Res == 1)strReply += "´ó³É¹¦";
-			else if (intD100Res <= intSkillVal / 5)strReply += "¼«ÄÑ³É¹¦";
-			else if (intD100Res <= intSkillVal / 2)strReply += "À§ÄÑ³É¹¦";
-			else if (intD100Res <= intSkillVal)strReply += "³É¹¦";
-			else if (intD100Res <= 95 || (intSkillVal >= 50 && intD100Res != 100))strReply += "Ê§°Ü";
-			else strReply += "´óÊ§°Ü";
+			if (intD100Res == 1)strReply += "å¤§æˆåŠŸ";
+			else if (intD100Res <= intSkillVal / 5)strReply += "æéš¾æˆåŠŸ";
+			else if (intD100Res <= intSkillVal / 2)strReply += "å›°éš¾æˆåŠŸ";
+			else if (intD100Res <= intSkillVal)strReply += "æˆåŠŸ";
+			else if (intD100Res <= 95 || (intSkillVal >= 50 && intD100Res != 100))strReply += "å¤±è´¥";
+			else strReply += "å¤§å¤±è´¥";
 			if (!strReason.empty())
 			{
-				strReply = "ÓÉÓÚ" + strReason + " " + strReply;
+				strReply = "ç”±äº" + strReason + " " + strReply;
 			}
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
@@ -2594,14 +2572,14 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				intTurnCnt = rdTurnCnt.intTotal;
 				if (strTurnCnt.find("d") != string::npos)
 				{
-					string strTurnNotice = strNickName + "µÄÖÀ÷»ÂÖÊı: " + rdTurnCnt.FormShortString() + "ÂÖ";
+					string strTurnNotice = strNickName + "çš„æ·éª°è½®æ•°: " + rdTurnCnt.FormShortString() + "è½®";
 					if (!isHidden)
 					{
 						AddMsgToQueue(strTurnNotice, eve.fromGroup, false);
 					}
 					else
 					{
-						strTurnNotice = "ÔÚÈº\"" + getGroupList()[eve.fromGroup] + "\"ÖĞ " + strTurnNotice;
+						strTurnNotice = "åœ¨ç¾¤\"" + getGroupList()[eve.fromGroup] + "\"ä¸­ " + strTurnNotice;
 						AddMsgToQueue(strTurnNotice, eve.fromQQ);
 						const auto range = ObserveGroup.equal_range(eve.fromGroup);
 						for (auto it = range.first; it != range.second; ++it)
@@ -2659,13 +2637,13 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 			if (!boolDetail && intTurnCnt != 1)
 			{
-				string strAns = strNickName + "÷»³öÁË: " + to_string(intTurnCnt) + "´Î" + rdMainDice.strDice + ": { ";
+				string strAns = strNickName + "éª°å‡ºäº†: " + to_string(intTurnCnt) + "æ¬¡" + rdMainDice.strDice + ": { ";
 				if (!strReason.empty())
-					strAns.insert(0, "ÓÉÓÚ" + strReason + " ");
+					strAns.insert(0, "ç”±äº" + strReason + " ");
 				vector<int> vintExVal;
 				while (intTurnCnt--)
 				{
-					// ´Ë´¦·µ»ØÖµÎŞÓÃ
+					// æ­¤å¤„è¿”å›å€¼æ— ç”¨
 					// ReSharper disable once CppExpressionWithoutSideEffects
 					rdMainDice.Roll();
 					strAns += to_string(rdMainDice.intTotal);
@@ -2678,7 +2656,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				strAns += " }";
 				if (!vintExVal.empty())
 				{
-					strAns += ",¼«Öµ: ";
+					strAns += ",æå€¼: ";
 					for (auto it = vintExVal.cbegin(); it != vintExVal.cend(); ++it)
 					{
 						strAns += to_string(*it);
@@ -2692,7 +2670,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				}
 				else
 				{
-					strAns = "ÔÚÈº\"" + getGroupList()[eve.fromGroup] + "\"ÖĞ " + strAns;
+					strAns = "åœ¨ç¾¤\"" + getGroupList()[eve.fromGroup] + "\"ä¸­ " + strAns;
 					AddMsgToQueue(strAns, eve.fromQQ);
 					const auto range = ObserveGroup.equal_range(eve.fromGroup);
 					for (auto it = range.first; it != range.second; ++it)
@@ -2708,21 +2686,21 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			{
 				while (intTurnCnt--)
 				{
-					// ´Ë´¦·µ»ØÖµÎŞÓÃ
+					// æ­¤å¤„è¿”å›å€¼æ— ç”¨
 					// ReSharper disable once CppExpressionWithoutSideEffects
 					rdMainDice.Roll();
-					string strAns = strNickName + "÷»³öÁË: " + (boolDetail
+					string strAns = strNickName + "éª°å‡ºäº†: " + (boolDetail
 						? rdMainDice.FormCompleteString()
 						: rdMainDice.FormShortString());
 					if (!strReason.empty())
-						strAns.insert(0, "ÓÉÓÚ" + strReason + " ");
+						strAns.insert(0, "ç”±äº" + strReason + " ");
 					if (!isHidden)
 					{
 						AddMsgToQueue(strAns, eve.fromGroup, false);
 					}
 					else
 					{
-						strAns = "ÔÚÈº\"" + getGroupList()[eve.fromGroup] + "\"ÖĞ " + strAns;
+						strAns = "åœ¨ç¾¤\"" + getGroupList()[eve.fromGroup] + "\"ä¸­ " + strAns;
 						AddMsgToQueue(strAns, eve.fromQQ);
 						const auto range = ObserveGroup.equal_range(eve.fromGroup);
 						for (auto it = range.first; it != range.second; ++it)
@@ -2737,7 +2715,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 			if (isHidden)
 			{
-				const string strReply = strNickName + "½øĞĞÁËÒ»´Î°µ÷»";
+				const string strReply = strNickName + "è¿›è¡Œäº†ä¸€æ¬¡æš—éª°";
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 			}
 		}
@@ -2796,11 +2774,11 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 					if (DisabledDiscuss.count(eve.fromDiscuss))
 					{
 						DisabledDiscuss.erase(eve.fromDiscuss);
-						AddMsgToQueue("³É¹¦¿ªÆô±¾»úÆ÷ÈË!", eve.fromDiscuss, false);
+						AddMsgToQueue("æˆåŠŸå¼€å¯æœ¬æœºå™¨äºº!", eve.fromDiscuss, false);
 					}
 					else
 					{
-						AddMsgToQueue("±¾»úÆ÷ÈËÒÑ¾­´¦ÓÚ¿ªÆô×´Ì¬!", eve.fromDiscuss, false);
+						AddMsgToQueue("æœ¬æœºå™¨äººå·²ç»å¤„äºå¼€å¯çŠ¶æ€!", eve.fromDiscuss, false);
 					}
 				}
 			}
@@ -2811,11 +2789,11 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 					if (!DisabledDiscuss.count(eve.fromDiscuss))
 					{
 						DisabledDiscuss.insert(eve.fromDiscuss);
-						AddMsgToQueue("³É¹¦¹Ø±Õ±¾»úÆ÷ÈË!", eve.fromDiscuss, false);
+						AddMsgToQueue("æˆåŠŸå…³é—­æœ¬æœºå™¨äºº!", eve.fromDiscuss, false);
 					}
 					else
 					{
-						AddMsgToQueue("±¾»úÆ÷ÈËÒÑ¾­´¦ÓÚ¹Ø±Õ×´Ì¬!", eve.fromDiscuss, false);
+						AddMsgToQueue("æœ¬æœºå™¨äººå·²ç»å¤„äºå…³é—­çŠ¶æ€!", eve.fromDiscuss, false);
 					}
 				}
 			}
@@ -2857,7 +2835,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			AddMsgToQueue(strHlpMsgList, eve.fromDiscuss, false);
 			return;
 		}
-			AddMsgToQueue(strHlpMsg + "\n´Ë°æ±¾¸üĞÂÊ±¼ä£º" + __DATE__ + " " + __TIME__, eve.fromDiscuss, false);
+			AddMsgToQueue(strHlpMsg + "\næ­¤ç‰ˆæœ¬æ›´æ–°æ—¶é—´ï¼š" + __DATE__ + " " + __TIME__, eve.fromDiscuss, false);
 		}
 	if (DisabledDiscuss.count(eve.fromDiscuss))return;
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "st")
@@ -3043,7 +3021,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				return;
 			}
 			ilInitList->insert(eve.fromDiscuss, initdice.intTotal, strname);
-			const string strReply = strname + "µÄÏÈ¹¥÷»µã£º" + strinit + '=' + to_string(initdice.intTotal);
+			const string strReply = strname + "çš„å…ˆæ”»éª°ç‚¹ï¼š" + strinit + '=' + to_string(initdice.intTotal);
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "init")
@@ -3054,9 +3032,9 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			if (strLowerMessage.substr(intMsgCnt, 3) == "clr")
 			{
 				if (ilInitList->clear(eve.fromDiscuss))
-					strReply = "³É¹¦Çå³ıÏÈ¹¥¼ÇÂ¼£¡";
+					strReply = "æˆåŠŸæ¸…é™¤å…ˆæ”»è®°å½•ï¼";
 				else
-					strReply = "ÁĞ±íÎª¿Õ£¡";
+					strReply = "åˆ—è¡¨ä¸ºç©ºï¼";
 				AddMsgToQueue(strReply, eve.fromDiscuss, false);
 				return;
 			}
@@ -3163,14 +3141,14 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				intTurnCnt = rdTurnCnt.intTotal;
 				if (strTurnCnt.find("d") != string::npos)
 				{
-					string strTurnNotice = strNickName + "µÄÖÀ÷»ÂÖÊı: " + rdTurnCnt.FormShortString() + "ÂÖ";
+					string strTurnNotice = strNickName + "çš„æ·éª°è½®æ•°: " + rdTurnCnt.FormShortString() + "è½®";
 					if (!isHidden)
 					{
 						AddMsgToQueue(strTurnNotice, eve.fromDiscuss, false);
 					}
 					else
 					{
-						strTurnNotice = "ÔÚ¶àÈËÁÄÌìÖĞ " + strTurnNotice;
+						strTurnNotice = "åœ¨å¤šäººèŠå¤©ä¸­ " + strTurnNotice;
 						AddMsgToQueue(strTurnNotice, eve.fromQQ);
 						const auto range = ObserveDiscuss.equal_range(eve.fromDiscuss);
 						for (auto it = range.first; it != range.second; ++it)
@@ -3242,13 +3220,13 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			}
 			if (!boolDetail && intTurnCnt != 1)
 			{
-				string strAns = strNickName + "÷»³öÁË: " + to_string(intTurnCnt) + "´Î" + rdMainDice.strDice + ": { ";
+				string strAns = strNickName + "éª°å‡ºäº†: " + to_string(intTurnCnt) + "æ¬¡" + rdMainDice.strDice + ": { ";
 				if (!strReason.empty())
-					strAns.insert(0, "ÓÉÓÚ" + strReason + " ");
+					strAns.insert(0, "ç”±äº" + strReason + " ");
 				vector<int> vintExVal;
 				while (intTurnCnt--)
 				{
-					// ´Ë´¦·µ»ØÖµÎŞÓÃ
+					// æ­¤å¤„è¿”å›å€¼æ— ç”¨
 					// ReSharper disable once CppExpressionWithoutSideEffects
 					rdMainDice.Roll();
 					strAns += to_string(rdMainDice.intTotal);
@@ -3261,7 +3239,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				strAns += " }";
 				if (!vintExVal.empty())
 				{
-					strAns += ",¼«Öµ: ";
+					strAns += ",æå€¼: ";
 					for (auto it = vintExVal.cbegin(); it != vintExVal.cend(); ++it)
 					{
 						strAns += to_string(*it);
@@ -3275,7 +3253,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				}
 				else
 				{
-					strAns = "ÔÚ¶àÈËÁÄÌìÖĞ " + strAns;
+					strAns = "åœ¨å¤šäººèŠå¤©ä¸­ " + strAns;
 					AddMsgToQueue(strAns, eve.fromQQ);
 					const auto range = ObserveDiscuss.equal_range(eve.fromDiscuss);
 					for (auto it = range.first; it != range.second; ++it)
@@ -3291,21 +3269,21 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			{
 				while (intTurnCnt--)
 				{
-					// ´Ë´¦·µ»ØÖµÎŞÓÃ
+					// æ­¤å¤„è¿”å›å€¼æ— ç”¨
 					// ReSharper disable once CppExpressionWithoutSideEffects
 					rdMainDice.Roll();
-					string strAns = strNickName + "÷»³öÁË: " + (boolDetail
+					string strAns = strNickName + "éª°å‡ºäº†: " + (boolDetail
 						? rdMainDice.FormCompleteString()
 						: rdMainDice.FormShortString());
 					if (!strReason.empty())
-						strAns.insert(0, "ÓÉÓÚ" + strReason + " ");
+						strAns.insert(0, "ç”±äº" + strReason + " ");
 					if (!isHidden)
 					{
 						AddMsgToQueue(strAns, eve.fromDiscuss, false);
 					}
 					else
 					{
-						strAns = "ÔÚ¶àÈËÁÄÌìÖĞ " + strAns;
+						strAns = "åœ¨å¤šäººèŠå¤©ä¸­ " + strAns;
 						AddMsgToQueue(strAns, eve.fromQQ);
 						const auto range = ObserveDiscuss.equal_range(eve.fromDiscuss);
 						for (auto it = range.first; it != range.second; ++it)
@@ -3320,7 +3298,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			}
 			if (isHidden)
 			{
-				const string strReply = strNickName + "½øĞĞÁËÒ»´Î°µ÷»";
+				const string strReply = strNickName + "è¿›è¡Œäº†ä¸€æ¬¡æš—éª°";
 				AddMsgToQueue(strReply, eve.fromDiscuss, false);
 			}
 		}
@@ -3335,11 +3313,11 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				if (DisabledOBDiscuss.count(eve.fromDiscuss))
 				{
 					DisabledOBDiscuss.erase(eve.fromDiscuss);
-					AddMsgToQueue("³É¹¦ÔÚ±¾¶àÈËÁÄÌìÖĞÆôÓÃÅÔ¹ÛÄ£Ê½!", eve.fromDiscuss, false);
+					AddMsgToQueue("æˆåŠŸåœ¨æœ¬å¤šäººèŠå¤©ä¸­å¯ç”¨æ—è§‚æ¨¡å¼!", eve.fromDiscuss, false);
 				}
 				else
 				{
-					AddMsgToQueue("ÔÚ±¾¶àÈËÁÄÌìÖĞÅÔ¹ÛÄ£Ê½Ã»ÓĞ±»½ûÓÃ!", eve.fromDiscuss, false);
+					AddMsgToQueue("åœ¨æœ¬å¤šäººèŠå¤©ä¸­æ—è§‚æ¨¡å¼æ²¡æœ‰è¢«ç¦ç”¨!", eve.fromDiscuss, false);
 				}
 				return;
 			}
@@ -3349,34 +3327,34 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				{
 					DisabledOBDiscuss.insert(eve.fromDiscuss);
 					ObserveDiscuss.clear();
-					AddMsgToQueue("³É¹¦ÔÚ±¾¶àÈËÁÄÌìÖĞ½ûÓÃÅÔ¹ÛÄ£Ê½!", eve.fromDiscuss, false);
+					AddMsgToQueue("æˆåŠŸåœ¨æœ¬å¤šäººèŠå¤©ä¸­ç¦ç”¨æ—è§‚æ¨¡å¼!", eve.fromDiscuss, false);
 				}
 				else
 				{
-					AddMsgToQueue("ÔÚ±¾¶àÈËÁÄÌìÖĞÅÔ¹ÛÄ£Ê½Ã»ÓĞ±»ÆôÓÃ!", eve.fromDiscuss, false);
+					AddMsgToQueue("åœ¨æœ¬å¤šäººèŠå¤©ä¸­æ—è§‚æ¨¡å¼æ²¡æœ‰è¢«å¯ç”¨!", eve.fromDiscuss, false);
 				}
 				return;
 			}
 			if (DisabledOBDiscuss.count(eve.fromDiscuss))
 			{
-				AddMsgToQueue("ÔÚ±¾¶àÈËÁÄÌìÖĞÅÔ¹ÛÄ£Ê½ÒÑ±»½ûÓÃ!", eve.fromDiscuss, false);
+				AddMsgToQueue("åœ¨æœ¬å¤šäººèŠå¤©ä¸­æ—è§‚æ¨¡å¼å·²è¢«ç¦ç”¨!", eve.fromDiscuss, false);
 				return;
 			}
 			if (Command == "list")
 			{
-				string Msg = "µ±Ç°µÄÅÔ¹ÛÕßÓĞ:";
+				string Msg = "å½“å‰çš„æ—è§‚è€…æœ‰:";
 				const auto Range = ObserveDiscuss.equal_range(eve.fromDiscuss);
 				for (auto it = Range.first; it != Range.second; ++it)
 				{
 					Msg += "\n" + getName(it->second, eve.fromDiscuss) + "(" + to_string(it->second) + ")";
 				}
-				const string strReply = Msg == "µ±Ç°µÄÅÔ¹ÛÕßÓĞ:" ? "µ±Ç°ÔİÎŞÅÔ¹ÛÕß" : Msg;
+				const string strReply = Msg == "å½“å‰çš„æ—è§‚è€…æœ‰:" ? "å½“å‰æš‚æ— æ—è§‚è€…" : Msg;
 				AddMsgToQueue(strReply, eve.fromDiscuss, false);
 			}
 			else if (Command == "clr")
 			{
 				ObserveDiscuss.erase(eve.fromDiscuss);
-				AddMsgToQueue("³É¹¦É¾³ıËùÓĞÅÔ¹ÛÕß!", eve.fromDiscuss, false);
+				AddMsgToQueue("æˆåŠŸåˆ é™¤æ‰€æœ‰æ—è§‚è€…!", eve.fromDiscuss, false);
 			}
 			else if (Command == "exit")
 			{
@@ -3386,13 +3364,13 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 					if (it->second == eve.fromQQ)
 					{
 						ObserveDiscuss.erase(it);
-						const string strReply = strNickName + "³É¹¦ÍË³öÅÔ¹ÛÄ£Ê½!";
+						const string strReply = strNickName + "æˆåŠŸé€€å‡ºæ—è§‚æ¨¡å¼!";
 						AddMsgToQueue(strReply, eve.fromDiscuss, false);
 						eve.message_block();
 						return;
 					}
 				}
-				const string strReply = strNickName + "Ã»ÓĞ¼ÓÈëÅÔ¹ÛÄ£Ê½!";
+				const string strReply = strNickName + "æ²¡æœ‰åŠ å…¥æ—è§‚æ¨¡å¼!";
 				AddMsgToQueue(strReply, eve.fromDiscuss, false);
 			}
 			else
@@ -3402,26 +3380,26 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				{
 					if (it->second == eve.fromQQ)
 					{
-						const string strReply = strNickName + "ÒÑ¾­´¦ÓÚÅÔ¹ÛÄ£Ê½!";
+						const string strReply = strNickName + "å·²ç»å¤„äºæ—è§‚æ¨¡å¼!";
 						AddMsgToQueue(strReply, eve.fromDiscuss, false);
 						eve.message_block();
 						return;
 					}
 				}
 				ObserveDiscuss.insert(make_pair(eve.fromDiscuss, eve.fromQQ));
-				const string strReply = strNickName + "³É¹¦¼ÓÈëÅÔ¹ÛÄ£Ê½!";
+				const string strReply = strNickName + "æˆåŠŸåŠ å…¥æ—è§‚æ¨¡å¼!";
 				AddMsgToQueue(strReply, eve.fromDiscuss, false);
 			}
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "ti")
 		{
-			string strAns = strNickName + "µÄ·è¿ñ·¢×÷-ÁÙÊ±Ö¢×´:\n";
+			string strAns = strNickName + "çš„ç–¯ç‹‚å‘ä½œ-ä¸´æ—¶ç—‡çŠ¶:\n";
 			TempInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "li")
 		{
-			string strAns = strNickName + "µÄ·è¿ñ·¢×÷-×Ü½áÖ¢×´:\n";
+			string strAns = strNickName + "çš„ç–¯ç‹‚å‘ä½œ-æ€»ç»“ç—‡çŠ¶:\n";
 			LongInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromDiscuss, false);
 		}
@@ -3447,7 +3425,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				return;
 			}
 			if (San.empty() && !(CharacterProp.count(SourceType(eve.fromQQ, DiscussT, eve.fromDiscuss)) && CharacterProp[
-				SourceType(eve.fromQQ, DiscussT, eve.fromDiscuss)].count("ÀíÖÇ")))
+				SourceType(eve.fromQQ, DiscussT, eve.fromDiscuss)].count("ç†æ™º")))
 			{
 				AddMsgToQueue(GlobalMsg["strSanInvalid"], eve.fromDiscuss, false);
 
@@ -3484,7 +3462,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 					return;
 				}
 				const int intSan = San.empty()
-					? CharacterProp[SourceType(eve.fromQQ, DiscussT, eve.fromDiscuss)]["ÀíÖÇ"]
+					? CharacterProp[SourceType(eve.fromQQ, DiscussT, eve.fromDiscuss)]["ç†æ™º"]
 					: stoi(San);
 				if (intSan == 0)
 				{
@@ -3492,46 +3470,46 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 
 					return;
 				}
-				string strAns = strNickName + "µÄSancheck:\n1D100=";
+				string strAns = strNickName + "çš„Sancheck:\n1D100=";
 				const int intTmpRollRes = RandomGenerator::Randint(1, 100);
 				strAns += to_string(intTmpRollRes);
 
 				if (intTmpRollRes <= intSan)
 				{
-					strAns += " ³É¹¦\nÄãµÄSanÖµ¼õÉÙ" + SanCost.substr(0, SanCost.find("/"));
+					strAns += " æˆåŠŸ\nä½ çš„Sanå€¼å‡å°‘" + SanCost.substr(0, SanCost.find("/"));
 					if (SanCost.substr(0, SanCost.find("/")).find("d") != string::npos)
 						strAns += "=" + to_string(rdSuc.intTotal);
-					strAns += +"µã,µ±Ç°Ê£Óà" + to_string(max(0, intSan - rdSuc.intTotal)) + "µã";
+					strAns += +"ç‚¹,å½“å‰å‰©ä½™" + to_string(max(0, intSan - rdSuc.intTotal)) + "ç‚¹";
 					if (San.empty())
 					{
-						CharacterProp[SourceType(eve.fromQQ, DiscussT, eve.fromDiscuss)]["ÀíÖÇ"] = max(0, intSan - rdSuc.intTotal
+						CharacterProp[SourceType(eve.fromQQ, DiscussT, eve.fromDiscuss)]["ç†æ™º"] = max(0, intSan - rdSuc.intTotal
 						);
 					}
 				}
 				else if (intTmpRollRes == 100 || (intSan < 50 && intTmpRollRes > 95))
 
 				{
-					strAns += " ´óÊ§°Ü\nÄãµÄSanÖµ¼õÉÙ" + SanCost.substr(SanCost.find("/") + 1);
+					strAns += " å¤§å¤±è´¥\nä½ çš„Sanå€¼å‡å°‘" + SanCost.substr(SanCost.find("/") + 1);
 					// ReSharper disable once CppExpressionWithoutSideEffects
 					rdFail.Max();
 					if (SanCost.substr(SanCost.find("/") + 1).find("d") != string::npos)
-						strAns += "×î´óÖµ=" + to_string(rdFail.intTotal);
-					strAns += +"µã,µ±Ç°Ê£Óà" + to_string(max(0, intSan - rdFail.intTotal)) + "µã";
+						strAns += "æœ€å¤§å€¼=" + to_string(rdFail.intTotal);
+					strAns += +"ç‚¹,å½“å‰å‰©ä½™" + to_string(max(0, intSan - rdFail.intTotal)) + "ç‚¹";
 					if (San.empty())
 					{
-						CharacterProp[SourceType(eve.fromQQ, DiscussT, eve.fromDiscuss)]["ÀíÖÇ"] = max(0, intSan - rdFail.intTotal
+						CharacterProp[SourceType(eve.fromQQ, DiscussT, eve.fromDiscuss)]["ç†æ™º"] = max(0, intSan - rdFail.intTotal
 						);
 					}
 				}
 				else
 				{
-					strAns += " Ê§°Ü\nÄãµÄSanÖµ¼õÉÙ" + SanCost.substr(SanCost.find("/") + 1);
+					strAns += " å¤±è´¥\nä½ çš„Sanå€¼å‡å°‘" + SanCost.substr(SanCost.find("/") + 1);
 					if (SanCost.substr(SanCost.find("/") + 1).find("d") != string::npos)
 						strAns += "=" + to_string(rdFail.intTotal);
-					strAns += +"µã,µ±Ç°Ê£Óà" + to_string(max(0, intSan - rdFail.intTotal)) + "µã";
+					strAns += +"ç‚¹,å½“å‰å‰©ä½™" + to_string(max(0, intSan - rdFail.intTotal)) + "ç‚¹";
 					if (San.empty())
 					{
-						CharacterProp[SourceType(eve.fromQQ, DiscussT, eve.fromDiscuss)]["ÀíÖÇ"] = max(0, intSan - rdFail.intTotal
+						CharacterProp[SourceType(eve.fromQQ, DiscussT, eve.fromDiscuss)]["ç†æ™º"] = max(0, intSan - rdFail.intTotal
 						);
 					}
 				}
@@ -3586,19 +3564,19 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				}
 				intCurrentVal = stoi(strCurrentValue);
 			}
-			string strAns = strNickName + "µÄ" + strSkillName + "ÔöÇ¿»ò³É³¤¼ì¶¨:\n1D100=";
+			string strAns = strNickName + "çš„" + strSkillName + "å¢å¼ºæˆ–æˆé•¿æ£€å®š:\n1D100=";
 			const int intTmpRollRes = RandomGenerator::Randint(1, 100);
 			strAns += to_string(intTmpRollRes) + "/" + to_string(intCurrentVal);
 
 			if (intTmpRollRes <= intCurrentVal && intTmpRollRes <= 95)
 			{
-				strAns += " Ê§°Ü!\nÄãµÄ" + (strSkillName.empty() ? "ÊôĞÔ»ò¼¼ÄÜÖµ" : strSkillName) + "Ã»ÓĞ±ä»¯!";
+				strAns += " å¤±è´¥!\nä½ çš„" + (strSkillName.empty() ? "å±æ€§æˆ–æŠ€èƒ½å€¼" : strSkillName) + "æ²¡æœ‰å˜åŒ–!";
 			}
 			else
 			{
-				strAns += " ³É¹¦!\nÄãµÄ" + (strSkillName.empty() ? "ÊôĞÔ»ò¼¼ÄÜÖµ" : strSkillName) + "Ôö¼Ó1D10=";
+				strAns += " æˆåŠŸ!\nä½ çš„" + (strSkillName.empty() ? "å±æ€§æˆ–æŠ€èƒ½å€¼" : strSkillName) + "å¢åŠ 1D10=";
 				const int intTmpRollD10 = RandomGenerator::Randint(1, 10);
-				strAns += to_string(intTmpRollD10) + "µã,µ±Ç°Îª" + to_string(intCurrentVal + intTmpRollD10) + "µã";
+				strAns += to_string(intTmpRollD10) + "ç‚¹,å½“å‰ä¸º" + to_string(intCurrentVal + intTmpRollD10) + "ç‚¹";
 				if (strCurrentValue.empty())
 				{
 					CharacterProp[SourceType(eve.fromQQ, DiscussT, eve.fromDiscuss)][strSkillName] = intCurrentVal +
@@ -3619,11 +3597,11 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				if (DisabledJRFATEDiscuss.count(eve.fromDiscuss))
 				{
 					DisabledJRFATEDiscuss.erase(eve.fromDiscuss);
-					AddMsgToQueue("³É¹¦ÔÚ´Ë¶àÈËÁÄÌìÖĞÆôÓÃFATE!", eve.fromDiscuss, false);
+					AddMsgToQueue("æˆåŠŸåœ¨æ­¤å¤šäººèŠå¤©ä¸­å¯ç”¨FATE!", eve.fromDiscuss, false);
 				}
 				else
 				{
-					AddMsgToQueue("ÔÚ´Ë¶àÈËÁÄÌìÖĞFATEÃ»ÓĞ±»½ûÓÃ!", eve.fromDiscuss, false);
+					AddMsgToQueue("åœ¨æ­¤å¤šäººèŠå¤©ä¸­FATEæ²¡æœ‰è¢«ç¦ç”¨!", eve.fromDiscuss, false);
 				}
 				return;
 			}
@@ -3632,17 +3610,17 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				if (!DisabledJRFATEDiscuss.count(eve.fromDiscuss))
 				{
 					DisabledJRFATEDiscuss.insert(eve.fromDiscuss);
-					AddMsgToQueue("³É¹¦ÔÚ´Ë¶àÈËÁÄÌìÖĞ½ûÓÃFATE!", eve.fromDiscuss, false);
+					AddMsgToQueue("æˆåŠŸåœ¨æ­¤å¤šäººèŠå¤©ä¸­ç¦ç”¨FATE!", eve.fromDiscuss, false);
 				}
 				else
 				{
-					AddMsgToQueue("ÔÚ´Ë¶àÈËÁÄÌìÖĞFATEÃ»ÓĞ±»ÆôÓÃ!", eve.fromDiscuss, false);
+					AddMsgToQueue("åœ¨æ­¤å¤šäººèŠå¤©ä¸­FATEæ²¡æœ‰è¢«å¯ç”¨!", eve.fromDiscuss, false);
 				}
 				return;
 			}
 			if (DisabledJRFATEDiscuss.count(eve.fromDiscuss))
 			{
-				AddMsgToQueue("ÔÚ´Ë¶àÈËÁÄÌìÖĞFATEÒÑ±»½ûÓÃ!", eve.fromDiscuss, false);
+				AddMsgToQueue("åœ¨æ­¤å¤šäººèŠå¤©ä¸­FATEå·²è¢«ç¦ç”¨!", eve.fromDiscuss, false);
 				return;
 			}
 			char cstrDate[100] = {};
@@ -3653,7 +3631,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			strftime(cstrDate, 100, "%F", &tmTime);
 			if (JRFATE.count(eve.fromQQ) && JRFATE[eve.fromQQ].Date == cstrDate)
 			{
-				const string strReply = strNickName + " ½ñÈÕ·İÃüÔËÊÇ \n" + tarotCard[JRFATE[eve.fromQQ].FATEVal];
+				const string strReply = strNickName + " ä»Šæ—¥ä»½å‘½è¿æ˜¯ \n" + tarotCard[JRFATE[eve.fromQQ].FATEVal];
 				AddMsgToQueue(strReply, eve.fromDiscuss, false);
 			}
 			else
@@ -3662,13 +3640,13 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				int iFATE = RandomGenerator::Randint(1, 44);
 				JRFATE[eve.fromQQ].Date = cstrDate;
 				JRFATE[eve.fromQQ].FATEVal = iFATE;
-				string strReply(strNickName + " ½ñÈÕ·İÃüÔËÊÇ \n" + tarotCard[JRFATE[eve.fromQQ].FATEVal]);
+				string strReply(strNickName + " ä»Šæ—¥ä»½å‘½è¿æ˜¯ \n" + tarotCard[JRFATE[eve.fromQQ].FATEVal]);
 				AddMsgToQueue(strReply, eve.fromDiscuss, false);
 			}
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 5) == "tarot")
 		{
-			const string strReply(strNickName + " ÇĞµ½µÄÅÆÊÇ \n" + tarotCard[RandomGenerator::Randint(1, 44)]);
+			const string strReply(strNickName + " åˆ‡åˆ°çš„ç‰Œæ˜¯ \n" + tarotCard[RandomGenerator::Randint(1, 44)]);
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "scp")
@@ -3741,11 +3719,11 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 		if (DisabledJRRPDiscuss.count(eve.fromDiscuss))
 		{
 			DisabledJRRPDiscuss.erase(eve.fromDiscuss);
-			AddMsgToQueue("³É¹¦ÔÚ´Ë¶àÈËÁÄÌìÖĞÆôÓÃJRRP!", eve.fromDiscuss, false);
+			AddMsgToQueue("æˆåŠŸåœ¨æ­¤å¤šäººèŠå¤©ä¸­å¯ç”¨JRRP!", eve.fromDiscuss, false);
 		}
 		else
 		{
-			AddMsgToQueue("ÔÚ´Ë¶àÈËÁÄÌìÖĞJRRPÃ»ÓĞ±»½ûÓÃ!", eve.fromDiscuss, false);
+			AddMsgToQueue("åœ¨æ­¤å¤šäººèŠå¤©ä¸­JRRPæ²¡æœ‰è¢«ç¦ç”¨!", eve.fromDiscuss, false);
 		}
 		return;
 	}
@@ -3754,17 +3732,17 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 		if (!DisabledJRRPDiscuss.count(eve.fromDiscuss))
 		{
 			DisabledJRRPDiscuss.insert(eve.fromDiscuss);
-			AddMsgToQueue("³É¹¦ÔÚ´Ë¶àÈËÁÄÌìÖĞ½ûÓÃJRRP!", eve.fromDiscuss, false);
+			AddMsgToQueue("æˆåŠŸåœ¨æ­¤å¤šäººèŠå¤©ä¸­ç¦ç”¨JRRP!", eve.fromDiscuss, false);
 		}
 		else
 		{
-			AddMsgToQueue("ÔÚ´Ë¶àÈËÁÄÌìÖĞJRRPÃ»ÓĞ±»ÆôÓÃ!", eve.fromDiscuss, false);
+			AddMsgToQueue("åœ¨æ­¤å¤šäººèŠå¤©ä¸­JRRPæ²¡æœ‰è¢«å¯ç”¨!", eve.fromDiscuss, false);
 		}
 		return;
 	}
 	if (DisabledJRRPDiscuss.count(eve.fromDiscuss))
 	{
-		AddMsgToQueue("ÔÚ´Ë¶àÈËÁÄÌìÖĞJRRPÒÑ±»½ûÓÃ!", eve.fromDiscuss, false);
+		AddMsgToQueue("åœ¨æ­¤å¤šäººèŠå¤©ä¸­JRRPå·²è¢«ç¦ç”¨!", eve.fromDiscuss, false);
 		return;
 	}
 	string des;
@@ -3796,14 +3774,14 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			if (!name.empty())
 			{
 				Name->set(eve.fromDiscuss, eve.fromQQ, name);
-				const string strReply = "ÒÑ½«" + strNickName + "µÄÃû³Æ¸ü¸ÄÎª" + strip(name);
+				const string strReply = "å·²å°†" + strNickName + "çš„åç§°æ›´æ”¹ä¸º" + strip(name);
 				AddMsgToQueue(strReply, eve.fromDiscuss, false);
 			}
 			else
 			{
 				if (Name->del(eve.fromDiscuss, eve.fromQQ))
 				{
-					const string strReply = "ÒÑ½«" + strNickName + "µÄÃû³ÆÉ¾³ı";
+					const string strReply = "å·²å°†" + strNickName + "çš„åç§°åˆ é™¤";
 					AddMsgToQueue(strReply, eve.fromDiscuss, false);
 				}
 				else
@@ -3824,11 +3802,11 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				if (DisabledMEDiscuss.count(eve.fromDiscuss))
 				{
 					DisabledMEDiscuss.erase(eve.fromDiscuss);
-					AddMsgToQueue("³É¹¦ÔÚ±¾¶àÈËÁÄÌìÖĞÆôÓÃ.meÃüÁî!", eve.fromDiscuss, false);
+					AddMsgToQueue("æˆåŠŸåœ¨æœ¬å¤šäººèŠå¤©ä¸­å¯ç”¨.meå‘½ä»¤!", eve.fromDiscuss, false);
 				}
 				else
 				{
-					AddMsgToQueue("ÔÚ±¾¶àÈËÁÄÌìÖĞ.meÃüÁîÃ»ÓĞ±»½ûÓÃ!", eve.fromDiscuss, false);
+					AddMsgToQueue("åœ¨æœ¬å¤šäººèŠå¤©ä¸­.meå‘½ä»¤æ²¡æœ‰è¢«ç¦ç”¨!", eve.fromDiscuss, false);
 				}
 				return;
 			}
@@ -3837,17 +3815,17 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				if (!DisabledMEDiscuss.count(eve.fromDiscuss))
 				{
 					DisabledMEDiscuss.insert(eve.fromDiscuss);
-					AddMsgToQueue("³É¹¦ÔÚ±¾¶àÈËÁÄÌìÖĞ½ûÓÃ.meÃüÁî!", eve.fromDiscuss, false);
+					AddMsgToQueue("æˆåŠŸåœ¨æœ¬å¤šäººèŠå¤©ä¸­ç¦ç”¨.meå‘½ä»¤!", eve.fromDiscuss, false);
 				}
 				else
 				{
-					AddMsgToQueue("ÔÚ±¾¶àÈËÁÄÌìÖĞ.meÃüÁîÃ»ÓĞ±»ÆôÓÃ!", eve.fromDiscuss, false);
+					AddMsgToQueue("åœ¨æœ¬å¤šäººèŠå¤©ä¸­.meå‘½ä»¤æ²¡æœ‰è¢«å¯ç”¨!", eve.fromDiscuss, false);
 				}
 				return;
 			}
 			if (DisabledMEDiscuss.count(eve.fromDiscuss))
 			{
-				AddMsgToQueue("ÔÚ±¾¶àÈËÁÄÌìÖĞ.meÃüÁîÒÑ±»½ûÓÃ!", eve.fromDiscuss, false);
+				AddMsgToQueue("åœ¨æœ¬å¤šäººèŠå¤©ä¸­.meå‘½ä»¤å·²è¢«ç¦ç”¨!", eve.fromDiscuss, false);
 				return;
 			}
 			if (DisabledMEDiscuss.count(eve.fromDiscuss))
@@ -3858,7 +3836,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			strAction = strip(eve.message.substr(intMsgCnt));
 			if (strAction.empty())
 			{
-				AddMsgToQueue("¶¯×÷²»ÄÜÎª¿Õ!", eve.fromDiscuss, false);
+				AddMsgToQueue("åŠ¨ä½œä¸èƒ½ä¸ºç©º!", eve.fromDiscuss, false);
 				return;
 			}
 			const string strReply = strNickName + strAction;
@@ -3890,7 +3868,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				DefaultDice.erase(eve.fromQQ);
 			else
 				DefaultDice[eve.fromQQ] = intDefaultDice;
-			const string strSetSuccessReply = "ÒÑ½«" + strNickName + "µÄÄ¬ÈÏ÷»ÀàĞÍ¸ü¸ÄÎªD" + strDefaultDice;
+			const string strSetSuccessReply = "å·²å°†" + strNickName + "çš„é»˜è®¤éª°ç±»å‹æ›´æ”¹ä¸ºD" + strDefaultDice;
 			AddMsgToQueue(strSetSuccessReply, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "coc6")
@@ -4046,17 +4024,17 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				intSkillVal = stoi(strSkillVal);
 			}
 			const int intD100Res = RandomGenerator::Randint(1, 100);
-			string strReply = strNickName + "½øĞĞ" + strSkillName + "¼ì¶¨: D100=" + to_string(intD100Res) + "/" +
+			string strReply = strNickName + "è¿›è¡Œ" + strSkillName + "æ£€å®š: D100=" + to_string(intD100Res) + "/" +
 				to_string(intSkillVal) + " ";
-			if (intD100Res <= 5)strReply += "´ó³É¹¦";
-			else if (intD100Res <= intSkillVal / 5)strReply += "¼«ÄÑ³É¹¦";
-			else if (intD100Res <= intSkillVal / 2)strReply += "À§ÄÑ³É¹¦";
-			else if (intD100Res <= intSkillVal)strReply += "³É¹¦";
-			else if (intD100Res <= 95)strReply += "Ê§°Ü";
-			else strReply += "´óÊ§°Ü";
+			if (intD100Res <= 5)strReply += "å¤§æˆåŠŸ";
+			else if (intD100Res <= intSkillVal / 5)strReply += "æéš¾æˆåŠŸ";
+			else if (intD100Res <= intSkillVal / 2)strReply += "å›°éš¾æˆåŠŸ";
+			else if (intD100Res <= intSkillVal)strReply += "æˆåŠŸ";
+			else if (intD100Res <= 95)strReply += "å¤±è´¥";
+			else strReply += "å¤§å¤±è´¥";
 			if (!strReason.empty())
 			{
-				strReply = "ÓÉÓÚ" + strReason + " " + strReply;
+				strReply = "ç”±äº" + strReason + " " + strReply;
 			}
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
@@ -4114,17 +4092,17 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				intSkillVal = stoi(strSkillVal);
 			}
 			const int intD100Res = RandomGenerator::Randint(1, 100);
-			string strReply = strNickName + "½øĞĞ" + strSkillName + "¼ì¶¨: D100=" + to_string(intD100Res) + "/" +
+			string strReply = strNickName + "è¿›è¡Œ" + strSkillName + "æ£€å®š: D100=" + to_string(intD100Res) + "/" +
 				to_string(intSkillVal) + " ";
-			if (intD100Res == 1)strReply += "´ó³É¹¦";
-			else if (intD100Res <= intSkillVal / 5)strReply += "¼«ÄÑ³É¹¦";
-			else if (intD100Res <= intSkillVal / 2)strReply += "À§ÄÑ³É¹¦";
-			else if (intD100Res <= intSkillVal)strReply += "³É¹¦";
-			else if (intD100Res <= 95 || (intSkillVal >= 50 && intD100Res != 100))strReply += "Ê§°Ü";
-			else strReply += "´óÊ§°Ü";
+			if (intD100Res == 1)strReply += "å¤§æˆåŠŸ";
+			else if (intD100Res <= intSkillVal / 5)strReply += "æéš¾æˆåŠŸ";
+			else if (intD100Res <= intSkillVal / 2)strReply += "å›°éš¾æˆåŠŸ";
+			else if (intD100Res <= intSkillVal)strReply += "æˆåŠŸ";
+			else if (intD100Res <= 95 || (intSkillVal >= 50 && intD100Res != 100))strReply += "å¤±è´¥";
+			else strReply += "å¤§å¤±è´¥";
 			if (!strReason.empty())
 			{
-				strReply = "ÓÉÓÚ" + strReason + " " + strReply;
+				strReply = "ç”±äº" + strReason + " " + strReply;
 			}
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
@@ -4241,14 +4219,14 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				intTurnCnt = rdTurnCnt.intTotal;
 				if (strTurnCnt.find("d") != string::npos)
 				{
-					string strTurnNotice = strNickName + "µÄÖÀ÷»ÂÖÊı: " + rdTurnCnt.FormShortString() + "ÂÖ";
+					string strTurnNotice = strNickName + "çš„æ·éª°è½®æ•°: " + rdTurnCnt.FormShortString() + "è½®";
 					if (!isHidden)
 					{
 						AddMsgToQueue(strTurnNotice, eve.fromDiscuss, false);
 					}
 					else
 					{
-						strTurnNotice = "ÔÚ¶àÈËÁÄÌìÖĞ " + strTurnNotice;
+						strTurnNotice = "åœ¨å¤šäººèŠå¤©ä¸­ " + strTurnNotice;
 						AddMsgToQueue(strTurnNotice, eve.fromQQ);
 						const auto range = ObserveDiscuss.equal_range(eve.fromDiscuss);
 						for (auto it = range.first; it != range.second; ++it)
@@ -4306,13 +4284,13 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			}
 			if (!boolDetail && intTurnCnt != 1)
 			{
-				string strAns = strNickName + "÷»³öÁË: " + to_string(intTurnCnt) + "´Î" + rdMainDice.strDice + ": { ";
+				string strAns = strNickName + "éª°å‡ºäº†: " + to_string(intTurnCnt) + "æ¬¡" + rdMainDice.strDice + ": { ";
 				if (!strReason.empty())
-					strAns.insert(0, "ÓÉÓÚ" + strReason + " ");
+					strAns.insert(0, "ç”±äº" + strReason + " ");
 				vector<int> vintExVal;
 				while (intTurnCnt--)
 				{
-					// ´Ë´¦·µ»ØÖµÎŞÓÃ
+					// æ­¤å¤„è¿”å›å€¼æ— ç”¨
 					// ReSharper disable once CppExpressionWithoutSideEffects
 					rdMainDice.Roll();
 					strAns += to_string(rdMainDice.intTotal);
@@ -4325,7 +4303,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				strAns += " }";
 				if (!vintExVal.empty())
 				{
-					strAns += ",¼«Öµ: ";
+					strAns += ",æå€¼: ";
 					for (auto it = vintExVal.cbegin(); it != vintExVal.cend(); ++it)
 					{
 						strAns += to_string(*it);
@@ -4339,7 +4317,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				}
 				else
 				{
-					strAns = "ÔÚ¶àÈËÁÄÌìÖĞ " + strAns;
+					strAns = "åœ¨å¤šäººèŠå¤©ä¸­ " + strAns;
 					AddMsgToQueue(strAns, eve.fromQQ);
 					const auto range = ObserveDiscuss.equal_range(eve.fromDiscuss);
 					for (auto it = range.first; it != range.second; ++it)
@@ -4355,21 +4333,21 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			{
 				while (intTurnCnt--)
 				{
-					// ´Ë´¦·µ»ØÖµÎŞÓÃ
+					// æ­¤å¤„è¿”å›å€¼æ— ç”¨
 					// ReSharper disable once CppExpressionWithoutSideEffects
 					rdMainDice.Roll();
-					string strAns = strNickName + "÷»³öÁË: " + (boolDetail
+					string strAns = strNickName + "éª°å‡ºäº†: " + (boolDetail
 						? rdMainDice.FormCompleteString()
 						: rdMainDice.FormShortString());
 					if (!strReason.empty())
-						strAns.insert(0, "ÓÉÓÚ" + strReason + " ");
+						strAns.insert(0, "ç”±äº" + strReason + " ");
 					if (!isHidden)
 					{
 						AddMsgToQueue(strAns, eve.fromDiscuss, false);
 					}
 					else
 					{
-						strAns = "ÔÚ¶àÈËÁÄÌìÖĞ " + strAns;
+						strAns = "åœ¨å¤šäººèŠå¤©ä¸­ " + strAns;
 						AddMsgToQueue(strAns, eve.fromQQ);
 						const auto range = ObserveDiscuss.equal_range(eve.fromDiscuss);
 						for (auto it = range.first; it != range.second; ++it)
@@ -4384,7 +4362,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			}
 			if (isHidden)
 			{
-				const string strReply = strNickName + "½øĞĞÁËÒ»´Î°µ÷»";
+				const string strReply = strNickName + "è¿›è¡Œäº†ä¸€æ¬¡æš—éª°";
 				AddMsgToQueue(strReply, eve.fromDiscuss, false);
 			}
 		}
@@ -4396,8 +4374,8 @@ EVE_System_GroupMemberDecrease(eventSystemGroupMemberDecrease)
 	{
 		BanFriendList.insert(fromQQ);
 		BanGroupList.insert(fromGroup);
-		AddMsgToQueue("ÄúÒÔ¼°Èº<" + to_string(fromGroup) + ">ÒòÎ¥¹æ²Ù×÷ÒÑ±»ÁĞÈë·â½ûÃûµ¥£¡ÈçÓĞÒìÒéÇëÁªÏµ¾ÉÈÕ½´(25528272027)", fromQQ);
-		AddMsgToQueue("ÒÑ½«QQ<" + to_string(fromQQ) + ">ºÍÈº<" + to_string(fromGroup) + ">ÁĞÈë·â½ûÃûµ¥£¡" + "Ô­Òò£º±»Ìß³öÈº", MASTER);
+		AddMsgToQueue("æ‚¨ä»¥åŠç¾¤<" + to_string(fromGroup) + ">å› è¿è§„æ“ä½œå·²è¢«åˆ—å…¥å°ç¦åå•ï¼å¦‚æœ‰å¼‚è®®è¯·è”ç³»æ—§æ—¥é…±(25528272027)", fromQQ);
+		AddMsgToQueue("å·²å°†QQ<" + to_string(fromQQ) + ">å’Œç¾¤<" + to_string(fromGroup) + ">åˆ—å…¥å°ç¦åå•ï¼" + "åŸå› ï¼šè¢«è¸¢å‡ºç¾¤", MASTER);
 		return 1;
 	}
 	return 0;
@@ -4408,7 +4386,7 @@ EVE_System_GroupMemberIncrease(eventGroupMemberIncrease)
 {
 	if (BanFriendList.count(beingOperateQQ) && WelcomeMsg.count(fromGroup))
 	{ 
-		const string strReply = "·¢ÏÖÒ»Ö»±»»®µôµÄ²»¿ÉÃû×´µÄÉúÎïÄØ£¡";
+		const string strReply = "å‘ç°ä¸€åªè¢«åˆ’æ‰çš„ä¸å¯åçŠ¶çš„ç”Ÿç‰©å‘¢ï¼";
 		AddMsgToQueue(strReply,fromGroup,false);
 	}
 	if (!BanFriendList.count(beingOperateQQ) && beingOperateQQ != getLoginQQ() && WelcomeMsg.count(fromGroup))
@@ -4430,10 +4408,10 @@ EVE_System_GroupMemberIncrease(eventGroupMemberIncrease)
 		{
 			strReply.replace(strReply.find("{sex}"), 5,
 			                 getStrangerInfo(beingOperateQQ).sex == 0
-				                 ? "ÄĞ"
+				                 ? "ç”·"
 				                 : getStrangerInfo(beingOperateQQ).sex == 1
-				                 ? "Å®"
-				                 : "Î´Öª");
+				                 ? "å¥³"
+				                 : "æœªçŸ¥");
 		}
 		while (strReply.find("{qq}") != string::npos)
 		{
@@ -4458,7 +4436,7 @@ EVE_Request_AddGroup(eventRequest_AddGroup)
 			return 1;
 		}
 		setGroupAddRequest(responseFlag, 2, 1, "");
-		AddMsgToQueue(getStrangerInfo(fromQQ).nick + "(" + to_string(fromQQ) + ")ÑûÇëÎÒ¼ÓÈëÈº:" + getGroupList()[fromGroup] + "(" + to_string(fromGroup) + ")", MASTER);
+		AddMsgToQueue(getStrangerInfo(fromQQ).nick + "(" + to_string(fromQQ) + ")é‚€è¯·æˆ‘åŠ å…¥ç¾¤:" + getGroupList()[fromGroup] + "(" + to_string(fromGroup) + ")", MASTER);
 
 	}
 	return 0;
