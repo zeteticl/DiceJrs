@@ -2002,7 +2002,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			{
 				getSCP.clear();
 				getSCP.str("");
-				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-ii/scp-" << strSCP << endl;
+				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-ii/scp-" << strSCP;
 			  string msgSCP = getSCP.str();
         AddMsgToQueue(msgSCP, eve.fromGroup, false);
       }
@@ -2010,7 +2010,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			{
 				getSCP.clear();
 				getSCP.str("");
-				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-iii/scp-" << strSCP << endl;
+				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-iii/scp-" << strSCP;
 			  string msgSCP = getSCP.str();
         AddMsgToQueue(msgSCP, eve.fromGroup, false);
 			}
@@ -2018,7 +2018,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			{
 				getSCP.clear();
 				getSCP.str("");
-				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-iv/scp-" << strSCP << endl;
+				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-iv/scp-" << strSCP;
 			  string msgSCP = getSCP.str();
         AddMsgToQueue(msgSCP, eve.fromGroup, false);
 			}
@@ -2029,7 +2029,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				getSCP.clear();
 				getSCP.str("");
 				str.format("%03s", strSCP);
-				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-i/scp-" << strSCP << endl;
+				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-i/scp-" << strSCP;
 			  string msgSCP = getSCP.str();
         AddMsgToQueue(msgSCP, eve.fromGroup, false);
 		}
