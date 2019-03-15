@@ -24,6 +24,7 @@
 #include "MsgFormat.h"
 #include "Jrs.h"
 #include "DiceNetwork.h"
+#include "GetSCP.h"
 
 using namespace std;
 using namespace CQ;
@@ -1982,58 +1983,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
 			intMsgCnt++;
 		string strSCP = eve.message.substr(intMsgCnt);
-		for (auto i : strSCP)
-		{
-			if (!isdigit(i))
-			{
-				AddMsgToQueue(GlobalMsg["strSCPErr"], eve.fromGroup, false);
-				return;
-			}
-		}
-		if (strSCP > "3999")
-		{
-			AddMsgToQueue(GlobalMsg["strSCPErr"], eve.fromGroup, false);
-			return;
-		}
-		ostringstream getSCP;
-		if (strSCP.length() == 4)
-		{
-			if (strSCP >= "1000" && strSCP <= "1999")
-			{
-				getSCP.clear();
-				getSCP.str("");
-				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-ii/scp-" << strSCP;
-			  string msgSCP = getSCP.str();
-        AddMsgToQueue(msgSCP, eve.fromGroup, false);
-      }
-			else if (strSCP >= "2000" && strSCP <= "2999")
-			{
-				getSCP.clear();
-				getSCP.str("");
-				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-iii/scp-" << strSCP;
-			  string msgSCP = getSCP.str();
-        AddMsgToQueue(msgSCP, eve.fromGroup, false);
-			}
-			else if (strSCP >= "3000" && strSCP <= "3999")
-			{
-				getSCP.clear();
-				getSCP.str("");
-				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-iv/scp-" << strSCP;
-			  string msgSCP = getSCP.str();
-        AddMsgToQueue(msgSCP, eve.fromGroup, false);
-			}
-		}
-		/*
-		else if (strSCP.length() <= 3)
-		{
-				getSCP.clear();
-				getSCP.str("");
-				str.format("%03s", strSCP);
-				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-i/scp-" << strSCP;
-			  string msgSCP = getSCP.str();
-        AddMsgToQueue(msgSCP, eve.fromGroup, false);
-		}
-		*/
+    AddMsgToQueue(GetSCP::toSCP(strSCP), eve.fromGroup, false);
   }
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "jrrp")
 	{
