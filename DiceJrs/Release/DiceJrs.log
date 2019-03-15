@@ -1,8 +1,7 @@
-﻿  CustomMsg.cpp
-  DiceJrs.cpp
-  GlobalVar.cpp
-  RD.cpp
-    正在创建库 C:\Users\SEEWO\source\repos\DiceJrs\Release\com.jrs.dice.lib 和对象 C:\Users\SEEWO\source\repos\DiceJrs\Release\com.jrs.dice.exp
-  正在生成代码
-  已完成代码的生成
-  DiceJrs.vcxproj -> C:\Users\SEEWO\source\repos\DiceJrs\Release\com.jrs.dice.dll
+﻿  DiceJrs.cpp
+C:\Users\SEEWO\source\repos\DiceJrs\DiceJrs\DiceJrs.cpp(2007): error C2676: 二进制“+”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”不定义该运算符或到预定义运算符可接收的类型的转换
+C:\Users\SEEWO\source\repos\DiceJrs\DiceJrs\DiceJrs.cpp(2015): error C2676: 二进制“+”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”不定义该运算符或到预定义运算符可接收的类型的转换
+C:\Users\SEEWO\source\repos\DiceJrs\DiceJrs\DiceJrs.cpp(2023): error C2676: 二进制“+”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”不定义该运算符或到预定义运算符可接收的类型的转换
+C:\Users\SEEWO\source\repos\DiceJrs\DiceJrs\DiceJrs.cpp(2032): error C2676: 二进制“+”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”不定义该运算符或到预定义运算符可接收的类型的转换
+C:\Users\SEEWO\source\repos\DiceJrs\DiceJrs\DiceJrs.cpp(2040): error C2676: 二进制“+”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”不定义该运算符或到预定义运算符可接收的类型的转换
+C:\Users\SEEWO\source\repos\DiceJrs\DiceJrs\DiceJrs.cpp(2048): error C2676: 二进制“+”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”不定义该运算符或到预定义运算符可接收的类型的转换
