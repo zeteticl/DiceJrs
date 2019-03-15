@@ -1995,59 +1995,43 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			AddMsgToQueue(GlobalMsg["strSCPErr"], eve.fromGroup, false);
 			return;
 		}
-		ostringstream scpb;
+		ostringstream getSCP;
 		if (strSCP.length() == 4)
 		{
 			if (strSCP >= "1000" && strSCP <= "1999")
 			{
-				const string scpa = GlobalMsg["strSCP"] + strSCP;
-				scpb.clear();
-				scpb.str("");
-				scpb << GlobalMsg["strSCPWeb"] << "-ii/scp-" << strSCP << endl;
-				AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
-			}
+				getSCP.clear();
+				getSCP.str("");
+				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-ii/scp-" << strSCP << endl;
+			  string msgSCP = getSCP;
+        AddMsgToQueue(msgSCP, eve.fromGroup, false);
+      }
 			else if (strSCP >= "2000" && strSCP <= "2999")
 			{
-				const string scpa = GlobalMsg["strSCP"] + strSCP;
-				scpb.clear();
-				scpb.str("");
-				scpb << GlobalMsg["strSCPWeb"] << "-iii/scp-" << strSCP << endl;
-				AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
+				getSCP.clear();
+				getSCP.str("");
+				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-iii/scp-" << strSCP << endl;
+			  string msgSCP = getSCP;
+        AddMsgToQueue(msgSCP, eve.fromGroup, false);
 			}
 			else if (strSCP >= "3000" && strSCP <= "3999")
 			{
-				const string scpa = GlobalMsg["strSCP"] + strSCP;
-				scpb.clear();
-				scpb.str("");
-				scpb << GlobalMsg["strSCPWeb"] << "-iv/scp-" << strSCP << endl;
-				AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
+				getSCP.clear();
+				getSCP.str("");
+				getSCP << GlobalMsg["strSCP"] << strSCP << "\n" << GlobalMsg["strSCPWeb"] << "-iv/scp-" << strSCP << endl;
+			  string msgSCP = getSCP;
+        AddMsgToQueue(msgSCP, eve.fromGroup, false);
 			}
 		}
-		else if (strSCP.length() == 3)
+		else if (strSCP.length() <= 3)
 		{
-			const string scpa = GlobalMsg["strSCP"] + strSCP;
-			scpb.clear();
-			scpb.str("");
-			scpb << GlobalMsg["strSCPWeb"] << "-i/scp-" << strSCP << endl;
-			AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
+				getSCP.clear();
+				getSCP.str("");
+				getSCP << GlobalMsg["strSCP"] << strSCP.PadLeft(3,'0') << "\n" << GlobalMsg["strSCPWeb"] << "-i/scp-" << strSCP.PadLeft(3,'0') << endl;
+			  string msgSCP = getSCP;
+        AddMsgToQueue(msgSCP, eve.fromGroup, false);
 		}
-		else if (strSCP.length() == 2)
-		{
-			const string scpa = GlobalMsg["strSCP"] + "0" + strSCP;
-			scpb.clear();
-			scpb.str("");
-			scpb << GlobalMsg["strSCPWeb"] << "-i/scp-0" << strSCP << endl;
-			AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
-		}
-		else if (strSCP.length() == 1)
-		{
-			const string scpa = GlobalMsg["strSCP"] + "00" + strSCP;
-			scpb.clear();
-			scpb.str("");
-			scpb << GlobalMsg["strSCPWeb"] << "-i/scp-00" << strSCP << endl;
-			AddMsgToQueue(scpa + "\n" + scpb, eve.fromGroup, false);
-		}
-	}
+  }
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "jrrp")
 	{
   	intMsgCnt += 4;
