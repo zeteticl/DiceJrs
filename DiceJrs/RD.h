@@ -710,4 +710,6 @@ public:
 		return strReturnString;
 	}
 };
+
+
 #endif /*JRS_RD*/

@@ -1,7 +1,4 @@
-﻿  Get.cpp
-C:\Users\SEEWO\source\repos\DiceJrs\DiceJrs\Get.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-C:\Users\SEEWO\source\repos\DiceJrs\DiceJrs\RD.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-C:\Users\SEEWO\source\repos\DiceJrs\DiceJrs\Get.cpp(59): error C2001: 常量中有换行符
-C:\Users\SEEWO\source\repos\DiceJrs\DiceJrs\Get.cpp(64): error C2059: 语法错误:“}”
-C:\Users\SEEWO\source\repos\DiceJrs\DiceJrs\Get.cpp(61): error C2059: 语法错误:“;”
-C:\Users\SEEWO\source\repos\DiceJrs\DiceJrs\Get.cpp(64): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+﻿    正在创建库 C:\Users\SEEWO\source\repos\DiceJrs\Release\com.jrs.dice.lib 和对象 C:\Users\SEEWO\source\repos\DiceJrs\Release\com.jrs.dice.exp
+  正在生成代码
+  已完成代码的生成
+  DiceJrs.vcxproj -> C:\Users\SEEWO\source\repos\DiceJrs\Release\com.jrs.dice.dll
