@@ -8,14 +8,12 @@ namespace GetSCP
 {
   toSCP(std::string strSCP)
   {
-    for (auto i : strSCP)
-		{
-			if (!isdigit(i))
+    Cstring cstrSCP(strSCP.c_str());
+			if (!cstrSCP.SpanIncluding(_T("0123456789")) == cstrSCP)
 			{
         std::string msgSCP = GlobalMsg["strSCPErr"];
 				return msgSCP;
 			}
-		}
 		if (strSCP > "3999")
 		{
       std::string msgSCP = GlobalMsg["strSCPErr"];
