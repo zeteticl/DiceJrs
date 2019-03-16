@@ -8,6 +8,8 @@
 #include <map>
 #include "RDConstant.h"
 #include "RandomGenerator.h"
+#include "Get.h"
+
 extern std::map<long long, int> DefaultDice;
 
 class RD
@@ -647,7 +649,7 @@ public:
 			else
 			{
 				strReturnString.append(std::to_string((*i)[0]));
-				strReturnString.append(vBnP[distance(vvintRes.begin(), i)] == B_Dice ? "[½±Àø÷»:" : "[³Í·£÷»:");
+				strReturnString.append(vBnP[distance(vvintRes.begin(), i)] == B_Dice ? "[å¥–åŠ±éª°:" : "[æƒ©ç½šéª°:");
 				for (auto it = i->begin() + 1; it != i->end(); ++it)
 				{
 					strReturnString.append(std::to_string(*it) + ((it == i->end() - 1) ? "" : " "));
@@ -709,12 +711,4 @@ public:
 		return strReturnString;
 	}
 };
-
-void init(std::string&);
-void init2(std::string&);
-void COC6(std::string&, int);
-void COC7(std::string&, int);
-void DND(std::string&, int);
-void LongInsane(std::string&);
-void TempInsane(std::string&);
 #endif /*JRS_RD*/

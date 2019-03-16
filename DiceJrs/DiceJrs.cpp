@@ -24,7 +24,7 @@
 #include "MsgFormat.h"
 #include "Jrs.h"
 #include "DiceNetwork.h"
-#include "GetSCP.h"
+#include "Get.h"
 
 using namespace std;
 using namespace CQ;
@@ -359,8 +359,8 @@ EVE_Enable(eventEnable)
 EVE_PrivateMsg_EX(eventPrivateMsg)
 {
 	if (eve.isSystem())return;
-	init(eve.message);
-	init2(eve.message);
+  Get::init(eve.message);
+  Get::init2(eve.message);
 	if (eve.message[0] != '.')return;
 	int intMsgCnt = 1;
 	while (isspace(static_cast<unsigned char>(eve.message[intMsgCnt])))intMsgCnt++;
@@ -917,7 +917,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 EVE_GroupMsg_EX(eventGroupMsg)
 {
 	if (eve.isSystem() || eve.isAnonymous())return;
-	init(eve.message);
+  Get::init(eve.message);
 	while (isspace(static_cast<unsigned char>(eve.message[0])))eve.message.erase(eve.message.begin());
 	string strAt = "[CQ:at,qq=" + to_string(getLoginQQ()) + "]";
 	if (eve.message.substr(0, 6) == "[CQ:at")
@@ -931,7 +931,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			return;
 		}
 	}
-	init2(eve.message);
+  Get::init2(eve.message);
 	if (eve.message[0] != '.')return;
 	int intMsgCnt = 1;
 	while (isspace(static_cast<unsigned char>(eve.message[intMsgCnt])))intMsgCnt++;
@@ -1789,7 +1789,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				return;
 			}
 			string strAns = strNickName + "的Sancheck:\n1D100=";
-			const int intTmpRollRes = RandomGenerator::Randint(1, 100);
+			const int intTmpRollRes = Get::Random(1, 100);
 			strAns += to_string(intTmpRollRes);
 
 			if (intTmpRollRes <= intSan)
@@ -1880,7 +1880,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 
 			string strAns = strNickName + "的" + strSkillName + "增强或成长检定:\n1D100=";
-			const int intTmpRollRes = RandomGenerator::Randint(1, 100);
+			const int intTmpRollRes = Get::Random(1, 100);
 			strAns += to_string(intTmpRollRes) + "/" + to_string(intCurrentVal);
 
 			if (intTmpRollRes <= intCurrentVal && intTmpRollRes <= 95)
@@ -1890,7 +1890,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			else
 			{
 				strAns += " 成功!\n你的" + (strSkillName.empty() ? "属性或技能值" : strSkillName) + "增加1D10=";
-				const int intTmpRollD10 = RandomGenerator::Randint(1, 10);
+				const int intTmpRollD10 = Get::Random(1, 10);
 				strAns += to_string(intTmpRollD10) + "点,当前为" + to_string(intCurrentVal + intTmpRollD10) + "点";
 				if (strCurrentValue.empty())
 				{
@@ -1965,7 +1965,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 			else
 			{
-				int iFATE = RandomGenerator::Randint(1, 44);
+				int iFATE = Get::Random(1, 44);
 				JRFATE[eve.fromQQ].Date = cstrDate;
 				JRFATE[eve.fromQQ].FATEVal = iFATE;
 				const string strReply(strNickName + " 今日份命运是 \n" + tarotCard[JRFATE[eve.fromQQ].FATEVal]);
@@ -1974,7 +1974,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 5) == "tarot")
 		{
-			const string strReply(strNickName + " 切到的牌是 \n" + tarotCard[RandomGenerator::Randint(1, 44)]);
+			const string strReply(strNickName + " 切到的牌是 \n" + tarotCard[Get::Random(1, 44)]);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "scp")
@@ -2328,7 +2328,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			{
 				intSkillVal = stoi(strSkillVal);
 			}
-			const int intD100Res = RandomGenerator::Randint(1, 100);
+			const int intD100Res = Get::Random(1, 100);
 			string strReply = strNickName + "进行" + strSkillName + "检定: D100=" + to_string(intD100Res) + "/" +
 				to_string(intSkillVal) + " ";
 			if (intD100Res <= 5)strReply += "大成功";
@@ -2396,7 +2396,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			{
 				intSkillVal = stoi(strSkillVal);
 			}
-			const int intD100Res = RandomGenerator::Randint(1, 100);
+			const int intD100Res = Get::Random(1, 100);
 			string strReply = strNickName + "进行" + strSkillName + "检定: D100=" + to_string(intD100Res) + "/" +
 				to_string(intSkillVal) + " ";
 			if (intD100Res == 1)strReply += "大成功";
@@ -2675,7 +2675,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 EVE_DiscussMsg_EX(eventDiscussMsg)
 {
 	if (eve.isSystem())return;
-	init(eve.message);
+  Get::init(eve.message);
 	string strAt = "[CQ:at,qq=" + to_string(getLoginQQ()) + "]";
 	if (eve.message.substr(0, 6) == "[CQ:at")
 	{
@@ -2688,7 +2688,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			return;
 		}
 	}
-	init2(eve.message);
+  Get::init2(eve.message);
 	if (eve.message[0] != '.')
 		return;
 	int intMsgCnt = 1;
@@ -3423,7 +3423,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 					return;
 				}
 				string strAns = strNickName + "的Sancheck:\n1D100=";
-				const int intTmpRollRes = RandomGenerator::Randint(1, 100);
+				const int intTmpRollRes = Get::Random(1, 100);
 				strAns += to_string(intTmpRollRes);
 
 				if (intTmpRollRes <= intSan)
@@ -3517,7 +3517,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				intCurrentVal = stoi(strCurrentValue);
 			}
 			string strAns = strNickName + "的" + strSkillName + "增强或成长检定:\n1D100=";
-			const int intTmpRollRes = RandomGenerator::Randint(1, 100);
+			const int intTmpRollRes = Get::Random(1, 100);
 			strAns += to_string(intTmpRollRes) + "/" + to_string(intCurrentVal);
 
 			if (intTmpRollRes <= intCurrentVal && intTmpRollRes <= 95)
@@ -3527,7 +3527,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			else
 			{
 				strAns += " 成功!\n你的" + (strSkillName.empty() ? "属性或技能值" : strSkillName) + "增加1D10=";
-				const int intTmpRollD10 = RandomGenerator::Randint(1, 10);
+				const int intTmpRollD10 = Get::Random(1, 10);
 				strAns += to_string(intTmpRollD10) + "点,当前为" + to_string(intCurrentVal + intTmpRollD10) + "点";
 				if (strCurrentValue.empty())
 				{
@@ -3589,7 +3589,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			else
 			{
 
-				int iFATE = RandomGenerator::Randint(1, 44);
+				int iFATE = Get::Random(1, 44);
 				JRFATE[eve.fromQQ].Date = cstrDate;
 				JRFATE[eve.fromQQ].FATEVal = iFATE;
 				string strReply(strNickName + " 今日份命运是 \n" + tarotCard[JRFATE[eve.fromQQ].FATEVal]);
@@ -3598,7 +3598,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 5) == "tarot")
 		{
-			const string strReply(strNickName + " 切到的牌是 \n" + tarotCard[RandomGenerator::Randint(1, 44)]);
+			const string strReply(strNickName + " 切到的牌是 \n" + tarotCard[Get::Random(1, 44)]);
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "scp")
@@ -3975,7 +3975,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			{
 				intSkillVal = stoi(strSkillVal);
 			}
-			const int intD100Res = RandomGenerator::Randint(1, 100);
+			const int intD100Res = Get::Random(1, 100);
 			string strReply = strNickName + "进行" + strSkillName + "检定: D100=" + to_string(intD100Res) + "/" +
 				to_string(intSkillVal) + " ";
 			if (intD100Res <= 5)strReply += "大成功";
@@ -4043,7 +4043,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			{
 				intSkillVal = stoi(strSkillVal);
 			}
-			const int intD100Res = RandomGenerator::Randint(1, 100);
+			const int intD100Res = Get::Random(1, 100);
 			string strReply = strNickName + "进行" + strSkillName + "检定: D100=" + to_string(intD100Res) + "/" +
 				to_string(intSkillVal) + " ";
 			if (intD100Res == 1)strReply += "大成功";
