@@ -476,7 +476,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				return;
 			}
 			string strReply = strNickName;
-			COC6(strReply, intNum);
+      Get::COC6(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromQQ);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "dnd")
@@ -507,7 +507,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				return;
 			}
 			string strReply = strNickName;
-			DND(strReply, intNum);
+			Get::DND(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromQQ);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "coc")
@@ -542,7 +542,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				return;
 			}
 			string strReply = strNickName;
-			COC7(strReply, intNum);
+			GetCOC7(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromQQ);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "exit")
@@ -1719,13 +1719,13 @@ EVE_GroupMsg_EX(eventGroupMsg)
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "ti")
 		{
 			string strAns = strNickName + "的疯狂发作-临时症状:\n";
-			TempInsane(strAns);
+			Get::TempInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "li")
 		{
 			string strAns = strNickName + "的疯狂发作-总结症状:\n";
-			LongInsane(strAns);
+			Get::LongInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "sc" && strLowerMessage.substr(intMsgCnt, 3) != "scp")
@@ -2206,7 +2206,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				return;
 			}
 			string strReply = strNickName;
-			COC6(strReply, intNum);
+      Get::COC6(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "dnd")
@@ -2237,7 +2237,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				return;
 			}
 			string strReply = strNickName;
-			DND(strReply, intNum);
+			Get::DND(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "coc")
@@ -2272,7 +2272,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				return;
 			}
 			string strReply = strNickName;
-			COC7(strReply, intNum);
+			GetCOC7(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "ra")
@@ -3346,13 +3346,13 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "ti")
 		{
 			string strAns = strNickName + "的疯狂发作-临时症状:\n";
-			TempInsane(strAns);
+			Get::TempInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "li")
 		{
 			string strAns = strNickName + "的疯狂发作-总结症状:\n";
-			LongInsane(strAns);
+			Get::LongInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "sc")
@@ -3853,7 +3853,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				return;
 			}
 			string strReply = strNickName;
-			COC6(strReply, intNum);
+			Get::COC6(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "dnd")
@@ -3884,7 +3884,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				return;
 			}
 			string strReply = strNickName;
-			DND(strReply, intNum);
+			Get::DND(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "coc")
@@ -3919,7 +3919,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				return;
 			}
 			string strReply = strNickName;
-			COC7(strReply, intNum);
+			GetCOC7(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "ra")
