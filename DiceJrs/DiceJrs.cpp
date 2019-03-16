@@ -11,9 +11,7 @@
 #include <mutex>
 #include <ostream>
 #include <sstream>
-
 #include "APPINFO.h"
-#include "RandomGenerator.h"
 #include "RD.h"
 #include "CQEVE_ALL.h"
 #include "InitList.h"
@@ -1977,6 +1975,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			const string strReply(strNickName + " 切到的牌是 \n" + tarotCard[Get::Random(1, 44)]);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
+		/*
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "scp")
 	{
 		intMsgCnt += 3;
@@ -1985,6 +1984,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 		string strSCP = eve.message.substr(intMsgCnt);
     AddMsgToQueue(GetSCP::toSCP(strSCP), eve.fromGroup, false);
   }
+  */
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "jrrp")
 	{
   	intMsgCnt += 4;

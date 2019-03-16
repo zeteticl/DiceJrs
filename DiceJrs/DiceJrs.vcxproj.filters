@@ -30,9 +30,6 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="RD.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="InitList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -75,10 +72,13 @@
     <ClCompile Include="MsgFormat.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="RandomGenerator.cpp">
+    <ClCompile Include="DiceNetwork.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="DiceNetwork.cpp">
+    <ClCompile Include="RandomGetNetwork.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Get.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -192,6 +192,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="EncodingConvert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Get.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
