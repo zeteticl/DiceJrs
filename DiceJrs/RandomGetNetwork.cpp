@@ -6,18 +6,17 @@
 #include "EncodingConvert.h"
 #include "DiceNetwork.h"
 #include "GlobalVar.h"
-#include "RandomGenerator.h"
+#include "Get.h"
 
 using namespace std;
 using namespace CQ;
 
-std::string getRDwebside;
-std::string isRDs;
-namespace RandomGenerator
+namespace Get
 {
-  int RandintNetwork(int min, int max)
+  int RandomNet(int min, int max)
   {
-    const std::string getRDwebside = "/integers/?num=1&min=" +  min + "&max=" + man +  "&col=1&base=10&firmat=plain&rnd=new";
+    ostringstream getRDwebside;
+    getRDwebside << "/integers/?num=1&min=" << min << "&max=" << man << "&col=1&base=10&firmat=plain&rnd=new";
     if (!Network::GET("www.random.org", getRDwebside, 443, isRDs))
 	{
 		int msgRDs = "0000";

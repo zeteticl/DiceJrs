@@ -47,7 +47,7 @@ private:
 				int AddNum = 0;
 				while (intDiceCnt--)
 				{
-					int intTmpResOnce = RandomGenerator::Randint(1, 10);
+					int intTmpResOnce = Get::Random(1, 10);
 					vintTmpRes.push_back(intTmpResOnce);
 					if (intTmpResOnce >= 8)
 						intTmpRes++;
@@ -88,7 +88,7 @@ private:
 			int intSum = 0;
 			while (intDiceNum--)
 			{
-				int intTmpSum = RandomGenerator::Randint(0, 2) - 1;
+				int intTmpSum = Get::Random(0, 2) - 1;
 				vintTmpRes.push_back(intTmpSum);
 				intSum += intTmpSum;
 			}
@@ -114,10 +114,10 @@ private:
 			if (intPNum == 0)
 				return Value_Err;
 			std::vector<int> vintTmpRes;
-			vintTmpRes.push_back(RandomGenerator::Randint(1, 100));
+			vintTmpRes.push_back(Get::Random(1, 100));
 			while (intPNum--)
 			{
-				int intTmpRollRes = RandomGenerator::Randint(1, 10);
+				int intTmpRollRes = Get::Random(1, 10);
 				if (vintTmpRes[0] % 10 == 0)
 					vintTmpRes.push_back(intTmpRollRes);
 				else
@@ -151,10 +151,10 @@ private:
 			if (intBNum == 0)
 				return Value_Err;
 			std::vector<int> vintTmpRes;
-			vintTmpRes.push_back(RandomGenerator::Randint(1, 100));
+			vintTmpRes.push_back(Get::Random(1, 100));
 			while (intBNum--)
 			{
-				int intTmpRollRes = RandomGenerator::Randint(1, 10);
+				int intTmpRollRes = Get::Random(1, 10);
 				if (vintTmpRes[0] % 10 == 0)
 					vintTmpRes.push_back(intTmpRollRes);
 				else
@@ -230,7 +230,7 @@ private:
 			int intTmpRes = 0;
 			while (intDiceCnt--)
 			{
-				int intTmpResOnce = RandomGenerator::Randint(1, intDiceType);
+				int intTmpResOnce = Get::Random(1, intDiceType);
 				vintTmpRes.push_back(intTmpResOnce);
 				intTmpRes += intTmpResOnce;
 			}
@@ -263,7 +263,7 @@ private:
 		std::vector<int> vintTmpRes;
 		while (intDiceCnt--)
 		{
-			int intTmpResOnce = RandomGenerator::Randint(1, intDiceType);
+			int intTmpResOnce = Get::Random(1, intDiceType);
 			if (vintTmpRes.size() != intKNum)
 				vintTmpRes.push_back(intTmpResOnce);
 			else if (intTmpResOnce > *(std::min_element(vintTmpRes.begin(), vintTmpRes.end())))
