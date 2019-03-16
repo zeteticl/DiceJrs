@@ -1,8 +1,6 @@
 #include "Get.h"
 
-using namespace std;
-
-ostringstream getSCP;
+std::ostringstream getSCP;
 
 namespace Get
 {
@@ -176,50 +174,50 @@ void DND(string& strOutput, int intNum)
 
 void TempInsane(string& strAns)
 {
-	const int intSymRes = RandomGenerator::Randint(1, 10);
+	const int intSymRes = Get::Random(1, 10);
 	std::string strTI = "1D10=" + to_string(intSymRes) + "\n症状: " + TempInsanity[intSymRes];
 	if (intSymRes == 9)
 	{
-		const int intDetailSymRes = RandomGenerator::Randint(1, 100);
+		const int intDetailSymRes = Get::Random(1, 100);
 		strTI = format(strTI, {
-			"1D10=" + to_string(RandomGenerator::Randint(1, 10)), "1D100=" + to_string(intDetailSymRes), strFear[intDetailSymRes]
+			"1D10=" + to_string(Get::Random(1, 10)), "1D100=" + to_string(intDetailSymRes), strFear[intDetailSymRes]
 		});
 	}
 	else if (intSymRes == 10)
 	{
-		const int intDetailSymRes = RandomGenerator::Randint(1, 100);
+		const int intDetailSymRes = Get::Random(1, 100);
 		strTI = format(strTI, {
-			"1D10=" + to_string(RandomGenerator::Randint(1, 10)), "1D100=" + to_string(intDetailSymRes), strPanic[intDetailSymRes]
+			"1D10=" + to_string(Get::Random(1, 10)), "1D100=" + to_string(intDetailSymRes), strPanic[intDetailSymRes]
 		});
 	}
 	else
 	{
-		strTI = format(strTI, {"1D10=" + to_string(RandomGenerator::Randint(1, 10))});
+		strTI = format(strTI, {"1D10=" + to_string(Get::Random(1, 10))});
 	}
 	strAns += strTI;
 }
 
 void LongInsane(string& strAns)
 {
-	const int intSymRes = RandomGenerator::Randint(1, 10);
+	const int intSymRes = Get::Random(1, 10);
 	std::string strLI = "1D10=" + to_string(intSymRes) + "\n症状: " + LongInsanity[intSymRes];
 	if (intSymRes == 9)
 	{
-		const int intDetailSymRes = RandomGenerator::Randint(1, 100);
+		const int intDetailSymRes = Get::Random(1, 100);
 		strLI = format(strLI, {
-			"1D10=" + to_string(RandomGenerator::Randint(1, 10)), "1D100=" + to_string(intDetailSymRes), strFear[intDetailSymRes]
+			"1D10=" + to_string(Get::Random(1, 10)), "1D100=" + to_string(intDetailSymRes), strFear[intDetailSymRes]
 		});
 	}
 	else if (intSymRes == 10)
 	{
-		const int intDetailSymRes = RandomGenerator::Randint(1, 100);
+		const int intDetailSymRes = Get::Random(1, 100);
 		strLI = format(strLI, {
-			"1D10=" + to_string(RandomGenerator::Randint(1, 10)), "1D100=" + to_string(intDetailSymRes), strPanic[intDetailSymRes]
+			"1D10=" + to_string(Get::Random(1, 10)), "1D100=" + to_string(intDetailSymRes), strPanic[intDetailSymRes]
 		});
 	}
 	else
 	{
-		strLI = format(strLI, {"1D10=" + to_string(RandomGenerator::Randint(1, 10))});
+		strLI = format(strLI, {"1D10=" + to_string(Get::Random(1, 10))});
 	}
 	strAns += strLI;
 }
