@@ -542,7 +542,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				return;
 			}
 			string strReply = strNickName;
-			GetCOC7(strReply, intNum);
+			Get::COC7(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromQQ);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "exit")
@@ -2272,7 +2272,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				return;
 			}
 			string strReply = strNickName;
-			GetCOC7(strReply, intNum);
+			Get::COC7(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "ra")
@@ -3919,7 +3919,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				return;
 			}
 			string strReply = strNickName;
-			GetCOC7(strReply, intNum);
+			Get::COC7(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "ra")
