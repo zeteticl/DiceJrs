@@ -357,8 +357,8 @@ EVE_Enable(eventEnable)
 EVE_PrivateMsg_EX(eventPrivateMsg)
 {
 	if (eve.isSystem())return;
-  Get::init(eve.message);
-  Get::init2(eve.message);
+  init(eve.message);
+  init2(eve.message);
 	if (eve.message[0] != '.')return;
 	int intMsgCnt = 1;
 	while (isspace(static_cast<unsigned char>(eve.message[intMsgCnt])))intMsgCnt++;
@@ -915,7 +915,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 EVE_GroupMsg_EX(eventGroupMsg)
 {
 	if (eve.isSystem() || eve.isAnonymous())return;
-  Get::init(eve.message);
+  init(eve.message);
 	while (isspace(static_cast<unsigned char>(eve.message[0])))eve.message.erase(eve.message.begin());
 	string strAt = "[CQ:at,qq=" + to_string(getLoginQQ()) + "]";
 	if (eve.message.substr(0, 6) == "[CQ:at")
@@ -929,7 +929,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			return;
 		}
 	}
-  Get::init2(eve.message);
+  init2(eve.message);
 	if (eve.message[0] != '.')return;
 	int intMsgCnt = 1;
 	while (isspace(static_cast<unsigned char>(eve.message[intMsgCnt])))intMsgCnt++;
@@ -2675,7 +2675,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 EVE_DiscussMsg_EX(eventDiscussMsg)
 {
 	if (eve.isSystem())return;
-  Get::init(eve.message);
+  init(eve.message);
 	string strAt = "[CQ:at,qq=" + to_string(getLoginQQ()) + "]";
 	if (eve.message.substr(0, 6) == "[CQ:at")
 	{
@@ -2688,7 +2688,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			return;
 		}
 	}
-  Get::init2(eve.message);
+  init2(eve.message);
 	if (eve.message[0] != '.')
 		return;
 	int intMsgCnt = 1;

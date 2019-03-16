@@ -5,8 +5,6 @@ namespace Get
 {
 	int Random(int lowest, int highest);
 	int RandomNet(int min, int max);
-	void init(std::string&);
-	void init2(std::string&);
 	void COC6D(std::string&);
 	void COC6(std::string&, int);
 	void COC7D(std::string&);
@@ -15,4 +13,6 @@ namespace Get
 	void LongInsane(std::string&);
 	void TempInsane(std::string&);
 }
+	void init(std::string&);
+	void init2(std::string&);
 #endif /*JRS_GET*/
