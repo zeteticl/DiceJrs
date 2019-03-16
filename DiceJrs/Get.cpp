@@ -1,22 +1,33 @@
 #include "Get.h"
+#include "CQEVE_ALL.h"
+#include "CQTools.h"
+#include <cctype>
+#include "RD.h"
+#include "RDConstant.h"
+#include "MsgFormat.h"
 
-std::ostringstream getSCP;
+using namespace std;
+using namespace CQ;
 
 namespace Get
 {
   void toSCP(std::string& strSCP)
   {
     Cstring cstrSCP(strSCP.c_str());
-			if (!cstrSCP.SpanIncluding(_T("0123456789")) == cstrSCP)
+			for (auto i : strSCP)
+       {
+       if (!isdigit(i))
 			{
         std::string msgSCP = GlobalMsg["strSCPErr"];
 				return msgSCP;
 			}
+       }
 		if (strSCP > "3999")
 		{
       std::string msgSCP = GlobalMsg["strSCPErr"];
 			return msgSCP;
 		}
+    ostringstream getSCP;
 		if (strSCP.length() == 4)
 		{
 			if (strSCP >= "1000" && strSCP <= "1999")
@@ -48,6 +59,7 @@ namespace Get
 		{
 				getSCP.clear();
 				getSCP.str("");
+        Cstring cstrSCP(strSCP.c_str());
 				String.format("%03s", cstrSCP);
 				getSCP << GlobalMsg["strSCP"] << cstrSCP << "\n" << GlobalMsg["strSCPWeb"] << "-i/scp-" << cstrSCP;
 			  string msgSCP = getSCP.str();

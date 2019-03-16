@@ -7,7 +7,6 @@
 #include <vector>
 #include <map>
 #include "RDConstant.h"
-#include "RandomGenerator.h"
 #include "Get.h"
 
 extern std::map<long long, int> DefaultDice;
