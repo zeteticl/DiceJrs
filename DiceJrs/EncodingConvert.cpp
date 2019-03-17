@@ -35,3 +35,55 @@ unsigned char ToHex(const unsigned char x)
 {
 	return  x > 9 ? x + 55 : x + 48;
 }
+
+unsigned char FromHex(const unsigned char x)
+{
+	unsigned char y;
+	if (x >= 'A' && x <= 'Z') y = x - 'A' + 10;
+	else if (x >= 'a' && x <= 'z') y = x - 'a' + 10;
+	else y = x - '0';
+	return y;
+}
+
+std::string UrlEncode(const std::string & str)
+{
+	std::string strTemp;
+	const size_t length = str.length();
+	for (size_t i = 0; i < length; i++)
+	{
+		if (isalnum(static_cast<unsigned char>(str[i])) ||
+			(str[i] == '-') ||
+			(str[i] == '_') ||
+			(str[i] == '.') ||
+			(str[i] == '~'))
+			strTemp += str[i];
+		else if (str[i] == ' ')
+			strTemp += "+";
+		else
+		{
+			strTemp += '%';
+			strTemp += ToHex(static_cast<unsigned char>(str[i]) >> 4);
+			strTemp += ToHex(static_cast<unsigned char>(str[i]) % 16);
+		}
+	}
+	return strTemp;
+}
+
+std::string UrlDecode(const std::string & str)
+{
+	std::string strTemp;
+	const size_t length = str.length();
+	for (size_t i = 0; i < length; i++)
+	{
+		if (str[i] == '+') strTemp += ' ';
+		else if (str[i] == '%')
+		{
+			assert(i + 2 < length);
+			unsigned char high = FromHex(static_cast<unsigned char>(str[++i]));
+			unsigned char low = FromHex(static_cast<unsigned char>(str[++i]));
+			strTemp += high * 16 + low;
+		}
+		else strTemp += str[i];
+	}
+	return strTemp;
+}

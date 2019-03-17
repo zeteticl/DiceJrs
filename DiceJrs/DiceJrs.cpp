@@ -1318,6 +1318,24 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			const string strReply = strname + "的先攻骰点：" + strinit + '=' + to_string(initdice.intTotal);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
+	else if (strLowerMessage.substr(intMsgCnt, 5) == "rules")
+	{
+	intMsgCnt += 5;
+	while (isspace(static_cast<unsigned char>(eve.message[intMsgCnt])))
+		intMsgCnt++;
+	string strSearch = eve.message.substr(intMsgCnt);
+	for (auto& n : strSearch)
+		n = toupper(static_cast<unsigned char>(n));
+	string strReturn;
+	if (Get::analyze(strSearch, strReturn))
+	{
+		AddMsgToQueue(strReturn, eve.fromGroup, false);
+	}
+	else
+	{
+		AddMsgToQueue(GlobalMsg["strRuleErr"] + strReturn, eve.fromGroup, false);
+	}
+	}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "init")
 		{
 			intMsgCnt += 4;
@@ -2040,7 +2058,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 	string data = "QQ=" + to_string(CQ::getLoginQQ()) + "&v=20190114" + "&QueryQQ=" + to_string(eve.fromQQ);
 	char* frmdata = new char[data.length() + 1];
 	strcpy_s(frmdata, data.length() + 1, data.c_str());
-	bool res = Network::POST("dice.xn--8c2a.top", "/jrrp", 80, frmdata, des);
+	bool res = Network::POST("api.kokona.tech", "/jrrp", 5555, frmdata, des);
 	delete[] frmdata;
 	if (res)
 	{
@@ -2976,6 +2994,24 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			const string strReply = strname + "的先攻骰点：" + strinit + '=' + to_string(initdice.intTotal);
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
+	else if (strLowerMessage.substr(intMsgCnt, 5) == "rules")
+	{
+	intMsgCnt += 5;
+	while (isspace(static_cast<unsigned char>(eve.message[intMsgCnt])))
+		intMsgCnt++;
+	string strSearch = eve.message.substr(intMsgCnt);
+	for (auto& n : strSearch)
+		n = toupper(static_cast<unsigned char>(n));
+	string strReturn;
+	if (Get::analyze(strSearch, strReturn))
+	{
+		AddMsgToQueue(strReturn, eve.fromDiscuss, false);
+	}
+	else
+	{
+		AddMsgToQueue(GlobalMsg["strRuleErr"] + strReturn, eve.fromDiscuss, false);
+	}
+	}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "init")
 		{
 			intMsgCnt += 4;
@@ -3701,7 +3737,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 	string data = "QQ=" + to_string(CQ::getLoginQQ()) + "&v=20190114" + "&QueryQQ=" + to_string(eve.fromQQ);
 	char* frmdata = new char[data.length() + 1];
 	strcpy_s(frmdata, data.length() + 1, data.c_str());
-	bool res = Network::POST("dice.xn--8c2a.top", "/jrrp", 80, frmdata, des);
+	bool res = Network::POST("api.kokona.tech", "/jrrp", 5555, frmdata, des);
 	delete[] frmdata;
 	if (res)
 	{

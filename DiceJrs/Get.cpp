@@ -1,6 +1,15 @@
-﻿#include <cctype>
+﻿#define WIN32_LEAN_AND_MEAN
+#include <Windows.h>
+#include <WinInet.h>
+
+#ifdef _MSC_VER
+#pragma comment(lib, "Wininet.lib")
+#endif /*_MSC_VER*/
+
+#include <cctype>
 #include <ostream>
 #include <sstream>
+
 #include "Get.h"
 #include "CQEVE_ALL.h"
 #include "CQTools.h"
@@ -8,16 +17,15 @@
 #include "RDConstant.h"
 #include "MsgFormat.h"
 #include "GlobalVar.h"
-
-
-
+#include "EncodingConvert.h"
+#include "DiceNetwork.h"
+#include "Jrs.h"
 
 using namespace std;
 using namespace CQ;
 
 namespace Get
 {
-	////////
 	int Random(int lowest, int highest)
 	{
 		std::random_device getGene;
@@ -25,9 +33,6 @@ namespace Get
 		std::uniform_int_distribution<int> dis(lowest, highest);
 		return dis(gen);
 	}
-	///////
-
-
 
 	void COC7D(string & strMAns)
 	{
@@ -354,6 +359,67 @@ namespace Get
 		}
 		strAns += strLI;
 	}
+
+	bool analyze(string& rawStr, string& des)
+	{
+		if (rawStr.empty())
+		{
+			des = GlobalMsg["strRulesFormatErr"];
+			return false;
+		}
+
+		for (auto& chr : rawStr)chr = toupper(static_cast<unsigned char> (chr));
+
+		if (rawStr.find(':') != string::npos)
+		{
+			const string name = rawStr.substr(rawStr.find(':') + 1);
+			if (name.empty())
+			{
+				des = GlobalMsg["strRulesFormatErr"];
+				return false;
+			}
+			const string rule = rawStr.substr(0, rawStr.find(':'));
+			if (name.empty())
+			{
+				des = GlobalMsg["strRulesFormatErr"];
+				return false;
+			}
+			return get(rule, name, des);
+		}
+		return get("", rawStr, des);
+	}
+
+	bool get(const std::string& rule, const std::string& name, std::string& des)
+	{
+		const string ruleName = GBKtoUTF8(rule);
+		const string itemName = GBKtoUTF8(name);
+
+		string data = "Name=" + UrlEncode(itemName) + "&QQ=" + to_string(CQ::getLoginQQ()) + "&v=20190114";
+		if (!ruleName.empty())
+		{
+			data += "&Type=Rules-" + UrlEncode(ruleName);
+		}
+		char* frmdata = new char[data.length() + 1];
+		strcpy_s(frmdata, data.length() + 1, data.c_str());
+		string temp;
+		const bool reqRes = Network::POST("api.kokona.tech", "/rules", 5555, frmdata, temp);
+		delete[] frmdata;
+		if (reqRes)
+		{
+			des = UTF8toGBK(temp);
+			return true;
+		}
+		if (temp == GlobalMsg["strRequestNoResponse"])
+		{
+			des = GlobalMsg["strRuleNotFound"];
+		}
+		else
+		{
+			des = temp;
+		}
+		return false;
+	}
+
 }
 void init(string& msg)
 	{

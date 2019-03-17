@@ -11,7 +11,7 @@
 #include "MsgFormat.h"
 #include "DiceNetwork.h"
 #include "EncodingConvert.h"
-#include "GetRule.h"
+#include "Get.h"
 #include "CQAPI_EX.h"
 #include "Jrs.h"
 

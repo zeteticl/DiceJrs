@@ -4,7 +4,6 @@
 namespace Get
 {
 	int Random(int lowest, int highest);
-	int RandomNet(int min, int max);
 	void COC6D(std::string&);
 	void COC6(std::string&, int);
 	void COC7D(std::string&);
@@ -12,6 +11,10 @@ namespace Get
 	void DND(std::string&, int);
 	void LongInsane(std::string&);
 	void TempInsane(std::string&);
+	//Rules
+	std::string getLastErrorMsg();
+	bool analyze(std::string& rawStr, std::string& des);
+	bool get(const std::string& rule, const std::string& name, std::string& des);
 }
 void init(std::string&);
 void init2(std::string&);
