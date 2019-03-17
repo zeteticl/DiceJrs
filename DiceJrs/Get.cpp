@@ -355,12 +355,12 @@ namespace Get
 		strAns += strLI;
 	}
 }
-	void init(string& msg)
+void init(string& msg)
 	{
 		msg_decode(msg);
 	}
 
-	void init2(string& msg)
+void init2(string& msg)
 	{
 		for (int i = 0; i != msg.length(); i++)
 		{

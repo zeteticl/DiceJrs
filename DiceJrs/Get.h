@@ -13,6 +13,6 @@ namespace Get
 	void LongInsane(std::string&);
 	void TempInsane(std::string&);
 }
-	void init(std::string&);
-	void init2(std::string&);
+void init(std::string&);
+void init2(std::string&);
 #endif /*JRS_GET*/
