@@ -1327,14 +1327,8 @@ EVE_GroupMsg_EX(eventGroupMsg)
 	for (auto& n : strSearch)
 		n = toupper(static_cast<unsigned char>(n));
 	string strReturn;
-	if (Get::analyze(strSearch, strReturn))
-	{
-		AddMsgToQueue(strReturn, eve.fromGroup, false);
-	}
-	else
-	{
-		AddMsgToQueue(GlobalMsg["strRuleErr"] + strReturn, eve.fromGroup, false);
-	}
+	Get::Rule(strSearch, strReturn);
+	AddMsgToQueue(strReturn, eve.fromGroup, false);
 	}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "init")
 		{
@@ -2054,20 +2048,10 @@ EVE_GroupMsg_EX(eventGroupMsg)
 		AddMsgToQueue("在本群中JRRP功能已被禁用", eve.fromGroup, false);
 		return;
 	}
-	string des;
-	string data = "QQ=" + to_string(CQ::getLoginQQ()) + "&v=20190114" + "&QueryQQ=" + to_string(eve.fromQQ);
-	char* frmdata = new char[data.length() + 1];
-	strcpy_s(frmdata, data.length() + 1, data.c_str());
-	bool res = Network::POST("api.kokona.tech", "/jrrp", 5555, frmdata, des);
-	delete[] frmdata;
-	if (res)
-	{
-		AddMsgToQueue(format(GlobalMsg["strJrrp"], { strNickName, des }), eve.fromGroup, false);
-	}
-	else
-	{
-		AddMsgToQueue(format(GlobalMsg["strJrrpErr"], { des }), eve.fromGroup, false);
-	}
+	string out = strNickName + "今天的人品值是: ";
+	string into = "QQ=" + to_string(CQ::getLoginQQ()) + "&v=20190114" + "&QueryQQ=" + to_string(eve.fromQQ);
+	Get::JRRP(into,out);
+	AddMsgToQueue(out, eve.fromGroup, false);
 	}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "nn")
 		{
@@ -2693,7 +2677,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 EVE_DiscussMsg_EX(eventDiscussMsg)
 {
 	if (eve.isSystem())return;
-  init(eve.message);
+	init(eve.message);
 	string strAt = "[CQ:at,qq=" + to_string(getLoginQQ()) + "]";
 	if (eve.message.substr(0, 6) == "[CQ:at")
 	{
@@ -3003,14 +2987,8 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 	for (auto& n : strSearch)
 		n = toupper(static_cast<unsigned char>(n));
 	string strReturn;
-	if (Get::analyze(strSearch, strReturn))
-	{
-		AddMsgToQueue(strReturn, eve.fromDiscuss, false);
-	}
-	else
-	{
-		AddMsgToQueue(GlobalMsg["strRuleErr"] + strReturn, eve.fromDiscuss, false);
-	}
+	Get::Rule(strSearch, strReturn);
+	AddMsgToQueue(strReturn, eve.fromDiscuss, false);
 	}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "init")
 		{
@@ -3698,55 +3676,45 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 	}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "jrrp")
 	{
-	intMsgCnt += 4;
-	while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
-		intMsgCnt++;
-	const string Command = strLowerMessage.substr(intMsgCnt, eve.message.find(' ', intMsgCnt) - intMsgCnt);
-	if (Command == "on")
-	{
+		intMsgCnt += 4;
+		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+			intMsgCnt++;
+		const string Command = strLowerMessage.substr(intMsgCnt, eve.message.find(' ', intMsgCnt) - intMsgCnt);
+		if (Command == "on")
+		{
+			if (DisabledJRRPDiscuss.count(eve.fromDiscuss))
+			{
+				DisabledJRRPDiscuss.erase(eve.fromDiscuss);
+				AddMsgToQueue("成功在此多人聊天中启用JRRP!", eve.fromDiscuss, false);
+			}
+			else
+			{
+				AddMsgToQueue("在此多人聊天中JRRP没有被禁用!", eve.fromDiscuss, false);
+			}
+			return;
+		}
+		if (Command == "off")
+		{
+			if (!DisabledJRRPDiscuss.count(eve.fromDiscuss))
+			{
+				DisabledJRRPDiscuss.insert(eve.fromDiscuss);
+				AddMsgToQueue("成功在此多人聊天中禁用JRRP!", eve.fromDiscuss, false);
+			}
+			else
+			{
+				AddMsgToQueue("在此多人聊天中JRRP没有被启用!", eve.fromDiscuss, false);
+			}
+			return;
+		}
 		if (DisabledJRRPDiscuss.count(eve.fromDiscuss))
 		{
-			DisabledJRRPDiscuss.erase(eve.fromDiscuss);
-			AddMsgToQueue("成功在此多人聊天中启用JRRP!", eve.fromDiscuss, false);
+			AddMsgToQueue("在此多人聊天中JRRP已被禁用!", eve.fromDiscuss, false);
+			return;
 		}
-		else
-		{
-			AddMsgToQueue("在此多人聊天中JRRP没有被禁用!", eve.fromDiscuss, false);
-		}
-		return;
-	}
-	if (Command == "off")
-	{
-		if (!DisabledJRRPDiscuss.count(eve.fromDiscuss))
-		{
-			DisabledJRRPDiscuss.insert(eve.fromDiscuss);
-			AddMsgToQueue("成功在此多人聊天中禁用JRRP!", eve.fromDiscuss, false);
-		}
-		else
-		{
-			AddMsgToQueue("在此多人聊天中JRRP没有被启用!", eve.fromDiscuss, false);
-		}
-		return;
-	}
-	if (DisabledJRRPDiscuss.count(eve.fromDiscuss))
-	{
-		AddMsgToQueue("在此多人聊天中JRRP已被禁用!", eve.fromDiscuss, false);
-		return;
-	}
-	string des;
-	string data = "QQ=" + to_string(CQ::getLoginQQ()) + "&v=20190114" + "&QueryQQ=" + to_string(eve.fromQQ);
-	char* frmdata = new char[data.length() + 1];
-	strcpy_s(frmdata, data.length() + 1, data.c_str());
-	bool res = Network::POST("api.kokona.tech", "/jrrp", 5555, frmdata, des);
-	delete[] frmdata;
-	if (res)
-	{
-		AddMsgToQueue(format(GlobalMsg["strJrrp"], { strNickName, des }), eve.fromDiscuss, false);
-	}
-	else
-	{
-		AddMsgToQueue(format(GlobalMsg["strJrrpErr"], { des }), eve.fromDiscuss, false);
-	}
+		string out = strNickName + "今天的人品值是: ";
+		string into = "QQ=" + to_string(CQ::getLoginQQ()) + "&v=20190114" + "&QueryQQ=" + to_string(eve.fromQQ);
+		Get::JRRP(into, out);
+		AddMsgToQueue(out, eve.fromDiscuss, false);
 	}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "nn")
 		{

@@ -53,6 +53,8 @@ std::map<std::string, std::string> GlobalMsg
 	{"strPropCleared", "已清除所有属性"},
 	{"strPropDeleted", "属性删除成功"},
 	{"strPropNotFound", "错误:属性不存在"},
+	{"strRuleErr", "规则数据获取失败,具体信息:\n"},
+	{"strRulesFailedErr", "请求失败,无法连接数据库"},
 	{"strRuleNotFound", "未找到对应的规则信息"},
 	{"strProp", "{0}的{1}属性值为{2}"},
 	{"strStErr", "格式错误:请参考帮助文档获取.st命令的使用方法"},

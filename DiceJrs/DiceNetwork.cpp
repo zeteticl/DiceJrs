@@ -67,7 +67,6 @@ namespace Network
 		return GlobalMsg["strUnableToGetErrorMsg"];
 	}
 
-
 	bool POST(const char* const serverName, const char* const objectName, const unsigned short port, char* const frmdata, std::string & des)
 	{
 		const char* acceptTypes[] = { "*/*", nullptr };

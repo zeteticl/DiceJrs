@@ -11,10 +11,14 @@ namespace Get
 	void DND(std::string&, int);
 	void LongInsane(std::string&);
 	void TempInsane(std::string&);
-	//Rules
-	std::string getLastErrorMsg();
-	bool analyze(std::string& rawStr, std::string& des);
-	bool get(const std::string& rule, const std::string& name, std::string& des);
+	void JRRP(std::string&, std::string&);
+	void Rule(std::string&, std::string&);
+	namespace Rules
+	{ 
+		std::string getLastErrorMsg();
+		bool into(std::string& rawStr, std::string& des);
+		bool out(const std::string& rule, const std::string& name, std::string& des);
+	}
 }
 void init(std::string&);
 void init2(std::string&);

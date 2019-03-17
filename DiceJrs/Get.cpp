@@ -33,8 +33,7 @@ namespace Get
 		std::uniform_int_distribution<int> dis(lowest, highest);
 		return dis(gen);
 	}
-
-	void COC7D(string & strMAns)
+	void COC7D(string& strMAns)
 	{
 		RD rd3D6("3D6");
 		RD rd2D6p6("2D6+6");
@@ -147,8 +146,7 @@ namespace Get
 			MOV = 8;
 		strMAns += "\n移动力MOV=" + to_string(MOV);
 	}
-
-	void COC6D(string & strMAns)
+	void COC6D(string& strMAns)
 	{
 		RD rd3D6("3D6");
 		RD rd2D6p6("2D6+6");
@@ -241,8 +239,7 @@ namespace Get
 		}
 		strMAns += DB;
 	}
-
-	void COC7(string & strMAns, int intNum)
+	void COC7(string& strMAns, int intNum)
 	{
 		strMAns += "的人物作成:";
 		string strProperty[] = { "力量", "体质", "体型", "敏捷", "外貌", "智力", "意志", "教育", "幸运" };
@@ -262,8 +259,7 @@ namespace Get
 			intAllTotal = 0;
 		}
 	}
-
-	void COC6(string & strMAns, int intNum)
+	void COC6(string& strMAns, int intNum)
 	{
 		strMAns += "的人物作成:";
 		string strProperty[] = { "力量", "体质", "体型", "敏捷", "外貌", "智力", "意志", "教育" };
@@ -286,8 +282,7 @@ namespace Get
 			intAllTotal = 0;
 		}
 	}
-
-	void DND(string & strOutput, int intNum)
+	void DND(string& strOutput, int intNum)
 	{
 		strOutput += "的英雄作成:";
 		RD rdDND("4D6K3");
@@ -309,8 +304,7 @@ namespace Get
 			intAllTotal = 0;
 		}
 	}
-
-	void TempInsane(string & strAns)
+	void TempInsane(string& strAns)
 	{
 		const int intSymRes = Get::Random(1, 10);
 		std::string strTI = "1D10=" + to_string(intSymRes) + "\n症状: " + TempInsanity[intSymRes];
@@ -334,8 +328,7 @@ namespace Get
 		}
 		strAns += strTI;
 	}
-
-	void LongInsane(string & strAns)
+	void LongInsane(string& strAns)
 	{
 		const int intSymRes = Get::Random(1, 10);
 		std::string strLI = "1D10=" + to_string(intSymRes) + "\n症状: " + LongInsanity[intSymRes];
@@ -359,65 +352,93 @@ namespace Get
 		}
 		strAns += strLI;
 	}
-
-	bool analyze(string& rawStr, string& des)
+	void JRRP(string& into, string& out)
 	{
-		if (rawStr.empty())
+		char* frminto = new char[into.length() + 1];
+		strcpy_s(frminto, into.length() + 1, into.c_str());
+		std::string des;
+		bool res = Network::POST("api.kokona.tech", "/jrrp", 5555, frminto, des);
+		delete[] frminto;
+		if (res)
 		{
-			des = GlobalMsg["strRulesFormatErr"];
-			return false;
-		}
-
-		for (auto& chr : rawStr)chr = toupper(static_cast<unsigned char> (chr));
-
-		if (rawStr.find(':') != string::npos)
-		{
-			const string name = rawStr.substr(rawStr.find(':') + 1);
-			if (name.empty())
-			{
-				des = GlobalMsg["strRulesFormatErr"];
-				return false;
-			}
-			const string rule = rawStr.substr(0, rawStr.find(':'));
-			if (name.empty())
-			{
-				des = GlobalMsg["strRulesFormatErr"];
-				return false;
-			}
-			return get(rule, name, des);
-		}
-		return get("", rawStr, des);
-	}
-
-	bool get(const std::string& rule, const std::string& name, std::string& des)
-	{
-		const string ruleName = GBKtoUTF8(rule);
-		const string itemName = GBKtoUTF8(name);
-
-		string data = "Name=" + UrlEncode(itemName) + "&QQ=" + to_string(CQ::getLoginQQ()) + "&v=20190114";
-		if (!ruleName.empty())
-		{
-			data += "&Type=Rules-" + UrlEncode(ruleName);
-		}
-		char* frmdata = new char[data.length() + 1];
-		strcpy_s(frmdata, data.length() + 1, data.c_str());
-		string temp;
-		const bool reqRes = Network::POST("api.kokona.tech", "/rules", 5555, frmdata, temp);
-		delete[] frmdata;
-		if (reqRes)
-		{
-			des = UTF8toGBK(temp);
-			return true;
-		}
-		if (temp == GlobalMsg["strRequestNoResponse"])
-		{
-			des = GlobalMsg["strRuleNotFound"];
+			out += des;
 		}
 		else
 		{
-			des = temp;
+			out = "JRRP获取失败! 错误信息:" + des;
 		}
-		return false;
+
+	}
+	void Rule(string& into,string& out)
+	{
+		string get;
+		if (Get::Rules::into(into, get))
+		{
+			if (get.find("规则: FAQ") != string::npos) out = "不允许FAQ词条检索";
+			else out = get;
+		}
+		else out = "规则数据获取失败, 具体信息:" + get;
+	}
+	namespace Rules
+	{
+		bool into(string& rawStr, string& des)
+		{
+			if (rawStr.empty())
+			{
+				des = GlobalMsg["strRulesFormatErr"];
+				return false;
+			}
+
+			for (auto& chr : rawStr)chr = toupper(static_cast<unsigned char> (chr));
+
+			if (rawStr.find(':') != string::npos)
+			{
+				const string name = rawStr.substr(rawStr.find(':') + 1);
+				if (name.empty())
+				{
+					des = GlobalMsg["strRulesFormatErr"];
+					return false;
+				}
+				const string rule = rawStr.substr(0, rawStr.find(':'));
+				if (name.empty())
+				{
+					des = GlobalMsg["strRulesFormatErr"];
+					return false;
+				}
+				return out(rule, name, des);
+			}
+			return out("", rawStr, des);
+		}
+		bool out(const std::string& rule, const std::string& name, std::string& des)
+		{
+			const string ruleName = GBKtoUTF8(rule);
+			const string itemName = GBKtoUTF8(name);
+
+			string data = "Name=" + UrlEncode(itemName) + "&QQ=" + to_string(CQ::getLoginQQ()) + "&v=20190114";
+			if (!ruleName.empty())
+			{
+				data += "&Type=Rules-" + UrlEncode(ruleName);
+			}
+			char* frmdata = new char[data.length() + 1];
+			strcpy_s(frmdata, data.length() + 1, data.c_str());
+			string temp;
+			const bool reqRes = Network::POST("api.kokona.tech", "/rules", 5555, frmdata, temp);
+			delete[] frmdata;
+			if (reqRes)
+			{
+				des = UTF8toGBK(temp);
+				return true;
+			}
+			if (temp == GlobalMsg["strRequestNoResponse"])
+			{
+				des = GlobalMsg["strRuleNotFound"];
+			}
+			else
+			{
+				des = temp;
+			}
+			return false;
+		}
 	}
 
 }
@@ -425,7 +446,6 @@ void init(string& msg)
 	{
 		msg_decode(msg);
 	}
-
 void init2(string& msg)
 	{
 		for (int i = 0; i != msg.length(); i++)
