@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #ifndef JRS_RD
 #define JRS_RD
 #include <random>
