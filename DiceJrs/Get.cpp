@@ -33,6 +33,48 @@ namespace Get
 		std::uniform_int_distribution<int> dis(lowest, highest);
 		return dis(gen);
 	}
+void JRRP(string& into, string& out)
+	{
+		char* frminto = new char[into.length() + 1];
+		strcpy_s(frminto, into.length() + 1, into.c_str());
+		std::string des;
+		bool res = Network::POST("api.kokona.tech", "/jrrp", 5555, frminto, des);
+		delete[] frminto;
+		if (res)
+		{
+			out += des;
+		}
+		else
+		{
+			out = "JRRP获取失败! 错误信息:" + des;
+		}
+}
+	
+void DND(string& strOutput, int intNum)
+	{
+		strOutput += "的英雄作成:";
+		RD rdDND("4D6K3");
+		string strDNDName[6] = { "力量", "体质", "敏捷", "智力", "感知", "魅力" };
+		const bool boolAddSpace = intNum != 1;
+		int intAllTotal = 0;
+		while (intNum--)
+		{
+			strOutput += "\n";
+			for (int i = 0; i <= 5; i++)
+			{
+				rdDND.Roll();
+				strOutput += strDNDName[i] + ":" + to_string(rdDND.intTotal) + " ";
+				if (rdDND.intTotal < 10 && boolAddSpace)
+					strOutput += "  ";
+				intAllTotal += rdDND.intTotal;
+			}
+			strOutput += "共计:" + to_string(intAllTotal);
+			intAllTotal = 0;
+		}
+	}
+	
+	namespace COC
+	{
 	void COC7D(string& strMAns)
 	{
 		RD rd3D6("3D6");
@@ -282,28 +324,6 @@ namespace Get
 			intAllTotal = 0;
 		}
 	}
-	void DND(string& strOutput, int intNum)
-	{
-		strOutput += "的英雄作成:";
-		RD rdDND("4D6K3");
-		string strDNDName[6] = { "力量", "体质", "敏捷", "智力", "感知", "魅力" };
-		const bool boolAddSpace = intNum != 1;
-		int intAllTotal = 0;
-		while (intNum--)
-		{
-			strOutput += "\n";
-			for (int i = 0; i <= 5; i++)
-			{
-				rdDND.Roll();
-				strOutput += strDNDName[i] + ":" + to_string(rdDND.intTotal) + " ";
-				if (rdDND.intTotal < 10 && boolAddSpace)
-					strOutput += "  ";
-				intAllTotal += rdDND.intTotal;
-			}
-			strOutput += "共计:" + to_string(intAllTotal);
-			intAllTotal = 0;
-		}
-	}
 	void TempInsane(string& strAns)
 	{
 		const int intSymRes = Get::Random(1, 10);
@@ -352,23 +372,6 @@ namespace Get
 		}
 		strAns += strLI;
 	}
-	void JRRP(string& into, string& out)
-	{
-		char* frminto = new char[into.length() + 1];
-		strcpy_s(frminto, into.length() + 1, into.c_str());
-		std::string des;
-		bool res = Network::POST("api.kokona.tech", "/jrrp", 5555, frminto, des);
-		delete[] frminto;
-		if (res)
-		{
-			out += des;
-		}
-		else
-		{
-			out = "JRRP获取失败! 错误信息:" + des;
-		}
-
-	}
 	void Rule(string& into,string& out)
 	{
 		string get;
@@ -379,6 +382,36 @@ namespace Get
 		}
 		else out = "规则数据获取失败, 具体信息:" + get;
 	}
+	}
+	
+	
+	
+	
+namespace Pure
+	{
+    void PhysicalTalents(std::string& strAns)
+{
+		const int intSymRes = Get::Random(1, 10);
+		std::string strTa = "的肉体天赋\n1D10=" + to_string(intSymRes) + "\n " + PhysicalTalents[intSymRes];
+    strAns += strTa;
+}
+void MentalTalents(std::string& strAns)
+{
+		const int intSymRes = Get::Random(1, 10);
+		std::string strTa = "的精神天赋\n1D10=" + to_string(intSymRes) + "\n" + MentalTalents[intSymRes];
+    strAns += strTa;
+  }
+void CombatTalents(std::string& strAns);
+void MiscellaneousTalents(std::string& strAns);
+void InasneTalents(std::string& strAns);
+void FailedCasting(std::string& strAns);
+}
+	
+	
+	
+	
+	
+	
 	namespace Rules
 	{
 		bool into(string& rawStr, string& des)
