@@ -474,7 +474,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				return;
 			}
 			string strReply = strNickName;
-      Get::COC6(strReply, intNum);
+      Get::COC::COC6(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromQQ);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "dnd")
@@ -540,7 +540,7 @@ EVE_PrivateMsg_EX(eventPrivateMsg)
 				return;
 			}
 			string strReply = strNickName;
-			Get::COC7(strReply, intNum);
+			Get::COC::COC7(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromQQ);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "exit")
@@ -1327,7 +1327,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 	for (auto& n : strSearch)
 		n = toupper(static_cast<unsigned char>(n));
 	string strReturn;
-	Get::Rule(strSearch, strReturn);
+	Get::COC::Rule(strSearch, strReturn);
 	AddMsgToQueue(strReturn, eve.fromGroup, false);
 	}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "init")
@@ -1729,13 +1729,13 @@ EVE_GroupMsg_EX(eventGroupMsg)
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "ti")
 		{
 			string strAns = strNickName + "的疯狂发作-临时症状:\n";
-			Get::TempInsane(strAns);
+			Get::COC::TempInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "li")
 		{
 			string strAns = strNickName + "的疯狂发作-总结症状:\n";
-			Get::LongInsane(strAns);
+			Get::COC::LongInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "sc" && strLowerMessage.substr(intMsgCnt, 3) != "scp")
@@ -2208,7 +2208,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				return;
 			}
 			string strReply = strNickName;
-      Get::COC6(strReply, intNum);
+      Get::COC::COC6(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "dnd")
@@ -2274,7 +2274,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				return;
 			}
 			string strReply = strNickName;
-			Get::COC7(strReply, intNum);
+			Get::COC::COC7(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "ra")
@@ -2723,7 +2723,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			string QQNum = strLowerMessage.substr(intMsgCnt, eve.message.find(' ', intMsgCnt) - intMsgCnt);
 			if (Command == "on")
 			{
-				if (eve.fromQQ == 2558272027 || QQNum.empty() || QQNum == to_string(getLoginQQ()) || (QQNum.length() == 4 && QQNum == to_string(getLoginQQ() % 10000)))
+				if (eve.fromQQ == MASTER || QQNum.empty() || QQNum == to_string(getLoginQQ()) || (QQNum.length() == 4 && QQNum == to_string(getLoginQQ() % 10000)))
 				{
 					if (DisabledDiscuss.count(eve.fromDiscuss))
 					{
@@ -2738,7 +2738,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 			}
 			else if (Command == "off")
 			{
-				if (eve.fromQQ == 2558272027 || QQNum.empty() || QQNum == to_string(getLoginQQ()) || (QQNum.length() == 4 && QQNum == to_string(getLoginQQ() % 10000)))
+				if (eve.fromQQ == MASTER || QQNum.empty() || QQNum == to_string(getLoginQQ()) || (QQNum.length() == 4 && QQNum == to_string(getLoginQQ() % 10000)))
 				{
 					if (!DisabledDiscuss.count(eve.fromDiscuss))
 					{
@@ -2772,7 +2772,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				QQNum += strLowerMessage[intMsgCnt];
 				intMsgCnt++;
 			}
-			if (eve.fromQQ == 2558272027 || QQNum.empty() || (QQNum.length() == 4 && QQNum == to_string(getLoginQQ() % 10000)) || QQNum == to_string(getLoginQQ()))
+			if (eve.fromQQ == MASTER || QQNum.empty() || (QQNum.length() == 4 && QQNum == to_string(getLoginQQ() % 10000)) || QQNum == to_string(getLoginQQ()))
 			{
 				setDiscussLeave(eve.fromDiscuss);
 			}
@@ -3360,13 +3360,13 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "ti")
 		{
 			string strAns = strNickName + "的疯狂发作-临时症状:\n";
-			Get::TempInsane(strAns);
+			Get::COC::TempInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "li")
 		{
 			string strAns = strNickName + "的疯狂发作-总结症状:\n";
-			Get::LongInsane(strAns);
+			Get::COC::LongInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "sc")
@@ -3857,7 +3857,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				return;
 			}
 			string strReply = strNickName;
-			Get::COC6(strReply, intNum);
+			Get::COC::COC6(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 3) == "dnd")
@@ -3923,7 +3923,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 				return;
 			}
 			string strReply = strNickName;
-			Get::COC7(strReply, intNum);
+			Get::COC::COC7(strReply, intNum);
 			AddMsgToQueue(strReply, eve.fromDiscuss, false);
 		}
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "ra")

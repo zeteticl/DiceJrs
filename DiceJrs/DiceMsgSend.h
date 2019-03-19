@@ -12,9 +12,5 @@
  */
 void AddMsgToQueue(const std::string& msg, long long target_id, bool is_private = true);
 
-/*
- * 消息发送线程函数
- * 注意: 切勿在主线程中调用此函数, 此函数仅用于初始化消息发送线程
- */
 void SendMsg();
 #endif /*JRS_MSG_SEND*/

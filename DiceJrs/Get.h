@@ -18,7 +18,7 @@ namespace Get
 	}
 	namespace Pure
 	{
-	  void MentalTalents(std::string&);
+	   void MentalTalents(std::string&);
     void CombatTalents(std::string&);
     void MiscellaneousTalents(std::string&);
     void InasneTalents(std::string&);
