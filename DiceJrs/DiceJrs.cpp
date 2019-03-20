@@ -316,6 +316,18 @@ EVE_Enable(eventEnable)
 	}
 	ifstreamBanGroupList.close();
 	//
+  ifstream ifstreamModeGroup(strFileLoc + "ModeGroup.RDconf");
+	if (ifstreamModeGroup)
+	{
+		long long GroupID;
+		int Var;
+		while (ifstreamModeGroup >> GroupID >> Var)
+		{
+			ModeGroup[GroupID].Var = Var;
+		}
+	}
+	ifstreamModeGroup.close();
+  //
 	ifstream ifstreamDefault(strFileLoc + "Default.RDconf");
 	if (ifstreamDefault)
 	{
@@ -1016,6 +1028,25 @@ EVE_GroupMsg_EX(eventGroupMsg)
 				}
 			}
 			return;
+		}
+  if (strLowerMessage.substr(intMsgCnt, 4) == "mode")
+		{
+			intMsgCnt += 4;
+			while (isspace(strLowerMessage[intMsgCnt]))
+				intMsgCnt++;
+			const string setMode = strLowerMessage.substr(intMsgCnt, eve.message.find(' ', intMsgCnt) - intMsgCnt);
+			if (ModeGroup.count(eve.fromGroup))
+			{
+			 ModeGroup.erase(eve.fromGroup);
+				const string strReply = "当前是" + Modes[JRFATE[eve.ModeGroup].Var];
+				AddMsgToQueue(strReply, eve.fromGroup, false);
+			}
+			else
+			{
+				ModeGroup[eve.fromGroup].Var = setMode;
+				const string strReply = "当前是" + Modes[JRFATE[eve.ModeGroup].Var];
+				AddMsgToQueue(strReply, eve.fromGroup, false);
+				}
 		}
 	if (strLowerMessage.substr(intMsgCnt, 4) == "quit")
 		{
@@ -4432,7 +4463,6 @@ EVE_Disable(eventDisable)
 	}
 	ofstreamDisabledFATEDiscuss.close();
 	//Fate
-
 	ofstream ofstreamDisabledMEGroup(strFileLoc + "DisabledMEGroup.RDconf", ios::out | ios::trunc);
 	for (auto it = DisabledMEGroup.begin(); it != DisabledMEGroup.end(); ++it)
 	{
@@ -4469,7 +4499,6 @@ EVE_Disable(eventDisable)
 		ofstreamBanFriendList << *it << std::endl;
 	}
 	ofstreamBanFriendList.close();
-
 
 	ofstream ofstreamBanGroupList(strFileLoc + "BanGroupList.RDconf", ios::out | ios::trunc);
 	for (auto it = BanGroupList.begin(); it != BanGroupList.end(); ++it)
@@ -4518,8 +4547,6 @@ EVE_Disable(eventDisable)
 		ofstreamDisabledJRRPDiscuss << *it << std::endl;
 	}
 	ofstreamDisabledJRRPDiscuss.close();
-
-
 	//Fate
 	ofstream ofstreamJRFATE(strFileLoc + "JRFATE.RDconf", ios::out | ios::trunc);
 	for (auto it = JRFATE.begin(); it != JRFATE.end(); ++it)
@@ -4528,6 +4555,14 @@ EVE_Disable(eventDisable)
 	}
 	ofstreamJRFATE.close();
 	//Fate
+  //Mode
+  ofstream ofstreamModeGroup(strFileLoc + "ModeGroup.RDconf", ios::out | ios::trunc);
+	for (auto it = ModeGroup.begin(); it != ModeGroup.end(); ++it)
+	{
+		ofstreamModeGroup << it->first << " " << it->second.Var << std::endl;
+	}
+	ofstreamModeGroup.close();
+  //
 	ofstream ofstreamCharacterProp(strFileLoc + "CharacterProp.RDconf", ios::out | ios::trunc);
 	for (auto it = CharacterProp.begin(); it != CharacterProp.end(); ++it)
 	{
@@ -4558,6 +4593,7 @@ EVE_Disable(eventDisable)
 	DisabledJRRPGroup.clear();
 	DisabledJRRPDiscuss.clear();
 	JRFATE.clear();
+  ModeGroup.clear();
 	DefaultDice.clear();
 	DisabledGroup.clear();
 	DisabledDiscuss.clear();
@@ -4632,6 +4668,14 @@ EVE_Exit(eventExit)
 		ofstreamDisabledMEGroup << *it << std::endl;
 	}
 	ofstreamDisabledMEGroup.close();
+  
+  //Mode
+  ofstream ofstreamModeGroup(strFileLoc + "ModeGroup.RDconf", ios::out | ios::trunc);
+	for (auto it = ModeGroup.begin(); it != ModeGroup.end(); ++it)
+	{
+		ofstreamModeGroup << it->first << " " << it->second.Var << std::endl;
+	}
+	ofstreamModeGroup.close();
 
 	ofstream ofstreamDisabledMEDiscuss(strFileLoc + "DisabledMEDiscuss.RDconf", ios::out | ios::trunc);
 	for (auto it = DisabledMEDiscuss.begin(); it != DisabledMEDiscuss.end(); ++it)
