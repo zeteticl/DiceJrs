@@ -1038,13 +1038,13 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			if (ModeGroup.count(eve.fromGroup))
 			{
 			 ModeGroup.erase(eve.fromGroup);
-				const string strReply = "当前是" + Modes[JRFATE[eve.ModeGroup].Var];
+				const string strReply = "当前是" + Modes[ModeGroup[eve.ModeGroup].Var];
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 			}
 			else
 			{
 				ModeGroup[eve.fromGroup].Var = setMode;
-				const string strReply = "当前是" + Modes[JRFATE[eve.ModeGroup].Var];
+				const string strReply = "当前是" + Modes[ModeGroup[eve.ModeGroup].Var];
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 				}
 		}
