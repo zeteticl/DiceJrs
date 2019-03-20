@@ -71,6 +71,7 @@ map<long long, FATE> JRFATE;
 map<long long, int> DefaultDice;
 map<long long, string> WelcomeMsg;
 map<long long, string> LogMsg;
+set<long long> ModeGroup;
 set<long long> EnableLogGroup;
 set<long long> DisabledGroup;
 set<long long> DisabledDiscuss;
@@ -1038,13 +1039,13 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			if (ModeGroup.count(eve.fromGroup))
 			{
 			 ModeGroup.erase(eve.fromGroup);
-				const string strReply = "当前是" + Modes[ModeGroup[eve.ModeGroup].Var];
+				const string strReply = "当前是" + setMode[ModeGroup[eve.fromGroup].Var];
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 			}
 			else
 			{
 				ModeGroup[eve.fromGroup].Var = setMode;
-				const string strReply = "当前是" + Modes[ModeGroup[eve.ModeGroup].Var];
+				const string strReply = "当前是" + setMode[ModeGroup[eve.fromGroup].Var];
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 				}
 		}
@@ -3018,7 +3019,7 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 	for (auto& n : strSearch)
 		n = toupper(static_cast<unsigned char>(n));
 	string strReturn;
-	Get::Rule(strSearch, strReturn);
+	Get::COC::Rule(strSearch, strReturn);
 	AddMsgToQueue(strReturn, eve.fromDiscuss, false);
 	}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "init")

@@ -33,7 +33,7 @@ namespace Get
 		std::uniform_int_distribution<int> dis(lowest, highest);
 		return dis(gen);
 	}
-void JRRP(string& into, string& out)
+	void JRRP(string& into, string& out)
 	{
 		char* frminto = new char[into.length() + 1];
 		strcpy_s(frminto, into.length() + 1, into.c_str());
@@ -48,9 +48,9 @@ void JRRP(string& into, string& out)
 		{
 			out = "JRRP获取失败! 错误信息:" + des;
 		}
-}
-	
-void DND(string& strOutput, int intNum)
+	}
+
+	void DND(string& strOutput, int intNum)
 	{
 		strOutput += "的英雄作成:";
 		RD rdDND("4D6K3");
@@ -72,168 +72,168 @@ void DND(string& strOutput, int intNum)
 			intAllTotal = 0;
 		}
 	}
-	
+
 	namespace COC
 	{
-	void COC7(string& strMAns, int intNum)
-	{
-		strMAns += "的人物作成:";
-		string strProperty[] = { "力量", "体质", "体型", "敏捷", "外貌", "智力", "意志", "教育", "幸运" };
-		string strRoll[] = { "3D6", "3D6", "2D6+6", "3D6", "3D6", "2D6+6", "3D6", "2D6+6", "3D6" };
-		int intAllTotal = 0;
-		while (intNum--)
+		void COC7(string& strMAns, int intNum)
 		{
-			strMAns += '\n';
-			for (int i = 0; i != 9; i++)
+			strMAns += "的人物作成:";
+			string strProperty[] = { "力量", "体质", "体型", "敏捷", "外貌", "智力", "意志", "教育", "幸运" };
+			string strRoll[] = { "3D6", "3D6", "2D6+6", "3D6", "3D6", "2D6+6", "3D6", "2D6+6", "3D6" };
+			int intAllTotal = 0;
+			while (intNum--)
 			{
-				RD rdCOC(strRoll[i]);
-				rdCOC.Roll();
-				strMAns += strProperty[i] + ":" + to_string(rdCOC.intTotal * 5) + " ";
-				intAllTotal += rdCOC.intTotal * 5;
+				strMAns += '\n';
+				for (int i = 0; i != 9; i++)
+				{
+					RD rdCOC(strRoll[i]);
+					rdCOC.Roll();
+					strMAns += strProperty[i] + ":" + to_string(rdCOC.intTotal * 5) + " ";
+					intAllTotal += rdCOC.intTotal * 5;
+				}
+				strMAns += "共计:" + to_string(intAllTotal);
+				intAllTotal = 0;
 			}
-			strMAns += "共计:" + to_string(intAllTotal);
-			intAllTotal = 0;
 		}
-	}
-	void COC6(string& strMAns, int intNum)
-	{
-		strMAns += "的人物作成:";
-		string strProperty[] = { "力量", "体质", "体型", "敏捷", "外貌", "智力", "意志", "教育" };
-		string strRoll[] = { "3D6", "3D6", "2D6+6", "3D6", "3D6", "2D6+6", "3D6", "3D6+3" };
-		const bool boolAddSpace = intNum != 1;
-		int intAllTotal = 0;
-		while (intNum--)
+		void COC6(string& strMAns, int intNum)
 		{
-			strMAns += '\n';
-			for (int i = 0; i != 8; i++)
+			strMAns += "的人物作成:";
+			string strProperty[] = { "力量", "体质", "体型", "敏捷", "外貌", "智力", "意志", "教育" };
+			string strRoll[] = { "3D6", "3D6", "2D6+6", "3D6", "3D6", "2D6+6", "3D6", "3D6+3" };
+			const bool boolAddSpace = intNum != 1;
+			int intAllTotal = 0;
+			while (intNum--)
 			{
-				RD rdCOC(strRoll[i]);
-				rdCOC.Roll();
-				strMAns += strProperty[i] + ":" + to_string(rdCOC.intTotal) + " ";
-				if (boolAddSpace&& rdCOC.intTotal < 10)
-					strMAns += "  ";
-				intAllTotal += rdCOC.intTotal;
+				strMAns += '\n';
+				for (int i = 0; i != 8; i++)
+				{
+					RD rdCOC(strRoll[i]);
+					rdCOC.Roll();
+					strMAns += strProperty[i] + ":" + to_string(rdCOC.intTotal) + " ";
+					if (boolAddSpace&& rdCOC.intTotal < 10)
+						strMAns += "  ";
+					intAllTotal += rdCOC.intTotal;
+				}
+				strMAns += "共计:" + to_string(intAllTotal);
+				intAllTotal = 0;
 			}
-			strMAns += "共计:" + to_string(intAllTotal);
-			intAllTotal = 0;
+		}
+		void TempInsane(string & strAns)
+		{
+			const int intSymRes = Get::Random(1, 10);
+			std::string strTI = "1D10=" + to_string(intSymRes) + "\n症状: " + TempInsanity[intSymRes];
+			if (intSymRes == 9)
+			{
+				const int intDetailSymRes = Get::Random(1, 100);
+				strTI = format(strTI, { "1D10=" + to_string(Get::Random(1, 10)), "1D100=" + to_string(intDetailSymRes), strFear[intDetailSymRes] });
+			}
+			else if (intSymRes == 10)
+			{
+				const int intDetailSymRes = Get::Random(1, 100);
+				strTI = format(strTI, { "1D10=" + to_string(Get::Random(1, 10)), "1D100=" + to_string(intDetailSymRes), strPanic[intDetailSymRes] });
+			}
+			else
+			{
+				strTI = format(strTI, { "1D10=" + to_string(Get::Random(1, 10)) });
+			}
+			strAns += strTI;
+		}
+		void LongInsane(string & strAns)
+		{
+			const int intSymRes = Get::Random(1, 10);
+			std::string strLI = "1D10=" + to_string(intSymRes) + "\n症状: " + LongInsanity[intSymRes];
+			if (intSymRes == 9)
+			{
+				const int intDetailSymRes = Get::Random(1, 100);
+				strLI = format(strLI, { "1D10=" + to_string(Get::Random(1, 10)), "1D100=" + to_string(intDetailSymRes), strFear[intDetailSymRes] });
+			}
+			else if (intSymRes == 10)
+			{
+				const int intDetailSymRes = Get::Random(1, 100);
+				strLI = format(strLI, { "1D10=" + to_string(Get::Random(1, 10)), "1D100=" + to_string(intDetailSymRes), strPanic[intDetailSymRes] });
+			}
+			else
+			{
+				strLI = format(strLI, { "1D10=" + to_string(Get::Random(1, 10)) });
+			}
+			strAns += strLI;
+		}
+		void Rule(string & into, string & out)
+		{
+			string get;
+			if (Get::Rules::into(into, get))
+			{
+				if (get.find("规则: FAQ") != string::npos) out = "不允许FAQ词条检索";
+				else out = get;
+			}
+			else out = "规则数据获取失败, 具体信息:" + get;
 		}
 	}
-	void TempInsane(string& strAns)
+
+
+
+
+	namespace Pure
 	{
-		const int intSymRes = Get::Random(1, 10);
-		std::string strTI = "1D10=" + to_string(intSymRes) + "\n症状: " + TempInsanity[intSymRes];
-		if (intSymRes == 9)
+		void PhysicalTalents(std::string& strAns)
 		{
-			const int intDetailSymRes = Get::Random(1, 100);
-			strTI = format(strTI, {"1D10=" + to_string(Get::Random(1, 10)), "1D100=" + to_string(intDetailSymRes), strFear[intDetailSymRes]});
+			const int intSymRes = Get::Random(1, 10);
+			std::string strTa = "的肉体天赋\n1D10=" + to_string(intSymRes) + "\n " + PhysicalTalents[intSymRes];
+			strAns += strTa;
 		}
-		else if (intSymRes == 10)
+		void MentalTalents(std::string& strAns)
 		{
-			const int intDetailSymRes = Get::Random(1, 100);
-			strTI = format(strTI, {"1D10=" + to_string(Get::Random(1, 10)), "1D100=" + to_string(intDetailSymRes), strPanic[intDetailSymRes]});
+			const int intSymRes = Get::Random(1, 10);
+			std::string strTa = "的精神天赋\n1D10=" + to_string(intSymRes) + "\n" + MentalTalents[intSymRes];
+			strAns += strTa;
 		}
-		else
+		void CombatTalents(std::string& strAns)
 		{
-			strTI = format(strTI, { "1D10=" + to_string(Get::Random(1, 10)) });
+			const int intSymRes = Get::Random(1, 10);
+			std::string strTa = "的战斗天赋\n1D10=" + to_string(intSymRes) + "\n" + CombatTalents[intSymRes];
+			strAns += strTa;
 		}
-		strAns += strTI;
+		void MiscellaneousTalents(std::string& strAns)
+		{
+			const int intSymRes = Get::Random(1, 10);
+			std::string strTa = "的其他天赋\n1D10=" + to_string(intSymRes) + "\n" + MiscellaneousTalents[intSymRes];
+			strAns += strTa;
+		}
+		void InasneTalents(std::string& strAns)
+		{
+			const int intSymRes = Get::Random(1, 20);
+			std::string strTa = "的疯狂天赋天赋\n1D20=" + to_string(intSymRes) + "\n" + InasneTalents[intSymRes];
+			strAns += strTa;
+		}
+		void FailedCasting(std::string& strAns)
+		{
+			const int intSymRes = Get::Random(1, 20);
+			std::string strTa = "-法术失误\n1D20=" + to_string(intSymRes) + "\n" + FailedCasting[intSymRes];
+			if (intSymRes == 2 || intSymRes == 13)
+			{
+				strTa = format(strTa, { to_string(Get::Random(1, 6)) });
+			}
+			else if (intSymRes == 9)
+			{
+				strTa = format(strTa, { to_string(Get::Random(1, 4)) });
+			}
+			else if (intSymRes == 16)
+			{
+				strTa = format(strTa, { to_string(Get::Random(1, 10)), to_string(Get::Random(1, 10)) });
+			}
+			else if (intSymRes == 14)
+			{
+				strTa = format(strTa, { to_string(Get::Random(1, 10) + Get::Random(1, 10)) });
+			}
+			strAns += strTa;
+		}
 	}
-	void LongInsane(string& strAns)
-	{
-		const int intSymRes = Get::Random(1, 10);
-		std::string strLI = "1D10=" + to_string(intSymRes) + "\n症状: " + LongInsanity[intSymRes];
-		if (intSymRes == 9)
-		{
-			const int intDetailSymRes = Get::Random(1, 100);
-			strLI = format(strLI, {"1D10=" + to_string(Get::Random(1, 10)), "1D100=" + to_string(intDetailSymRes), strFear[intDetailSymRes]});
-		}
-		else if (intSymRes == 10)
-		{
-			const int intDetailSymRes = Get::Random(1, 100);
-			strLI = format(strLI, {"1D10=" + to_string(Get::Random(1, 10)), "1D100=" + to_string(intDetailSymRes), strPanic[intDetailSymRes]});
-		}
-		else
-		{
-			strLI = format(strLI, { "1D10=" + to_string(Get::Random(1, 10)) });
-		}
-		strAns += strLI;
-	}
-	void Rule(string& into,string& out)
-	{
-		string get;
-		if (Get::Rules::into(into, get))
-		{
-			if (get.find("规则: FAQ") != string::npos) out = "不允许FAQ词条检索";
-			else out = get;
-		}
-		else out = "规则数据获取失败, 具体信息:" + get;
-	}
-}
-	
-	
-	
-	
-namespace Pure
-{
-  void PhysicalTalents(std::string& strAns)
-  {
-		const int intSymRes = Get::Random(1, 10);
-		std::string strTa = "的肉体天赋\n1D10=" + to_string(intSymRes) + "\n " + PhysicalTalents[intSymRes];
-    strAns += strTa;
-  }
-  void MentalTalents(std::string& strAns)
-  {
-		const int intSymRes = Get::Random(1, 10);
-		std::string strTa = "的精神天赋\n1D10=" + to_string(intSymRes) + "\n" + MentalTalents[intSymRes];
-    strAns += strTa;
-  }
-  void CombatTalents(std::string& strAns);
-  {
-		const int intSymRes = Get::Random(1, 10);
-		std::string strTa = "的战斗天赋\n1D10=" + to_string(intSymRes) + "\n" + CombatTalents[intSymRes];
-    strAns += strTa;
-  }
-  void MiscellaneousTalents(std::string& strAns);
-  {
-		const int intSymRes = Get::Random(1, 10);
-		std::string strTa = "的其他天赋\n1D10=" + to_string(intSymRes) + "\n" + MiscellaneousTalents[intSymRes];
-    strAns += strTa;
-  }
-  void InasneTalents(std::string& strAns);
-  {
-		const int intSymRes = Get::Random(1, 20);
-		std::string strTa = "的疯狂天赋天赋\n1D20=" + to_string(intSymRes) + "\n" + InasneTalents[intSymRes];
-    strAns += strTa;
-  }
-  void FailedCasting(std::string& strAns);
-  {
-		const int intSymRes = Get::Random(1, 20);
-		std::string strTa = "-法术失误\n1D20=" + to_string(intSymRes) + "\n" + InasneTalents[intSymRes];
-		if (intSymRes == 2 || intSymRes == 13)
-		{
-		  strTa = format(strTa, { to_string(Get::Random(1, 6)) });
-		}
-		else if (intSymRes == 9)
-		{
-		  strTa = format(strTa, { to_string(Get::Random(1, 4)) });
-		}
-	  else if (intSymRes == 16)
-		{
-		  strTa = format(strTa, { to_string(Get::Random(1, 10)), to_string(Get::Random(1, 10))});
-		}
-	  else if (intSymRes == 14)
-		{
-		  strTa = format(strTa, { to_string(Get::Random(1, 10) + Get::Random(1, 10))});
-		}
-    strAns += strTa;
-  }
-}
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	namespace Rules
 	{
 		bool into(string& rawStr, string& des)
@@ -295,7 +295,6 @@ namespace Pure
 			return false;
 		}
 	}
-
 }
 void init(string& msg)
 	{

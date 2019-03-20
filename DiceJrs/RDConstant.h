@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #ifndef JRS_RD_CONSTANT
 #define JRS_RD_CONSTANT
 #include <string>
@@ -265,7 +265,7 @@ static std::string CombatTalents[11]{
 //其他天赋
 static std::string MiscellaneousTalents[11]{
 "",
-"[凶神恶煞]\n进行恐吓检定时降低一级难度等级，或者获得一个奖励骰，由守秘人判断。"，
+"[凶神恶煞]\n进行恐吓检定时降低一级难度等级，或者获得一个奖励骰，由守秘人判断。",
 "[奇妙道具]\n游戏开始时获得一个奇妙道具，见怪奇技术，86页。",
 "[吉人天相]\n回复幸运时，额外投一个1D10。",
 "[神话知识]\n游戏开始时获得10点克苏鲁神话技能。",
@@ -305,7 +305,7 @@ static std::string InsaneTalents[21]{
 //施法失败
 static std::string FailedCasting[21]{
 "",
-"骇人的电闪雷鸣。
+"骇人的电闪雷鸣。"
 "暂时失明1D6={0}轮（调整相应检定的难度等级/承受惩罚骰）。"
 "自不知何处吹起一阵狂风（进行幸运检定来抓住纸张与书籍等易被吹走的物品）。"
 "亮绿色的黏液自墙壁、地板或窗户等场所涌出（0/1D3理智损失）。"
