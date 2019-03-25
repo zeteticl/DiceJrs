@@ -71,7 +71,7 @@ map<long long, FATE> JRFATE;
 map<long long, int> DefaultDice;
 map<long long, string> WelcomeMsg;
 map<long long, string> LogMsg;
-set<long long> ModeGroup;
+map<long long, Mode> ModeGroup;
 set<long long> EnableLogGroup;
 set<long long> DisabledGroup;
 set<long long> DisabledDiscuss;
@@ -1044,7 +1044,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 			else
 			{
-				ModeGroup[eve.fromGroup].Var = setMode;
+				ModeGroup[eve.fromGroup].Var = atoi(setMode.c_str());
 				const string strReply = "当前是" + setMode[ModeGroup[eve.fromGroup].Var];
 				AddMsgToQueue(strReply, eve.fromGroup, false);
 				}

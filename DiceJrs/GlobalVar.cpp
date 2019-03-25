@@ -1,4 +1,4 @@
-#include "CQLogger.h"
+﻿#include "CQLogger.h"
 #include "GlobalVar.h"
 #include <map>
 #include "RDConstant.h"
