@@ -178,34 +178,34 @@ namespace Get
 		void PhysicalTalents(std::string& strAns)
 		{
 			const int intSymRes = Get::Random(1, 10);
-			std::string strTa = "的肉体天赋\n1D10=" + to_string(intSymRes) + "\n " + PhysicalTalents[intSymRes];
+			std::string strTa = "的肉体天赋\n1D10=" + to_string(intSymRes) + "\n " + PhysicalTalent[intSymRes];
 			strAns += strTa;
 		}
 		void MentalTalents(std::string& strAns)
 		{
 			const int intSymRes = Get::Random(1, 10);
-			std::string strTa = "的精神天赋\n1D10=" + to_string(intSymRes) + "\n" + MentalTalents[intSymRes];
+			std::string strTa = "的精神天赋\n1D10=" + to_string(intSymRes) + "\n" + MentalTalent[intSymRes];
 			strAns += strTa;
 		}
 		void CombatTalents(std::string& strAns)
 		{
 			const int intSymRes = Get::Random(1, 10);
-			std::string strTa = "的战斗天赋\n1D10=" + to_string(intSymRes) + "\n" + CombatTalents[intSymRes];
+			std::string strTa = "的战斗天赋\n1D10=" + to_string(intSymRes) + "\n" + CombatTalent[intSymRes];
 			strAns += strTa;
 		}
 		void MiscellaneousTalents(std::string& strAns)
 		{
 			const int intSymRes = Get::Random(1, 10);
-			std::string strTa = "的其他天赋\n1D10=" + to_string(intSymRes) + "\n" + MiscellaneousTalents[intSymRes];
+			std::string strTa = "的其他天赋\n1D10=" + to_string(intSymRes) + "\n" + MiscellaneousTalent[intSymRes];
 			strAns += strTa;
 		}
-		void InasneTalents(std::string& strAns)
+		void InsaneTalents(std::string& strAns)
 		{
 			const int intSymRes = Get::Random(1, 20);
-			std::string strTa = "的疯狂天赋天赋\n1D20=" + to_string(intSymRes) + "\n" + InasneTalents[intSymRes];
+			std::string strTa = "的疯狂天赋天赋\n1D20=" + to_string(intSymRes) + "\n" + InsaneTalent[intSymRes];
 			strAns += strTa;
 		}
-		void FailedCasting(std::string& strAns)
+		void FailedCastings(std::string& strAns)
 		{
 			const int intSymRes = Get::Random(1, 20);
 			std::string strTa = "-法术失误\n1D20=" + to_string(intSymRes) + "\n" + FailedCasting[intSymRes];

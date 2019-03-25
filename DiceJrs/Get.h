@@ -22,7 +22,7 @@ namespace Get
 		void CombatTalents(std::string&);
 		void MiscellaneousTalents(std::string&);
 		void InasneTalents(std::string&);
-		void FailedCasting(std::string&);
+		void FailedCastings(std::string&);
 	}
 	namespace Rules
 	{

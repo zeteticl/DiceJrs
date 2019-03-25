@@ -218,7 +218,7 @@ static std::string LongInsanity[11]{
 };
 
 //肉体天赋
-static std::string PhysicalTalents[11]{
+static std::string PhysicalTalent[11]{
 "",
 "[明察秋毫]\n进行侦查检定时获得一个奖励骰。",
 "[快速愈合]\n自然回复增加至每日3HP。",
@@ -233,7 +233,7 @@ static std::string PhysicalTalents[11]{
 };
 
 //精神天赋
-static std::string MentalTalents[11]{
+static std::string MentalTalent[11]{
 "",
 "[坚定不移]\n无视攻击人类、目睹惨烈创伤或尸体的理智损失。",
 "[百折不挠]\n可以花费幸运来避免等量的理智损失。",
@@ -248,7 +248,7 @@ static std::string MentalTalents[11]{
 };
 
 //战斗天赋
-static std::string CombatTalents[11]{
+static std::string CombatTalent[11]{
 "",
 "[处变不惊]\n不会被突袭。",
 "[专注打击]\n在格斗中，可以花费10点幸运来获得额外伤害骰，数量取决于所用武器。如徒手攻击+1D3，剑+1D6。",
@@ -263,7 +263,7 @@ static std::string CombatTalents[11]{
 };
 
 //其他天赋
-static std::string MiscellaneousTalents[11]{
+static std::string MiscellaneousTalent[11]{
 "",
 "[凶神恶煞]\n进行恐吓检定时降低一级难度等级，或者获得一个奖励骰，由守秘人判断。",
 "[奇妙道具]\n游戏开始时获得一个奇妙道具，见怪奇技术，86页。",
@@ -278,7 +278,7 @@ static std::string MiscellaneousTalents[11]{
 };
 
 //疯狂天赋
-static std::string InsaneTalents[21]{
+static std::string InsaneTalent[21]{
 "",
 "[疯狂力量]\n“我激发了自己所有的潜力！”在力量检定上获得一个奖励骰。如果检定失败，有些事就会变得糟糕。/n由守秘人来选择：英雄受伤（受到由于肌肉拉伤之类造成的1D3+英雄的伤害加值的伤害），或者者英雄正在处理的事物被打破了。",
 "[疯狂敏捷]\n“我的手快到你看不见！”在敏捷检定上获得一个奖励骰。如果检定失败，有些事就会变得糟糕。/n由守秘人来选择：英雄受伤（受到1D4点伤害），或者他们把自己正在处理的东西给弄坏了。",

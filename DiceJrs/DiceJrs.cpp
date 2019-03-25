@@ -1030,7 +1030,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			}
 			return;
 		}
-  if (strLowerMessage.substr(intMsgCnt, 4) == "mode")
+	if (strLowerMessage.substr(intMsgCnt, 4) == "mode")
 		{
 			intMsgCnt += 4;
 			while (isspace(strLowerMessage[intMsgCnt]))
