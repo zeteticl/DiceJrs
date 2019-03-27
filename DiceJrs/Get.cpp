@@ -33,6 +33,7 @@ namespace Get
 		std::uniform_int_distribution<int> dis(lowest, highest);
 		return dis(gen);
 	}
+
 	void JRRP(string& into, string& out)
 	{
 		char* frminto = new char[into.length() + 1];
@@ -170,9 +171,6 @@ namespace Get
 		}
 	}
 
-
-
-
 	namespace Pure
 	{
 		void PhysicalTalents(std::string& strAns)
@@ -228,11 +226,6 @@ namespace Get
 			strAns += strTa;
 		}
 	}
-
-
-
-
-
 
 	namespace Rules
 	{

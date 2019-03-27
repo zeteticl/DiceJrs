@@ -69,11 +69,6 @@ typedef struct FATE
 	std::string Date;
 }FATE;
 
-typedef struct Mode
-{
-	int Var;
-	std::string Date;
-}Mode;
 //¿¨ÅÆ
 static std::string tarotCard[] =
 {
