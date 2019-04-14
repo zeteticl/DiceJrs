@@ -1738,6 +1738,25 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			Get::COC::LongInsane(strAns);
 			AddMsgToQueue(strAns, eve.fromGroup, false);
 		}
+	else if (strLowerMessage.substr(intMsgCnt, 2) == "fr")
+		{
+		intMsgCnt += 2;
+		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+			intMsgCnt++;
+		string Mode;
+		while (intMsgCnt != strLowerMessage.length() && !isdigit(static_cast<unsigned char>(strLowerMessage[intMsgCnt])) && !isspace(
+			static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+		{
+			Mode += strLowerMessage[intMsgCnt];
+			intMsgCnt++;
+		}
+		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+			intMsgCnt++;
+		string strAns = strNickName;
+		Get::LegendOfTheFiveRings(strAns, Mode);
+		AddMsgToQueue(strAns, eve.fromGroup, false);
+		}
+
 	else if (strLowerMessage.substr(intMsgCnt, 2) == "sc" && strLowerMessage.substr(intMsgCnt, 3) != "scp")
 	{
 		intMsgCnt += 2;
@@ -1987,16 +2006,6 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			const string strReply(strNickName + " 切到的牌是 \n" + tarotCard[Get::Random(1, 44)]);
 			AddMsgToQueue(strReply, eve.fromGroup, false);
 		}
-		/*
-	else if (strLowerMessage.substr(intMsgCnt, 3) == "scp")
-	{
-		intMsgCnt += 3;
-		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
-			intMsgCnt++;
-		string strSCP = eve.message.substr(intMsgCnt);
-    AddMsgToQueue(GetSCP::toSCP(strSCP), eve.fromGroup, false);
-  }
-  */
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "jrrp")
 	{
   	intMsgCnt += 4;

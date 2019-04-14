@@ -12,16 +12,11 @@
       },
       "invocations": [
         {
-          "commandLine": "\"C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00322090 -il C:\\Users\\sb6ku\\AppData\\Local\\Temp\\_CL_20756d62ast -typedil -f StorageBase.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1920 -D_MSC_FULL_VER=192027305 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\sb6ku\\source\\DiceJrs\\CQSDK -nologo -W 3 -diagnostics:column- -diagnostics:caret- -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -GF -Og -Oi -Ot -Oy -ltcg -DCODE_ANALYSIS -DWIN32 -DNDEBUG -DDICE_EXPORTS -D_WINDOWS -D_USRDLL -D_WINDLL -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -clrNoPureCRT -D_MT -GS -fpfast -D_M_FP_FAST -permissive- -Zc:wchar_t -Zc:forScope -FoRelease\\StorageBase.obj -FdRelease\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:projectdirectory C:\\Users\\sb6ku\\source\\DiceJrs\\DiceJrs -analyze:rulesetdirectory ;C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\um -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\shared -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\winrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\cppwinrt -I C:\\Program Files\\Windows Kits\\NETFXSDK\\4.7.2\\Include\\um -MPdiagMutex 0000000000000160"
+          "commandLine": "\"C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00322090 -il C:\\Users\\sb6ku\\AppData\\Local\\Temp\\_CL_5e932bb6ast -typedil -f GlobalVar.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1920 -D_MSC_FULL_VER=192027305 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\sb6ku\\source\\DiceJrs\\CQSDK -nologo -W 3 -diagnostics:column- -diagnostics:caret- -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -GF -Og -Oi -Ot -Oy -ltcg -DCODE_ANALYSIS -DWIN32 -DNDEBUG -DDICE_EXPORTS -D_WINDOWS -D_USRDLL -D_WINDLL -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -clrNoPureCRT -D_MT -GS -fpfast -D_M_FP_FAST -permissive- -Zc:wchar_t -Zc:forScope -FoRelease\\GlobalVar.obj -FdRelease\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:projectdirectory C:\\Users\\sb6ku\\source\\DiceJrs\\DiceJrs -analyze:rulesetdirectory ;C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.20.27305\\atlmfc\\include -I C:\\Program Files\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\um -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\shared -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\winrt -I C:\\Program Files\\Windows Kits\\10\\Include\\10.0.17763.0\\cppwinrt -I C:\\Program Files\\Windows Kits\\NETFXSDK\\4.7.2\\Include\\um -MPdiagMutex 0000000000000160"
         }
       ],
       "files": {
         "file:///c:/users/sb6ku/source/dicejrs/cqsdk/cqeve_all.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/source/dicejrs/dicejrs/storagebase.h": {
           "roles": [
             "resultFile"
           ]
@@ -39,12 +34,6 @@
         },
         "file:///c:/users/sb6ku/source/dicejrs/cqsdk/cqdefine.h": {
           "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/source/dicejrs/dicejrs/msgformat.cpp": {
-          "roles": [
-            "analysisTarget",
             "resultFile"
           ]
         },
@@ -215,23 +204,6 @@
           ]
         },
         "file:///c:/users/sb6ku/source/dicejrs/dicejrs/globalvar.cpp": {
-          "roles": [
-            "analysisTarget",
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/source/dicejrs/dicejrs/initlist.cpp": {
-          "roles": [
-            "analysisTarget",
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/source/dicejrs/dicejrs/initlist.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/sb6ku/source/dicejrs/dicejrs/storagebase.cpp": {
           "roles": [
             "analysisTarget",
             "resultFile"

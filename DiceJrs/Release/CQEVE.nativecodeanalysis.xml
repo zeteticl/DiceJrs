@@ -2,7 +2,7 @@
 <DEFECTS>
   <DEFECT>
     <SFA>
-      <FILEPATH>c:\users\seewo\source\repos\dicejrs\cqsdk</FILEPATH>
+      <FILEPATH>c:\users\sb6ku\source\dicejrs\cqsdk</FILEPATH>
       <FILENAME>cqeve_requestaddfriend.h</FILENAME>
       <LINE>39</LINE>
       <COLUMN>39</COLUMN>
@@ -16,7 +16,7 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>c:\users\seewo\source\repos\dicejrs\cqsdk</FILEPATH>
+      <FILEPATH>c:\users\sb6ku\source\dicejrs\cqsdk</FILEPATH>
       <FILENAME>cqeve_requestaddfriend.h</FILENAME>
       <LINE>40</LINE>
       <COLUMN>79</COLUMN>
@@ -30,7 +30,7 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>c:\users\seewo\source\repos\dicejrs\cqsdk</FILEPATH>
+      <FILEPATH>c:\users\sb6ku\source\dicejrs\cqsdk</FILEPATH>
       <FILENAME>cqeve_requestaddgroup.h</FILENAME>
       <LINE>45</LINE>
       <COLUMN>39</COLUMN>
@@ -44,7 +44,7 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>c:\users\seewo\source\repos\dicejrs\cqsdk</FILEPATH>
+      <FILEPATH>c:\users\sb6ku\source\dicejrs\cqsdk</FILEPATH>
       <FILENAME>cqeve_requestaddgroup.h</FILENAME>
       <LINE>46</LINE>
       <COLUMN>79</COLUMN>
