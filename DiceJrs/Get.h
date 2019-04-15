@@ -30,7 +30,6 @@ namespace Get
 		bool into(std::string& rawStr, std::string& des);
 		bool out(const std::string& rule, const std::string& name, std::string& des);
 	}
-	void LegendOfTheFiveRings(std::string& out, std::string& mode);
 }
 void init(std::string&);
 void init2(std::string&);

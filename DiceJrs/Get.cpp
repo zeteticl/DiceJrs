@@ -289,11 +289,6 @@ namespace Get
 		}
 	}
 
-	void LegendOfTheFiveRings(string& out, string& mode)
-	{
-		if (mode == "r") out += "进行轮之骰，结果为/n1d6=" + Get::Random(1, 6);
-		if (mode == "s") out += "进行技之骰，结果为/n1d12=" + Get::Random(1, 12);
-	}
 }
 void init(string& msg)
 	{

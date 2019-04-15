@@ -1753,7 +1753,8 @@ EVE_GroupMsg_EX(eventGroupMsg)
 		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
 			intMsgCnt++;
 		string strAns = strNickName;
-		Get::LegendOfTheFiveRings(strAns, Mode);
+		if (Mode == "r") strAns = strNickName + "进行轮之骰，结果为\n1d6=" + to_string(Get::Random(1, 6));
+		if (Mode == "s") strAns = strNickName + "进行技之骰，结果为\n1d12=" + to_string(Get::Random(1, 12));
 		AddMsgToQueue(strAns, eve.fromGroup, false);
 		}
 
