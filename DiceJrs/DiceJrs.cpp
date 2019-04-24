@@ -54,15 +54,11 @@ std::string getName(long long QQ, long long GroupID = 0)
 {
 	if (GroupID)
 	{
-		if (GroupID < 1000000000)
-		{
-			return strip(Name->get(GroupID, QQ).empty()
-				             ? (getGroupMemberInfo(GroupID, QQ).GroupNick.empty()
-					                ? getStrangerInfo(QQ).nick
-					                : getGroupMemberInfo(GroupID, QQ).GroupNick)
-				             : Name->get(GroupID, QQ));
-		}
-		return strip(Name->get(GroupID, QQ).empty() ? getStrangerInfo(QQ).nick : Name->get(GroupID, QQ));
+		return strip(Name->get(GroupID, QQ).empty()
+			? (getGroupMemberInfo(GroupID, QQ).GroupNick.empty()
+				? getStrangerInfo(QQ).nick
+				: getGroupMemberInfo(GroupID, QQ).GroupNick)
+			: Name->get(GroupID, QQ));
 	}
 	return strip(getStrangerInfo(QQ).nick);
 }
