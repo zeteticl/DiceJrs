@@ -65,6 +65,7 @@ std::map<std::string, std::string> GlobalMsg
 	{"strNotBanned","未封禁" },
 	{"strUnBan","已解除封禁" },
 	{"strJrrp", "{0}今天的人品值是: {1}"},
+	{"strLfr","{0}进行{1}之骰\n{2}={3}\n结果为{4}"},
 	{"strJrrpErr", "JRRP获取失败! 错误信息: \n{0}"},
 	{"strSuccessfullyBanned","已加入封禁名单！" },
 	{"strBanAdmin","请不要封禁骰子管理员" },

@@ -1326,6 +1326,32 @@ EVE_GroupMsg_EX(eventGroupMsg)
 	Get::COC::Rule(strSearch, strReturn);
 	AddMsgToQueue(strReturn, eve.fromGroup, false);
 	}
+	else if (strLowerMessage.substr(intMsgCnt, 3) == "lfr")
+	{
+		intMsgCnt += 3;
+		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+			intMsgCnt++;
+		string Mode;
+		while (intMsgCnt != strLowerMessage.length() && !isdigit(static_cast<unsigned char>(strLowerMessage[intMsgCnt])) && !isspace(
+			static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+		{
+			Mode += strLowerMessage[intMsgCnt];
+			intMsgCnt++;
+		}
+		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+			intMsgCnt++;
+		if (Mode == "r")
+		{
+			string strN = to_string(Get::Random(1, 6));
+			AddMsgToQueue(format(GlobalMsg["strLfr"], { strNickName, "轮", "1d6", strN ,strN }), eve.fromGroup, false);
+
+		}
+		if (Mode == "s")
+		{
+			string strN = to_string(Get::Random(1, 12));
+			AddMsgToQueue(format(GlobalMsg["strLfr"], { strNickName, "技", "1d12", strN ,strN }), eve.fromGroup, false);
+		}
+	}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "init")
 		{
 			intMsgCnt += 4;
