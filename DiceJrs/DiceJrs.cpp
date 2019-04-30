@@ -1332,7 +1332,8 @@ EVE_GroupMsg_EX(eventGroupMsg)
 		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
 			intMsgCnt++;
 		string Mode;
-		while (intMsgCnt != strLowerMessage.length() && !isdigit(static_cast<unsigned char>(strLowerMessage[intMsgCnt])) && !isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+		while (intMsgCnt != strLowerMessage.length() && !isdigit(static_cast<unsigned char>(strLowerMessage[intMsgCnt])) && 
+			!isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
 		{
 			Mode += strLowerMessage[intMsgCnt];
 			intMsgCnt++;
@@ -1341,14 +1342,14 @@ EVE_GroupMsg_EX(eventGroupMsg)
 			intMsgCnt++;
 		if (Mode == "r")
 		{
-			string strN = to_string(Get::Random(1, 6));
-			AddMsgToQueue(format(GlobalMsg["strLfr"], { strNickName, "轮", "1d6", strN ,strN }), eve.fromGroup, false);
+			const int strN = Get::Random(1, 6);
+			AddMsgToQueue(format(GlobalMsg["strLfr"], { strNickName, "轮", "1d6", to_string(strN) ,Lfrr[strN] }), eve.fromGroup, false);
 
 		}
 		if (Mode == "s")
 		{
-			string strN = to_string(Get::Random(1, 12));
-			AddMsgToQueue(format(GlobalMsg["strLfr"], { strNickName, "技", "1d12", strN ,strN }), eve.fromGroup, false);
+			const int strN = Get::Random(1, 12);
+			AddMsgToQueue(format(GlobalMsg["strLfr"], { strNickName, "技", "1d12", to_string(strN) ,Lfrs[strN] }), eve.fromGroup, false);
 		}
 	}
 	else if (strLowerMessage.substr(intMsgCnt, 4) == "init")
