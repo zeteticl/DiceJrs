@@ -1332,8 +1332,7 @@ EVE_GroupMsg_EX(eventGroupMsg)
 		while (isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
 			intMsgCnt++;
 		string Mode;
-		while (intMsgCnt != strLowerMessage.length() && !isdigit(static_cast<unsigned char>(strLowerMessage[intMsgCnt])) && !isspace(
-			static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
+		while (intMsgCnt != strLowerMessage.length() && !isdigit(static_cast<unsigned char>(strLowerMessage[intMsgCnt])) && !isspace(static_cast<unsigned char>(strLowerMessage[intMsgCnt])))
 		{
 			Mode += strLowerMessage[intMsgCnt];
 			intMsgCnt++;
@@ -4356,19 +4355,6 @@ EVE_DiscussMsg_EX(eventDiscussMsg)
 		}
 }
 
-EVE_System_GroupMemberDecrease(eventSystemGroupMemberDecrease)
-{
-	if (beingOperateQQ == getLoginQQ())
-	{
-		BanFriendList.insert(fromQQ);
-		BanGroupList.insert(fromGroup);
-		AddMsgToQueue("您以及群<" + to_string(fromGroup) + ">因违规操作已被列入封禁名单！如有异议请联系旧日酱(25528272027)", fromQQ);
-		AddMsgToQueue("已将QQ<" + to_string(fromQQ) + ">和群<" + to_string(fromGroup) + ">列入封禁名单！" + "原因：被踢出群", MASTER);
-		return 1;
-	}
-	return 0;
-}
-
 
 EVE_System_GroupMemberIncrease(eventGroupMemberIncrease)
 {
@@ -4412,6 +4398,8 @@ EVE_System_GroupMemberIncrease(eventGroupMemberIncrease)
 
 EVE_Request_AddFriend(eventRequest_AddFriend)
 {
+	AddMsgToQueue(getStrangerInfo(fromQQ).nick + "(" + to_string(fromQQ) + ")添加我为好友", MASTER);
+	Sleep(60000);
 	setFriendAddRequest(responseFlag, 1, "");
 	return 1;
 }
@@ -4419,13 +4407,10 @@ EVE_Request_AddGroup(eventRequest_AddGroup)
 {
 	if (subType == 2)
 	{
-		if (BanFriendList.count(fromQQ))
-		{
-			return 1;
-		}
-		setGroupAddRequest(responseFlag, 2, 1, "");
+		if (BanFriendList.count(fromQQ)) return 1;
 		AddMsgToQueue(getStrangerInfo(fromQQ).nick + "(" + to_string(fromQQ) + ")邀请我加入群:" + getGroupList()[fromGroup] + "(" + to_string(fromGroup) + ")", MASTER);
-
+		Sleep(60000);
+		setGroupAddRequest(responseFlag, 2, 1, "");
 	}
 	return 0;
 }
